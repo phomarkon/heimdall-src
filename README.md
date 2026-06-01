@@ -9,7 +9,6 @@ CC-BY-4.0 and reproducible from public sources; forecaster checkpoints are
 mirrored on HuggingFace; the thesis manuscript lives in its own repository.
 
 - Model card and forecaster checkpoints: https://huggingface.co/Phongsakon/heimdall
-- Manuscript: https://github.com/phomarkon/heimdall-manuscript
 
 ## What this is
 
@@ -157,7 +156,6 @@ ruff check .                              # lint
 ## Documentation
 
 - `docs/REPRODUCE.md` -- reproducibility runbook
-- [Manuscript](https://github.com/phomarkon/heimdall-manuscript) -- thesis LaTeX (methodology source of truth)
 
 ## License
 
