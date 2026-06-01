@@ -54,10 +54,36 @@ bash dev-stack.sh --stop      # stop run-view + frontend
 - run-view: `http://127.0.0.1:8091` (`/v1/runs`, `/v1/runs/{id}/*`).
 - frontend: `http://127.0.0.1:3000` (single-route SPA; nav tabs are client-side).
 
-run-view auto-discovers the catalogue at `research/llm/ai-society/runs` (1347
-runs; override with `HEIMDALL_RUNS_DIR`), so no extra config is needed to see
-them. The frontend reads `NEXT_PUBLIC_HEIMDALL_API_URL` (default
-`http://127.0.0.1:8091`), so no `.env.local` is required for local use.
+run-view auto-discovers the run catalogue at `research/llm/ai-society/runs`
+(override with `HEIMDALL_RUNS_DIR`) and serves whatever run directories are
+present there. A curated demo set (39 runs with evaluations) ships committed in
+the repo, so the catalogue is populated out of the box. The full result set is
+DVC-tracked; `uv run dvc pull` hydrates it (requires access to the configured
+DVC remote).
+
+The frontend reads the run-view base URL from `NEXT_PUBLIC_HEIMDALL_API_URL`,
+and the default Live run from `NEXT_PUBLIC_HEIMDALL_RUN_ID`. Neither is set by
+default, so to view real runs create `app/frontend/.env.local`:
+
+```bash
+cat > app/frontend/.env.local <<'EOF'
+NEXT_PUBLIC_HEIMDALL_API_URL=http://127.0.0.1:8091
+NEXT_PUBLIC_HEIMDALL_RUN_ID=ff-matrix-det-apr02-0530-seed42-24-q32
+EOF
+```
+
+Without `NEXT_PUBLIC_HEIMDALL_RUN_ID` the Live tab opens on the mock run id,
+which run-view does not serve (404 → mock); point it at any run id from
+`GET /v1/runs`. The Runs tab lists the full catalogue regardless.
+
+Without `.env.local` — or whenever run-view is unreachable, or the catalogue is
+empty — the frontend serves built-in **mock data** instead of real runs. This is
+intentional: the dashboard runs fully standalone for demos and UI work with no
+backend, no data pull, and no Postgres. A clone of this public source release
+therefore shows mock data out of the box; that is expected, not a
+misconfiguration. The tell-tale is a P&L that never changes across reloads and
+synthetic agent names — add `.env.local`, start run-view, and pull run data to
+switch to the real catalogue.
 
 Disk-only (no Postgres):
 

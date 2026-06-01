@@ -69,14 +69,40 @@ bash dev-stack.sh                              # Postgres :5432 + run-view :8091
 # open http://localhost:3000
 ```
 
-Frontend-only / no-Postgres viewing (run-view serves runs from disk; the Config
-page's spec/template persistence is unavailable):
+### Dashboard quick start (light, no Postgres, macOS-friendly)
+
+Just want the dashboard? This path skips the multi-GB research stack and
+PostgreSQL, works on macOS as well as Linux, and renders the 39 curated demo
+runs committed in the repo (no DVC pull needed). run-view serves runs from disk;
+only the Config page's spec/template persistence is unavailable without Postgres.
 
 ```bash
-bash setup.sh --no-db
-uv run uvicorn heimdall_run_view.service:app --host 127.0.0.1 --port 8091 &
+# 1. light deps only — installs run-view (FastAPI/uvicorn/psycopg), not torch/pypsa/mlflow
+uv sync --package heimdall-run-view
+(cd app/frontend && bun install)
+
+# 2. point the frontend at run-view and pick a real default run (gitignored, not committed)
+cat > app/frontend/.env.local <<'EOF'
+NEXT_PUBLIC_HEIMDALL_API_URL=http://127.0.0.1:8091
+NEXT_PUBLIC_HEIMDALL_RUN_ID=ff-matrix-det-apr02-0530-seed42-24-q32
+EOF
+
+# 3. run both (--no-sync reuses the light env instead of syncing the full workspace)
+uv run --no-sync uvicorn heimdall_run_view.service:app --host 127.0.0.1 --port 8091 &
 (cd app/frontend && bun run dev)              # http://localhost:3000
 ```
+
+Without `app/frontend/.env.local` the frontend has no backend to call and falls
+back to built-in **mock data** — that is expected, not a misconfiguration, and
+lets the dashboard run fully standalone. `NEXT_PUBLIC_HEIMDALL_RUN_ID` must name
+a run that run-view serves (any id from `GET /v1/runs`); otherwise the Live tab
+opens on the mock run and 404s back to mock. The Runs tab always lists the real
+catalogue.
+
+The `setup.sh` + `dev-stack.sh` flow above is the full Debian/Ubuntu path: it
+runs the complete `uv sync` and provisions PostgreSQL via `sudo`
+(`pg_ctlcluster`), which is Linux-only. On macOS use this light path, or install
+PostgreSQL 16 manually (e.g. Homebrew) if you want the Config page.
 
 See `docs/REPRODUCE.md` for the full runbook.
 
@@ -116,6 +142,10 @@ bun install
 bun run dev             # :3000
 bun run test            # vitest
 ```
+
+Set `app/frontend/.env.local` (`NEXT_PUBLIC_HEIMDALL_API_URL`,
+`NEXT_PUBLIC_HEIMDALL_RUN_ID`) to point at run-view and a real run; without it
+the dashboard renders mock data. See the dashboard quick start above.
 
 One-command full stack:
 ```bash
