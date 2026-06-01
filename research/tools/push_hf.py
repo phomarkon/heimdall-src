@@ -1,7 +1,7 @@
 """Push trained forecaster checkpoints to the canonical HF model repo.
 
 Policy (set 2026-05-16):
-  - Target repo: ``Phongsakon/heimdall-forecasters`` (fixed; not date-stamped).
+  - Target repo: ``Phongsakon/heimdall`` (fixed; not date-stamped).
   - **Newest-only**: every push deletes pre-existing files in the repo before
     upload, so the HF mirror always reflects the current local checkpoint set.
   - **Checkpoints only**: model weights + normalization stats + cards.
@@ -24,7 +24,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 MODEL_DIR = REPO_ROOT / "models" / "forecaster"
 RELEASE_DIR = REPO_ROOT / "models" / "release"
-DEFAULT_REPO_ID = "Phongsakon/heimdall-forecasters"
+DEFAULT_REPO_ID = "Phongsakon/heimdall"
 
 # Only these filename patterns get mirrored to HF.
 CHECKPOINT_PATTERNS = (
@@ -187,7 +187,7 @@ def push(repo_id: str = DEFAULT_REPO_ID) -> dict:
 def _local_fallback(reason: str) -> dict:
     RELEASE_DIR.mkdir(parents=True, exist_ok=True)
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    out = RELEASE_DIR / f"heimdall-forecasters-{today}.tar.gz"
+    out = RELEASE_DIR / f"heimdall-{today}.tar.gz"
     with tarfile.open(out, "w:gz") as tar:
         tar.add(MODEL_DIR, arcname="forecaster", filter=_strip_caches)
     print(f"[hf] FALLBACK ({reason}); wrote {out}")

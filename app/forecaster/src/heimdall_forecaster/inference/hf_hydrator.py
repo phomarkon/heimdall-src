@@ -21,7 +21,7 @@ from typing import Iterable
 
 REPO_ROOT = Path(__file__).resolve().parents[5]
 DEFAULT_FORECASTER_ROOT = REPO_ROOT / "models" / "forecaster"
-HF_REPO = "Phongsakon/heimdall-forecasters"
+HF_REPO = "Phongsakon/heimdall"
 
 
 def checkpoint_dir(

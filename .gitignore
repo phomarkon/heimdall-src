@@ -50,7 +50,7 @@ data/cache/
 !data/external/**/*.md
 
 # Models / artifacts.  Heavy binaries live on HuggingFace
-# (Phongsakon/heimdall-forecasters); we don't track them here.
+# (Phongsakon/heimdall); we don't track them here.
 # `mlruns/` IS tracked in git: small (~10 MB), examiner-grade
 # reproducibility provenance, and crash-safety duplication of the HF copy.
 *.bin

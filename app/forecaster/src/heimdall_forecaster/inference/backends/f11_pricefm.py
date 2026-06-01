@@ -41,7 +41,7 @@ def _load_f11(seed: int) -> _PatchTSTBase:
             "F11 (PriceFM-shaped surrogate) could not be loaded from local "
             "or HuggingFace artifacts. Expected config.json, model.pt, and "
             "stats.pkl under models/forecaster/f11/seed-<seed>/ locally, or "
-            "f11/seed-<seed>/ in Phongsakon/heimdall-forecasters. If those "
+            "f11/seed-<seed>/ in Phongsakon/heimdall. If those "
             "artifacts are absent, see the MODEL_CARD fine-tune recipe. "
             f"Underlying error: {e}"
         ) from e

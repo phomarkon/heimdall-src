@@ -8,8 +8,7 @@ This is the public source release. Data panels are versioned through DVC under
 CC-BY-4.0 and reproducible from public sources; forecaster checkpoints are
 mirrored on HuggingFace; the thesis manuscript lives in its own repository.
 
-- Project card: https://huggingface.co/Phongsakon/heimdall
-- Forecaster checkpoints: https://huggingface.co/Phongsakon/heimdall-forecasters
+- Model card and forecaster checkpoints: https://huggingface.co/Phongsakon/heimdall
 - Manuscript: https://github.com/phomarkon/heimdall-manuscript
 
 ## What this is

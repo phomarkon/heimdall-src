@@ -241,7 +241,7 @@ Both PDFs use `bibliography/heimdall.bib`.
 - Code: Apache-2.0 (`LICENSE`).
 - Data: Energinet Open Data + ENTSO-E Transparency (both free-tier, free
   to redistribute).
-- Models: Apache-2.0, mirrored at `Phongsakon/heimdall-forecasters` on
+- Models: Apache-2.0, mirrored at `Phongsakon/heimdall` on
   HuggingFace.
 
 If you use Heimdall in your work, please cite the BSc thesis and the

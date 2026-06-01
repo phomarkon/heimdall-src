@@ -12,7 +12,7 @@ from pathlib import Path
 from huggingface_hub import HfApi, login
 
 REPO = Path(__file__).resolve().parents[2]
-HF_REPO = "Phongsakon/heimdall-forecasters"
+HF_REPO = "Phongsakon/heimdall"
 
 ALLOW_PATTERNS = [
     "model.pt", "boosters.pkl", "booster.pkl", "stats.pkl",
