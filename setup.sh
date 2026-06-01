@@ -248,7 +248,7 @@ Next steps:
 
 Useful entry points:
   - Reproducibility runbook       : docs/REPRODUCE.md
-  - Reproducibility bundle prep   : research/tools/zenodo_bundle.py
+  - Reproducibility bundle prep   : research/tools/data_bundle.py
   - AI society UCloud runbook     : research/llm/ai-society/SOCIETY-PLAN.md
 
 Native UCloud vLLM next steps:

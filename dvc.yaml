@@ -4,7 +4,7 @@
 # Most stages are file-checksummed; only the train stages produce model
 # artifacts that we publish through HuggingFace, not DVC.
 #
-# Remote: configured in .dvc/config (zenodo-staging + s3-staging).
+# Remote: configured in .dvc/config (local-staging + s3-staging).
 # Run `dvc repro` from a clean clone after `dvc pull` to reproduce.
 
 stages:
