@@ -45,7 +45,9 @@ export function SocietyGraph({ snapshot }: { snapshot: RunSnapshot }) {
   const selected = useSelectedEntityStore((state) => state.selected);
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const [hoverPosition, setHoverPosition] = useState<{ left: number; top: number } | null>(null);
-  const [sigmaUnavailable, setSigmaUnavailable] = useState(false);
+  // Render agents as the square DOM nodes used in the thesis figures; the
+  // WebGL/Sigma path draws circles, so we pin the graph to the DOM renderer.
+  const [sigmaUnavailable, setSigmaUnavailable] = useState(true);
   const [historyAgentId, setHistoryAgentId] = useState<string | null>(null);
 
   const focalAgentId = snapshot.nodes.find((node) => node.is_focal)?.id ?? snapshot.selected_trace.agent_id;
@@ -895,9 +897,6 @@ function FallbackSocietyGraph({
           </button>
         );
       })}
-      <div className="absolute left-4 top-4 border border-[#1f2933] bg-white/95 px-3 py-2 text-xs text-slate-600">
-        DOM graph fallback / WebGL unavailable
-      </div>
     </div>
   );
 }
