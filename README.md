@@ -4,10 +4,9 @@ Verifier-guarded LLM-agent society for the post-2025 Nordic 15-minute mFRR balan
 
 BSc Software Engineering thesis (SDU Sonderborg) by Phongsakon "Mark" Konrad and Tim Lukas Adam, with Danfoss A/S as industrial partner.
 
-This is the public source release. Data panels are versioned through DVC and
-reproducible from public sources, with a citable Zenodo deposit to follow at
-publication; forecaster checkpoints are mirrored on HuggingFace; the thesis
-manuscript lives in its own repository.
+This is the public source release. Data panels are versioned through DVC under
+CC-BY-4.0 and reproducible from public sources; forecaster checkpoints are
+mirrored on HuggingFace; the thesis manuscript lives in its own repository.
 
 - Project card: https://huggingface.co/Phongsakon/heimdall
 - Forecaster checkpoints: https://huggingface.co/Phongsakon/heimdall-forecasters
@@ -164,6 +163,6 @@ ruff check .                              # lint
 ## License
 
 - Code: Apache 2.0 (`LICENSE`)
-- Data bundle: CC-BY-4.0 (DVC; Zenodo deposit to follow at publication)
+- Data bundle: CC-BY-4.0 (DVC, reproducible from public sources)
 - Models: Apache 2.0 (HuggingFace)
 - Frontend: MIT
