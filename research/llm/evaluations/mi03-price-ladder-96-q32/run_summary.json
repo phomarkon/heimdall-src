@@ -1,0 +1,33 @@
+{
+  "activation_direction_hit_rate": 0.103448,
+  "bid_count": 96,
+  "cleared_mwh": 0.0,
+  "cumulative_pnl_eur": 0.0,
+  "downside_cvar_95_eur": 0.0,
+  "eligible_count": 58,
+  "fill_rate": 0.0,
+  "filled_count": 0,
+  "id": "mi03-price-ladder-96-q32",
+  "max_drawdown_eur": 0.0,
+  "mean_limit_price_distance_eur_mwh": 74.808333,
+  "missed_profitable_activation_mwh": 195.5,
+  "opportunity_capture": 0.0,
+  "oracle_feasible_profit_eur": 7537.545,
+  "partially_filled_count": 0,
+  "profit_per_mwh": null,
+  "realized_price_coverage": 0.0,
+  "realized_profit_eur": 0.0,
+  "regret_eur": 7537.545,
+  "run_id": "mi03-price-ladder-96-q32",
+  "side_precision": 0.103448,
+  "status_counts": {
+    "abstain": 38,
+    "price_not_crossed": 6,
+    "watch": 40,
+    "wrong_side": 12
+  },
+  "verifier_false_accepts": 0,
+  "verifier_false_rejects": 0,
+  "verifier_realized_profit_breach_rate": 0.0,
+  "volume_utilisation": 0.0
+}

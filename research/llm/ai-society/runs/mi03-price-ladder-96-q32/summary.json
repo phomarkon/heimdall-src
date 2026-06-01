@@ -1,0 +1,21 @@
+{
+  "ablation_strategy": "price_ladder",
+  "abstained": 38,
+  "accepted": 18,
+  "agent_count": 1,
+  "created_at_utc": "2026-05-12T15:40:32.697010Z",
+  "forecaster_backend": "f0",
+  "invalid": 0,
+  "llm_enabled": true,
+  "llm_model_configured": "Qwen/Qwen3-32B",
+  "llm_model_served": "Qwen/Qwen3-32B",
+  "market_context": "real",
+  "persona_profile": "default",
+  "rejected": 0,
+  "run_id": "mi03-price-ladder-96-q32",
+  "ticks": 96,
+  "tool_mode": "openai_tools",
+  "trace_path": "ai-society/runs/mi03-price-ladder-96-q32/traces.jsonl",
+  "verifier_mode": "simulator",
+  "watched": 40
+}

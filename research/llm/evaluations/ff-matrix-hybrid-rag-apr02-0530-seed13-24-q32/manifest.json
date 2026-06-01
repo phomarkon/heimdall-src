@@ -1,0 +1,26 @@
+{
+  "artifacts": {
+    "agent_metrics": "evaluations/ff-matrix-hybrid-rag-apr02-0530-seed13-24-q32/agent_metrics.parquet",
+    "archetype_metrics": "evaluations/ff-matrix-hybrid-rag-apr02-0530-seed13-24-q32/archetype_metrics.parquet",
+    "bid_evaluations": "evaluations/ff-matrix-hybrid-rag-apr02-0530-seed13-24-q32/bid_evaluations.parquet",
+    "run_summary": "evaluations/ff-matrix-hybrid-rag-apr02-0530-seed13-24-q32/run_summary.json"
+  },
+  "context_dataset_id": "april_2026",
+  "context_dir": "data/cache/real_context/april_2026",
+  "context_manifest_sha256": "d4dff65079fc4b9f5f8d2afea17a99492ab68d633c83fef895a59a58017bfec8",
+  "created_at_utc": "2026-05-26T22:25:32.196535Z",
+  "row_counts": {
+    "agent_metrics": 6,
+    "archetype_metrics": 6,
+    "bid_evaluations": 144,
+    "traces": 144,
+    "truth": 5760
+  },
+  "run_dir": "ai-society/runs/freeform-matrix-20260526/ff-matrix-hybrid-rag-apr02-0530-seed13-24-q32",
+  "run_id": "ff-matrix-hybrid-rag-apr02-0530-seed13-24-q32",
+  "schema_version": "1.0.0",
+  "trace_sha256": "1f7340d3b5db92242dc2f6cc42c3f80acc80599608c3bd37cc55375fe0706c13",
+  "truth_dataset_id": "april_2026",
+  "truth_dir": "data/cache/evaluation_truth/april_2026",
+  "truth_manifest_sha256": "ccfe423f2fce9dc93c6372d9757ca4d8866017e1321133421673a3e9b348ee12"
+}

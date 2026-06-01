@@ -1,0 +1,21 @@
+{
+  "ablation_strategy": "baseline",
+  "abstained": 41,
+  "accepted": 18,
+  "agent_count": 1,
+  "created_at_utc": "2026-05-12T14:03:47.985729Z",
+  "forecaster_backend": "f0",
+  "invalid": 0,
+  "llm_enabled": true,
+  "llm_model_configured": "Qwen/Qwen3-32B",
+  "llm_model_served": "Qwen/Qwen3-32B",
+  "market_context": "real",
+  "persona_profile": "default",
+  "rejected": 0,
+  "run_id": "mi00-baseline-profitguard-96-q32",
+  "ticks": 96,
+  "tool_mode": "openai_tools",
+  "trace_path": "ai-society/runs/mi00-baseline-profitguard-96-q32/traces.jsonl",
+  "verifier_mode": "simulator",
+  "watched": 37
+}
