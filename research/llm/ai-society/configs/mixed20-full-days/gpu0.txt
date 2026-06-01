@@ -1,0 +1,8 @@
+ai-society/configs/mixed20-full-days/mixed20-apr02-96-proxy-controls.yaml
+ai-society/configs/mixed20-full-days/mixed20-apr03-96-proxy-controls.yaml
+ai-society/configs/mixed20-full-days/mixed20-apr04-96-proxy-controls.yaml
+ai-society/configs/mixed20-full-days/mixed20-apr05-96-proxy-controls.yaml
+ai-society/configs/mixed20-full-days/mixed20-apr02-96-real-controls.yaml
+ai-society/configs/mixed20-full-days/mixed20-apr03-96-real-controls.yaml
+ai-society/configs/mixed20-full-days/mixed20-apr04-96-real-controls.yaml
+ai-society/configs/mixed20-full-days/mixed20-apr05-96-real-controls.yaml

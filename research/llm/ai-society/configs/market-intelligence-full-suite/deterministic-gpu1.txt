@@ -1,0 +1,12 @@
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-apr02-0530-f8.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-apr09-1830-f8.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-roll1-apr27-1730-f8.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-roll3-apr07-2230-f8.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-apr02-0530-f3_ensemble.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-apr09-1830-f3_ensemble.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-roll1-apr27-1730-f3_ensemble.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-roll3-apr07-2230-f3_ensemble.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-apr02-0530-f0.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-apr09-1830-f0.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-roll1-apr27-1730-f0.yaml
+ai-society/configs/market-intelligence-full-suite/deterministic-baselines/mi-detbest-diverse5-roll3-apr07-2230-f0.yaml

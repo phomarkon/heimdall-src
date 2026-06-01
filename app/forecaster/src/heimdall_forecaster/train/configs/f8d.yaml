@@ -1,0 +1,22 @@
+# F8d — XAI-lean multivariate forecaster.
+# Feature set derived from A16 ranking on F8c (experiments/outputs/a16.json,
+# union SHAP rank≤15 ∪ perm-importance rank≤15 → 20 features). Same architecture as F8c.
+name: f8d
+multivariate: false
+train_panel: data/processed/dk1_panel_rich_train.parquet
+val_panel: data/processed/dk1_panel_rich_val.parquet
+anomaly_panel: data/processed/anomaly_features.parquet
+seq_len: 96
+horizon: 16
+patch_len: 8
+d_model: 128
+nhead: 8
+n_layers: 6
+dropout: 0.1
+epochs: 20
+batch_size: 64
+lr: 1.0e-3
+weight_decay: 1.0e-4
+seed: 42
+quantiles: [0.1, 0.5, 0.9]
+# feature_names resolved at runtime via F8D_FEATURES.

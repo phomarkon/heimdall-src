@@ -1,0 +1,7 @@
+[core]
+    no_scm = True
+    remote = zenodo-staging
+['remote "zenodo-staging"']
+    url = /scratch/heimdall-dvc-store
+['remote "s3-staging"']
+    url = s3://heimdall-energy/dvc-store

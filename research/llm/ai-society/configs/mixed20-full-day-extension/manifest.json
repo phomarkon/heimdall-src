@@ -1,0 +1,18 @@
+{
+  "config_list": "ai-society/configs/mixed20-full-day-extension/config-list.txt",
+  "continues_real_control_full_days_after": "fob-mixed20-apr07-96-real-controls-q32",
+  "model": "Qwen/Qwen3-32B",
+  "run_count": 2,
+  "run_root": "ai-society/runs/mixed20-full-day-extension",
+  "runs": [
+    {
+      "config": "ai-society/configs/mixed20-full-day-extension/m20fde-mixed20-apr08-96-real-controls-q32.yaml",
+      "run_id": "m20fde-mixed20-apr08-96-real-controls-q32"
+    },
+    {
+      "config": "ai-society/configs/mixed20-full-day-extension/m20fde-mixed20-apr09-96-real-controls-q32.yaml",
+      "run_id": "m20fde-mixed20-apr09-96-real-controls-q32"
+    }
+  ],
+  "ticks": 96
+}

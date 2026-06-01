@@ -1,0 +1,2 @@
+ai-society/configs/d8-modelsize-20260524/smoke/d8-q32-apr02-0530-seed42-2-q.yaml
+ai-society/configs/d8-modelsize-20260524/smoke/d8-q72-apr02-0530-seed42-2-q.yaml

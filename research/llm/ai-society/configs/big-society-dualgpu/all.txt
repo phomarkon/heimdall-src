@@ -1,0 +1,12 @@
+ai-society/configs/big-society-dualgpu/balanced-apr02-1200-24.yaml
+ai-society/configs/big-society-dualgpu/balanced-apr09-1815-24.yaml
+ai-society/configs/big-society-dualgpu/balanced-apr13-0545-24.yaml
+ai-society/configs/big-society-dualgpu/action-info-apr02-1200-24.yaml
+ai-society/configs/big-society-dualgpu/action-info-apr09-1815-24.yaml
+ai-society/configs/big-society-dualgpu/action-info-apr13-0545-24.yaml
+ai-society/configs/big-society-dualgpu/jao-grid-apr02-1200-24.yaml
+ai-society/configs/big-society-dualgpu/jao-grid-apr09-1815-24.yaml
+ai-society/configs/big-society-dualgpu/jao-grid-apr13-0545-24.yaml
+ai-society/configs/big-society-dualgpu/chair-jao-grid-apr02-1200-10.yaml
+ai-society/configs/big-society-dualgpu/chair-jao-grid-apr09-1815-10.yaml
+ai-society/configs/big-society-dualgpu/chair-jao-grid-apr13-0545-10.yaml

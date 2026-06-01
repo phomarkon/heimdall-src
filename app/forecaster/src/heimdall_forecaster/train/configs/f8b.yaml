@@ -1,0 +1,24 @@
+# F8b — rich-feature multivariate forecaster.
+# Adds Trinity cross-zone DA, 24h-lagged weather, generation actuals (lagged-OK),
+# and calendar features on top of F8a's (price + load + da) baseline.
+# See packages/data/src/heimdall_data/trinity.py for weather causality contract.
+name: f8b
+multivariate: false  # explicit feature_names below supersedes
+train_panel: data/processed/dk1_panel_rich_train.parquet
+val_panel: data/processed/dk1_panel_rich_val.parquet
+# anomaly_panel: null — F8b does not consume anomaly features (those are F8c's).
+seq_len: 96
+horizon: 16
+patch_len: 8
+d_model: 128
+nhead: 8
+n_layers: 6
+dropout: 0.1
+epochs: 100
+batch_size: 64
+lr: 1.0e-3
+weight_decay: 1.0e-4
+seed: 42
+quantiles: [0.1, 0.5, 0.9]
+# `feature_names` left empty here — train/run.py will resolve from
+# heimdall_forecaster.train.dataset.F8B_FEATURES when name == "f8b".

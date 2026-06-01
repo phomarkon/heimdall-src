@@ -1,0 +1,24 @@
+# UCloud real-data smoke: requires cached/fetchable ENTSO-E data and vLLM.
+run_id: real-smoke-5
+seed: 42
+zone: DK1
+agent_count: 5
+ticks: 4
+start_timestamp: "2026-05-11T12:00:00Z"
+forecaster_backend: f0
+verifier_mode: simulator
+market_context: real
+tool_mode: openai_tools
+data_start: "2026-05-10T00:00:00Z"
+data_end: "2026-05-12T00:00:00Z"
+default_lookback_hours: 24
+cache_refresh: false
+context_dataset_dir: data/cache/real_context/real_smoke_5
+data_cache_dir: data/cache/real_context/real_smoke_5/source_cache
+output_dir: research/llm/ai-society/runs
+llm:
+  enabled: true
+  temperature: 0.2
+  max_tokens: 700
+  timeout_seconds: 180
+  max_concurrency: 4

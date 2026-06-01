@@ -1,0 +1,20 @@
+name: f8w72
+use_rin: true
+multivariate: false
+train_panel: data/processed/dk1_panel_rich_wx72_train.parquet
+val_panel: data/processed/dk1_panel_rich_wx72_val.parquet
+seq_len: 96
+horizon: 16
+patch_len: 8
+d_model: 128
+nhead: 8
+n_layers: 6
+dropout: 0.1
+epochs: 20
+batch_size: 64
+lr: 0.001
+weight_decay: 0.0001
+seed: 42
+quantiles: [0.1, 0.5, 0.9]
+out_dir: models/forecaster
+experiment: heimdall-forecaster-weather-ablation

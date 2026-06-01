@@ -1,0 +1,2 @@
+ai-society/configs/forecaster-zoo-priority-realcontrol-20260518/smoke-fzpr-s06-f9-apr02-0530-2-q32.yaml
+ai-society/configs/forecaster-zoo-priority-realcontrol-20260518/smoke-fzpr-s20-mixed-persona-apr02-0530-2-q32.yaml

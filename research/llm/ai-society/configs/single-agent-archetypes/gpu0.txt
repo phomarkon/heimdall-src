@@ -1,0 +1,11 @@
+ai-society/configs/single-agent-archetypes/sat-1-p2h-apr02-0530-f8-q32.yaml
+ai-society/configs/single-agent-archetypes/sat-1-wind-apr02-0530-f8-q32.yaml
+ai-society/configs/single-agent-archetypes/sat-1-renewables-apr02-0530-f8-q32.yaml
+ai-society/configs/single-agent-archetypes/sat-1-arbitrageur-apr02-0530-f8-q32.yaml
+ai-society/configs/single-agent-archetypes/sat-1-ev-apr09-1830-f8-q32.yaml
+ai-society/configs/single-agent-archetypes/sat-1-generator-apr09-1830-f8-q32.yaml
+ai-society/configs/single-agent-archetypes/sat-1-retailer-apr09-1830-f8-q32.yaml
+ai-society/configs/single-agent-archetypes/sat-1-p2h-apr13-0015-f8-q32.yaml
+ai-society/configs/single-agent-archetypes/sat-1-wind-apr13-0015-f8-q32.yaml
+ai-society/configs/single-agent-archetypes/sat-1-renewables-apr13-0015-f8-q32.yaml
+ai-society/configs/single-agent-archetypes/sat-1-arbitrageur-apr13-0015-f8-q32.yaml

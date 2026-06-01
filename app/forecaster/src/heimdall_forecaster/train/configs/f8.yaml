@@ -1,0 +1,16 @@
+# F8 — multivariate (price + load + DA price) forecaster. docs/RESEARCH-PROPOSAL.md §4.4.
+name: f8
+multivariate: true
+seq_len: 96
+horizon: 16
+patch_len: 8
+d_model: 128
+nhead: 8
+n_layers: 6
+dropout: 0.1
+epochs: 5
+batch_size: 64
+lr: 1.0e-3
+weight_decay: 1.0e-4
+seed: 42
+quantiles: [0.1, 0.5, 0.9]

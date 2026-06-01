@@ -1,0 +1,6 @@
+ai-society/configs/d9-society-20260524/d9-solo-apr02-seed42-24.yaml
+ai-society/configs/d9-society-20260524/d9-society-apr02-seed42-24.yaml
+ai-society/configs/d9-society-20260524/d9-solo-apr09-seed42-24.yaml
+ai-society/configs/d9-society-20260524/d9-society-apr09-seed42-24.yaml
+ai-society/configs/d9-society-20260524/d9-solo-apr13-seed42-24.yaml
+ai-society/configs/d9-society-20260524/d9-society-apr13-seed42-24.yaml

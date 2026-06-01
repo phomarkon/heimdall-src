@@ -1,0 +1,3 @@
+ai-society/configs/broadcast-forecaster-ablations/smoke-core12-f3_ensemble-apr02-0530-2.yaml
+ai-society/configs/broadcast-forecaster-ablations/smoke-core12-f8-apr02-0530-2.yaml
+ai-society/configs/broadcast-forecaster-ablations/smoke-core12-f7-apr02-0530-2.yaml

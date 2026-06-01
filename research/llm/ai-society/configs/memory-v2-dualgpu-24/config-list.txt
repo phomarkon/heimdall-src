@@ -1,0 +1,4 @@
+ai-society/configs/memory-v2-dualgpu-24/memv2-5-bcast-memv2-apr03-1100-24-f8-q32.yaml
+ai-society/configs/memory-v2-dualgpu-24/memv2-12-bcast-memv2-apr03-1100-24-f8-q32.yaml
+ai-society/configs/memory-v2-dualgpu-24/memv2-5-bcast-memv2-apr09-1100-24-f8-q32.yaml
+ai-society/configs/memory-v2-dualgpu-24/memv2-12-bcast-memv2-apr09-1100-24-f8-q32.yaml

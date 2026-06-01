@@ -1,0 +1,15 @@
+ai-society/configs/bcast-mem-extensions-20260515/bme-balanced12-bcast-mem-apr02-0530-24-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-info14-bcast-mem-apr02-0530-24-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-jao12-bcast-mem-apr02-0530-24-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-info14-bcast-mem-apr02-0530-24-f3_ensemble.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-info14-bcast-mem-apr02-0530-24-f7.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-balanced12-bcast-mem-apr09-1830-24-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-info14-bcast-mem-apr09-1830-24-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-jao12-bcast-mem-apr09-1830-24-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-info14-bcast-mem-apr09-1830-24-f3_ensemble.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-info14-bcast-mem-apr09-1830-24-f7.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-balanced12-bcast-mem-apr13-0015-24-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-info14-bcast-mem-apr13-0015-24-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-jao12-bcast-mem-apr13-0015-24-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-info14-bcast-mem-apr13-0015-24-f3_ensemble.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-info14-bcast-mem-apr13-0015-24-f7.yaml

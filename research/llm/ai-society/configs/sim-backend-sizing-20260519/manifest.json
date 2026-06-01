@@ -1,0 +1,100 @@
+{
+  "backends": {
+    "pypsa": "dual_compare_pypsa_controls",
+    "scenario": "dual_compare_real_controls"
+  },
+  "config_list": "ai-society/configs/sim-backend-sizing-20260519/all.txt",
+  "forecaster_backend": "f8",
+  "full_run_count": 12,
+  "full_runs": [
+    {
+      "backend": "scenario",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/scenario/current/sbs-s06-scenario-current-apr02-0530-seed42-q32.yaml",
+      "run_id": "sbs-s06-scenario-current-apr02-0530-seed42-q32",
+      "sizing": "current"
+    },
+    {
+      "backend": "scenario",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/scenario/current/sbs-s06-scenario-current-apr09-1830-seed42-q32.yaml",
+      "run_id": "sbs-s06-scenario-current-apr09-1830-seed42-q32",
+      "sizing": "current"
+    },
+    {
+      "backend": "scenario",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/scenario/current/sbs-s06-scenario-current-apr13-0015-seed42-q32.yaml",
+      "run_id": "sbs-s06-scenario-current-apr13-0015-seed42-q32",
+      "sizing": "current"
+    },
+    {
+      "backend": "scenario",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/scenario/large/sbs-s06-scenario-large-apr02-0530-seed42-q32.yaml",
+      "run_id": "sbs-s06-scenario-large-apr02-0530-seed42-q32",
+      "sizing": "large"
+    },
+    {
+      "backend": "scenario",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/scenario/large/sbs-s06-scenario-large-apr09-1830-seed42-q32.yaml",
+      "run_id": "sbs-s06-scenario-large-apr09-1830-seed42-q32",
+      "sizing": "large"
+    },
+    {
+      "backend": "scenario",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/scenario/large/sbs-s06-scenario-large-apr13-0015-seed42-q32.yaml",
+      "run_id": "sbs-s06-scenario-large-apr13-0015-seed42-q32",
+      "sizing": "large"
+    },
+    {
+      "backend": "pypsa",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/pypsa/current/sbs-s06-pypsa-current-apr02-0530-seed42-q32.yaml",
+      "run_id": "sbs-s06-pypsa-current-apr02-0530-seed42-q32",
+      "sizing": "current"
+    },
+    {
+      "backend": "pypsa",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/pypsa/current/sbs-s06-pypsa-current-apr09-1830-seed42-q32.yaml",
+      "run_id": "sbs-s06-pypsa-current-apr09-1830-seed42-q32",
+      "sizing": "current"
+    },
+    {
+      "backend": "pypsa",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/pypsa/current/sbs-s06-pypsa-current-apr13-0015-seed42-q32.yaml",
+      "run_id": "sbs-s06-pypsa-current-apr13-0015-seed42-q32",
+      "sizing": "current"
+    },
+    {
+      "backend": "pypsa",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/pypsa/large/sbs-s06-pypsa-large-apr02-0530-seed42-q32.yaml",
+      "run_id": "sbs-s06-pypsa-large-apr02-0530-seed42-q32",
+      "sizing": "large"
+    },
+    {
+      "backend": "pypsa",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/pypsa/large/sbs-s06-pypsa-large-apr09-1830-seed42-q32.yaml",
+      "run_id": "sbs-s06-pypsa-large-apr09-1830-seed42-q32",
+      "sizing": "large"
+    },
+    {
+      "backend": "pypsa",
+      "config": "ai-society/configs/sim-backend-sizing-20260519/full/pypsa/large/sbs-s06-pypsa-large-apr13-0015-seed42-q32.yaml",
+      "run_id": "sbs-s06-pypsa-large-apr13-0015-seed42-q32",
+      "sizing": "large"
+    }
+  ],
+  "generated_at": "2026-05-19",
+  "matrix": "sim-backend-sizing-20260519",
+  "medium_comparator_source": "thesis-s06-equal-ablation-20260519 scenario/full and pypsa/full medium cells",
+  "new_sizing_arms": [
+    "current",
+    "large"
+  ],
+  "run_root": "ai-society/runs/sim-backend-sizing-20260519",
+  "seed": 42,
+  "smoke_list": "ai-society/configs/sim-backend-sizing-20260519/smoke.txt",
+  "smoke_run_count": 4,
+  "truth_dir": "data/cache/evaluation_truth/april_2026",
+  "windows": {
+    "apr02-0530": "2026-04-02T05:30:00Z",
+    "apr09-1830": "2026-04-09T18:30:00Z",
+    "apr13-0015": "2026-04-13T00:15:00Z"
+  }
+}

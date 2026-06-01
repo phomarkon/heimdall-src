@@ -1,0 +1,82 @@
+{
+  "arms": [
+    {
+      "agent_count": 5,
+      "max_concurrency": 5,
+      "memory": false,
+      "profile": "diverse_action",
+      "slug": "5-ind",
+      "strategy": "diverse_action_society"
+    },
+    {
+      "agent_count": 5,
+      "max_concurrency": 5,
+      "memory": false,
+      "profile": "diverse_action",
+      "slug": "5-bcast",
+      "strategy": "comm_broadcast_digest"
+    },
+    {
+      "agent_count": 5,
+      "max_concurrency": 5,
+      "memory": true,
+      "profile": "diverse_action",
+      "slug": "5-bcast-mem",
+      "strategy": "comm_broadcast_digest"
+    },
+    {
+      "agent_count": 8,
+      "max_concurrency": 6,
+      "memory": false,
+      "profile": "diverse_expert_action",
+      "slug": "8-bcast",
+      "strategy": "comm_broadcast_digest"
+    },
+    {
+      "agent_count": 8,
+      "max_concurrency": 6,
+      "memory": true,
+      "profile": "diverse_expert_action",
+      "slug": "8-bcast-mem",
+      "strategy": "comm_broadcast_digest"
+    },
+    {
+      "agent_count": 12,
+      "max_concurrency": 8,
+      "memory": true,
+      "profile": "balanced_intelligence",
+      "slug": "12-bcast-mem",
+      "strategy": "comm_broadcast_digest"
+    },
+    {
+      "agent_count": 5,
+      "max_concurrency": 3,
+      "memory": true,
+      "profile": "diverse_action",
+      "slug": "5-peer-mem",
+      "strategy": "comm_peer_signal"
+    },
+    {
+      "agent_count": 8,
+      "max_concurrency": 3,
+      "memory": true,
+      "profile": "diverse_expert_action",
+      "slug": "8-peer-mem",
+      "strategy": "comm_peer_signal"
+    }
+  ],
+  "memory_bank": "ai-society/runs/adaptive-thesis-matrix/memory-v2-bank.jsonl",
+  "run_count": 16,
+  "windows": [
+    [
+      "apr02-1200",
+      "2026-04-02T12:00:00Z",
+      24
+    ],
+    [
+      "apr09-1830",
+      "2026-04-09T18:30:00Z",
+      24
+    ]
+  ]
+}

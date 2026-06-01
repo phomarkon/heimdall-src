@@ -1,0 +1,15 @@
+ai-society/configs/info-specialist-ablation/solo-grid-apr09-1815.yaml
+ai-society/configs/info-specialist-ablation/solo-outage-apr09-1815.yaml
+ai-society/configs/info-specialist-ablation/solo-limit-apr09-1815.yaml
+ai-society/configs/info-specialist-ablation/solo-sizing-apr09-1815.yaml
+ai-society/configs/info-specialist-ablation/solo-uncertainty-apr09-1815.yaml
+ai-society/configs/info-specialist-ablation/solo-decision-apr09-1815.yaml
+ai-society/configs/info-specialist-ablation/info-panel-apr09-1815.yaml
+ai-society/configs/info-specialist-ablation/action8-base-apr09-1815.yaml
+ai-society/configs/info-specialist-ablation/action8-info-apr09-1815.yaml
+ai-society/configs/info-specialist-ablation/jao-grid-action-apr09-1815.yaml
+ai-society/configs/info-specialist-ablation/action8-base-apr13-0545.yaml
+ai-society/configs/info-specialist-ablation/action8-info-apr13-0545.yaml
+ai-society/configs/info-specialist-ablation/jao-grid-action-apr13-0545.yaml
+ai-society/configs/info-specialist-ablation/p2h-info-apr02-1200.yaml
+ai-society/configs/info-specialist-ablation/ev-info-apr02-1200.yaml

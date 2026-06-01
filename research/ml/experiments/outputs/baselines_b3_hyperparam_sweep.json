@@ -1,0 +1,150 @@
+{
+  "n_configs": 12,
+  "best_profit_per_mwh_eur": 9.0539,
+  "best_config": {
+    "horizon_ticks": 32,
+    "n_scenarios": 24,
+    "cvar_lambda": 0.0,
+    "profit_per_mwh_eur": 9.0539,
+    "total_profit_eur": 29659.8459,
+    "sharpe": 53.4778,
+    "cvar5_daily_eur": -253.7111,
+    "physical_violation_rate": 0.8056,
+    "runtime_seconds": 41.9
+  },
+  "all_results": [
+    {
+      "horizon_ticks": 4,
+      "n_scenarios": 24,
+      "cvar_lambda": 0.0,
+      "profit_per_mwh_eur": 4.0353,
+      "total_profit_eur": 30635.402,
+      "sharpe": 30.6219,
+      "cvar5_daily_eur": -98.7844,
+      "physical_violation_rate": 0.4762,
+      "runtime_seconds": 103.7
+    },
+    {
+      "horizon_ticks": 4,
+      "n_scenarios": 24,
+      "cvar_lambda": 0.5,
+      "profit_per_mwh_eur": 4.0293,
+      "total_profit_eur": 30619.3905,
+      "sharpe": 30.4753,
+      "cvar5_daily_eur": -104.1477,
+      "physical_violation_rate": 0.4759,
+      "runtime_seconds": 100.69
+    },
+    {
+      "horizon_ticks": 4,
+      "n_scenarios": 24,
+      "cvar_lambda": 1.0,
+      "profit_per_mwh_eur": 4.0258,
+      "total_profit_eur": 30602.5692,
+      "sharpe": 30.3938,
+      "cvar5_daily_eur": -109.7602,
+      "physical_violation_rate": 0.4759,
+      "runtime_seconds": 96.31
+    },
+    {
+      "horizon_ticks": 8,
+      "n_scenarios": 24,
+      "cvar_lambda": 0.0,
+      "profit_per_mwh_eur": 5.4608,
+      "total_profit_eur": 30686.1832,
+      "sharpe": 35.1739,
+      "cvar5_daily_eur": -59.7812,
+      "physical_violation_rate": 0.5842,
+      "runtime_seconds": 59.09
+    },
+    {
+      "horizon_ticks": 8,
+      "n_scenarios": 24,
+      "cvar_lambda": 0.5,
+      "profit_per_mwh_eur": 5.458,
+      "total_profit_eur": 30686.0005,
+      "sharpe": 35.2569,
+      "cvar5_daily_eur": -59.7787,
+      "physical_violation_rate": 0.5835,
+      "runtime_seconds": 60.5
+    },
+    {
+      "horizon_ticks": 8,
+      "n_scenarios": 24,
+      "cvar_lambda": 1.0,
+      "profit_per_mwh_eur": 5.4574,
+      "total_profit_eur": 30685.9054,
+      "sharpe": 35.2514,
+      "cvar5_daily_eur": -59.7856,
+      "physical_violation_rate": 0.5835,
+      "runtime_seconds": 59.5
+    },
+    {
+      "horizon_ticks": 16,
+      "n_scenarios": 24,
+      "cvar_lambda": 0.0,
+      "profit_per_mwh_eur": 7.9672,
+      "total_profit_eur": 33649.3063,
+      "sharpe": 39.8826,
+      "cvar5_daily_eur": 146.8487,
+      "physical_violation_rate": 0.7049,
+      "runtime_seconds": 47.21
+    },
+    {
+      "horizon_ticks": 16,
+      "n_scenarios": 24,
+      "cvar_lambda": 0.5,
+      "profit_per_mwh_eur": 7.9649,
+      "total_profit_eur": 33649.3544,
+      "sharpe": 39.8882,
+      "cvar5_daily_eur": 146.8306,
+      "physical_violation_rate": 0.7049,
+      "runtime_seconds": 48.39
+    },
+    {
+      "horizon_ticks": 16,
+      "n_scenarios": 24,
+      "cvar_lambda": 1.0,
+      "profit_per_mwh_eur": 7.9646,
+      "total_profit_eur": 33649.1724,
+      "sharpe": 39.8877,
+      "cvar5_daily_eur": 146.8189,
+      "physical_violation_rate": 0.7049,
+      "runtime_seconds": 48.2
+    },
+    {
+      "horizon_ticks": 32,
+      "n_scenarios": 24,
+      "cvar_lambda": 0.0,
+      "profit_per_mwh_eur": 9.0539,
+      "total_profit_eur": 29659.8459,
+      "sharpe": 53.4778,
+      "cvar5_daily_eur": -253.7111,
+      "physical_violation_rate": 0.8056,
+      "runtime_seconds": 41.9
+    },
+    {
+      "horizon_ticks": 32,
+      "n_scenarios": 24,
+      "cvar_lambda": 0.5,
+      "profit_per_mwh_eur": 9.0529,
+      "total_profit_eur": 29659.8388,
+      "sharpe": 53.4734,
+      "cvar5_daily_eur": -253.7098,
+      "physical_violation_rate": 0.8056,
+      "runtime_seconds": 43.29
+    },
+    {
+      "horizon_ticks": 32,
+      "n_scenarios": 24,
+      "cvar_lambda": 1.0,
+      "profit_per_mwh_eur": 9.0528,
+      "total_profit_eur": 29659.887,
+      "sharpe": 53.4725,
+      "cvar5_daily_eur": -253.7036,
+      "physical_violation_rate": 0.8056,
+      "runtime_seconds": 41.42
+    }
+  ],
+  "b2_anchor_profit_per_mwh_eur": 17.87
+}

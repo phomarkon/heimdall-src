@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: #fbfaf7;
+  --panel: #ffffff;
+  --panel-strong: #f7f6f2;
+  --border: #1f2933;
+  --border-soft: #cfd5dd;
+  --muted: #5f6673;
+  --text: #101217;
+  --accent: #0f8f7e;
+  --danger: #d22f2f;
+  --warning: #d39b14;
+  --paper: #fbfaf7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-mono), "IBM Plex Mono", "Courier New", monospace;
+}
+
+body {
+  overflow: hidden;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.sigma-container canvas {
+  background: transparent !important;
+}
+
+.timeline-range {
+  appearance: none;
+  background: transparent;
+}
+
+.timeline-range::-webkit-slider-runnable-track {
+  height: 64px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.timeline-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 64px;
+  margin-top: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.timeline-range::-moz-range-track {
+  height: 64px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.timeline-range::-moz-range-thumb {
+  width: 18px;
+  height: 64px;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+}
+
+.retro-noise {
+  background-image:
+    linear-gradient(rgb(31 41 51 / 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(31 41 51 / 0.018) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.retro-panel {
+  border: 1px solid #1f2933;
+  border-radius: 2px;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.retro-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tabular-stable {
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,35 @@
+{
+  "config_list": "ai-society/configs/thesis-s06-equal-ablation-20260519/all.txt",
+  "fixed": {
+    "agent_count": 6,
+    "candidate_sizing_mode": "medium",
+    "forecaster_backend": "f8",
+    "llm_model": "Qwen/Qwen3-32B",
+    "persona_profile": "action_core_8",
+    "tool_policy": "asset_simulator_v1"
+  },
+  "full_run_count": 27,
+  "generated_at": "2026-05-19",
+  "matrix": "thesis-s06-equal-ablation",
+  "preprobe_modes": {
+    "context": "context_only",
+    "full": "full",
+    "none": "none"
+  },
+  "run_root": "ai-society/runs/thesis-s06-equal-ablation-20260519",
+  "sanity_check": "Full configs differ only by run_id, start_timestamp, asset_simulator_mode, and preprobe_mode.",
+  "seed": 42,
+  "simulator_modes": {
+    "proxy": "dual_compare_proxy_controls",
+    "pypsa": "dual_compare_pypsa_controls",
+    "scenario": "dual_compare_real_controls"
+  },
+  "smoke_list": "ai-society/configs/thesis-s06-equal-ablation-20260519/smoke.txt",
+  "smoke_run_count": 9,
+  "truth_dir": "data/cache/evaluation_truth/april_2026",
+  "windows": {
+    "apr02-0530": "2026-04-02T05:30:00Z",
+    "apr09-1830": "2026-04-09T18:30:00Z",
+    "apr13-0015": "2026-04-13T00:15:00Z"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "acceptance_gates": {
+    "action_probe_compliance_rate_min": 0.5,
+    "deliberation_note_rate_min": 0.7,
+    "inquiry_tool_call_rate_min": 0.8
+  },
+  "config_lists": {
+    "all": "ai-society/configs/deliberation-protocol-20260519/all.txt",
+    "final_comparators": "ai-society/configs/deliberation-protocol-20260519/final-comparators.txt",
+    "final_delib": "ai-society/configs/deliberation-protocol-20260519/final-delib.txt",
+    "ramp": "ai-society/configs/deliberation-protocol-20260519/ramp.txt",
+    "ramp_s06": "ai-society/configs/deliberation-protocol-20260519/ramp-s06.txt",
+    "ramp_s12": "ai-society/configs/deliberation-protocol-20260519/ramp-s12.txt"
+  },
+  "fast_validation_ladder": [
+    [
+      "stage1-s06-2",
+      "s06-actioncore",
+      "apr02-0530",
+      2
+    ],
+    [
+      "stage2-s06-5",
+      "s06-actioncore",
+      "apr02-0530",
+      5
+    ],
+    [
+      "stage3-s06-10",
+      "s06-actioncore",
+      "apr02-0530",
+      10
+    ],
+    [
+      "stage4-s12-5",
+      "s12-balanced",
+      "apr02-0530",
+      5
+    ],
+    [
+      "stage5-s12-10",
+      "s12-balanced",
+      "apr02-0530",
+      10
+    ]
+  ],
+  "final_comparator_runs": [
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-guardedfull-apr02-0530-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-guardedfull-apr02-0530-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-guardedfull-apr09-1830-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-guardedfull-apr09-1830-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-guardedfull-apr13-0015-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-guardedfull-apr13-0015-24-seed42-q32.yaml"
+  ],
+  "final_delib_runs": [
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-delib-apr02-0530-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-delib-apr02-0530-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-delib-apr09-1830-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-delib-apr09-1830-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-delib-apr13-0015-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-delib-apr13-0015-24-seed42-q32.yaml"
+  ],
+  "model": "Qwen/Qwen3-32B",
+  "ramp_runs": [
+    "ai-society/configs/deliberation-protocol-20260519/ramp/dproto-stage1-s06-2-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/ramp/dproto-stage2-s06-5-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/ramp/dproto-stage3-s06-10-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/ramp/dproto-stage4-s12-5-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/ramp/dproto-stage5-s12-10-apr02-0530-seed42-q32.yaml"
+  ],
+  "run_count": 17,
+  "run_root": "ai-society/runs/deliberation-protocol-20260519",
+  "runs": [
+    "ai-society/configs/deliberation-protocol-20260519/ramp/dproto-stage1-s06-2-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/ramp/dproto-stage2-s06-5-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/ramp/dproto-stage3-s06-10-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/ramp/dproto-stage4-s12-5-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/ramp/dproto-stage5-s12-10-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-delib-apr02-0530-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-guardedfull-apr02-0530-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-delib-apr02-0530-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-guardedfull-apr02-0530-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-delib-apr09-1830-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-guardedfull-apr09-1830-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-delib-apr09-1830-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-guardedfull-apr09-1830-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-delib-apr13-0015-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s06-actioncore/dproto-final-s06-actioncore-guardedfull-apr13-0015-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-delib-apr13-0015-24-seed42-q32.yaml",
+    "ai-society/configs/deliberation-protocol-20260519/final/s12-balanced/dproto-final-s12-balanced-guardedfull-apr13-0015-24-seed42-q32.yaml"
+  ]
+}

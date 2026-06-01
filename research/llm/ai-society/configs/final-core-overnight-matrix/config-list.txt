@@ -1,0 +1,13 @@
+ai-society/configs/final-core-overnight-matrix/core_seed_fill/s06-actioncore/fco-s06-actioncore-bcast-apr02-0530-seed13-q32.yaml
+ai-society/configs/final-core-overnight-matrix/core_seed_fill/s06-actioncore/fco-s06-actioncore-bcast-apr02-0530-seed137-q32.yaml
+ai-society/configs/final-core-overnight-matrix/core_seed_fill/s12-balanced/fco-s12-balanced-bcast-apr02-0530-seed13-q32.yaml
+ai-society/configs/final-core-overnight-matrix/core_seed_fill/s12-balanced/fco-s12-balanced-bcast-apr02-0530-seed137-q32.yaml
+ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr02-0530-seed13-q32.yaml
+ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr02-0530-seed137-q32.yaml
+ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr09-1830-seed13-q32.yaml
+ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr09-1830-seed137-q32.yaml
+ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr13-0015-seed13-q32.yaml
+ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr13-0015-seed42-q32.yaml
+ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr13-0015-seed137-q32.yaml
+ai-society/configs/final-core-overnight-matrix/sparse_control_fill/s06-actioncore/fco-s06-actioncore-bcast-apr07-1715-seed42-q32.yaml
+ai-society/configs/final-core-overnight-matrix/sparse_control_fill/s20-mixed/fco-s20-mixed-bcast-apr07-1715-seed42-q32.yaml

@@ -1,0 +1,106 @@
+# Heimdall reproducibility pipeline (Plan v2 Track F.1).
+#
+# Stages chain from raw API ingest → processed panels → forecaster training → eval.
+# Most stages are file-checksummed; only the train stages produce model
+# artifacts that we publish through HuggingFace, not DVC.
+#
+# Remote: configured in .dvc/config (zenodo-staging + s3-staging).
+# Run `dvc repro` from a clean clone after `dvc pull` to reproduce.
+
+stages:
+
+  build_rich_splits:
+    cmd: uv run python research/tools/build_rich_splits.py
+    deps:
+      - research/tools/build_rich_splits.py
+      - packages/data/src/heimdall_data/rich_panel.py
+      - packages/data/src/heimdall_data/trinity.py
+      - packages/data/src/heimdall_data/markets.py
+      - packages/data/src/heimdall_data/calendar_features.py
+      - data/external/trinity/prices.parquet
+      - data/external/trinity/load.parquet
+      - data/external/trinity/generation.parquet
+      - data/external/trinity/flows.parquet
+      - data/external/trinity/weather.parquet
+      - data/external/trinity/nordpool_umm/umm_zone_hourly_features.parquet
+      - data/processed/dk1_panel.parquet
+    outs:
+      - data/processed/dk1_panel_rich.parquet
+      - data/processed/dk1_panel_rich_archive.parquet
+      - data/processed/dk1_panel_rich_train.parquet
+      - data/processed/dk1_panel_rich_val.parquet
+      - data/processed/dk1_panel_rich_test.parquet
+      - data/processed/dk1_panel_rich_archive_train.parquet
+      - data/processed/dk1_panel_rich_archive_val.parquet
+      - data/processed/dk1_panel_rich_archive_test.parquet
+      - data/processed/anomaly_features_train.parquet
+      - data/processed/anomaly_features_val.parquet
+      - data/processed/anomaly_features_test.parquet
+
+  build_multi_zone_panel:
+    cmd: uv run python research/tools/build_multi_zone_panel.py
+    deps:
+      - research/tools/build_multi_zone_panel.py
+      - packages/data/src/heimdall_data/trinity.py
+      - data/external/trinity/prices.parquet
+    outs:
+      - data/processed/multi_zone_da_panel.parquet
+
+  synthetic_bank:
+    cmd: uv run python research/tools/synthetic_bank.py
+    deps:
+      - research/tools/synthetic_bank.py
+      - data/processed/dk1_panel_rich_train.parquet
+      - data/processed/dk1_panel_rich_val.parquet
+    outs:
+      - data/processed/synthetic_bank.parquet
+      - data/processed/synthetic_bank_leak.parquet
+
+  train_f8b:
+    foreach: [13, 42, 137, 1729, 31415]
+    do:
+      cmd: uv run python -m heimdall_forecaster.train.run --config app/forecaster/src/heimdall_forecaster/train/configs/f8b.yaml --seed ${item}
+      deps:
+        - app/forecaster/src/heimdall_forecaster/train/configs/f8b.yaml
+        - app/forecaster/src/heimdall_forecaster/train/trainer.py
+        - app/forecaster/src/heimdall_forecaster/train/dataset.py
+        - app/forecaster/src/heimdall_forecaster/train/model.py
+        - data/processed/dk1_panel_rich_train.parquet
+        - data/processed/dk1_panel_rich_val.parquet
+      outs:
+        - research/ml/models/forecaster/f8b/seed-${item}
+
+  train_f8c:
+    foreach: [13, 42, 137, 1729, 31415]
+    do:
+      cmd: uv run python -m heimdall_forecaster.train.run --config app/forecaster/src/heimdall_forecaster/train/configs/f8c.yaml --seed ${item}
+      deps:
+        - app/forecaster/src/heimdall_forecaster/train/configs/f8c.yaml
+        - app/forecaster/src/heimdall_forecaster/train/trainer.py
+        - app/forecaster/src/heimdall_forecaster/train/dataset.py
+        - app/forecaster/src/heimdall_forecaster/train/model.py
+        - data/processed/dk1_panel_rich_train.parquet
+        - data/processed/dk1_panel_rich_val.parquet
+        - data/processed/anomaly_features_train.parquet
+        - data/processed/anomaly_features_val.parquet
+      outs:
+        - research/ml/models/forecaster/f8c/seed-${item}
+
+  classical_baselines:
+    cmd: uv run python research/ml/experiments/baselines_classical.py
+    deps:
+      - research/ml/experiments/baselines_classical.py
+      - data/processed/dk1_panel_rich_train.parquet
+      - data/processed/dk1_panel_rich_val.parquet
+    outs:
+      - research/ml/experiments/outputs/baselines_classical.json
+
+  leaderboard:
+    cmd: uv run python research/ml/experiments/build_leaderboard.py
+    deps:
+      - research/ml/experiments/build_leaderboard.py
+      - research/ml/models/forecaster
+    outs:
+      - research/notes/forecaster_leaderboard.md:
+          cache: false
+          persist: true

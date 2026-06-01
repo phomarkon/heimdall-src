@@ -1,0 +1,6 @@
+ai-society/configs/action-core-matrix/acm-8-bcast-apr02-0530-f8-q32.yaml
+ai-society/configs/action-core-matrix/acm-8-core-mem-apr02-0530-f8-q32.yaml
+ai-society/configs/action-core-matrix/acm-8-bcast-apr09-1830-f8-q32.yaml
+ai-society/configs/action-core-matrix/acm-8-core-mem-apr09-1830-f8-q32.yaml
+ai-society/configs/action-core-matrix/acm-8-bcast-apr13-0015-f8-q32.yaml
+ai-society/configs/action-core-matrix/acm-8-core-mem-apr13-0015-f8-q32.yaml

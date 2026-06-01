@@ -1,0 +1,89 @@
+{
+  "chain_after": {
+    "matrix": "chooser-det-llm-20260522",
+    "required_completed": 45,
+    "required_failed": 0
+  },
+  "chooser_mode": "deterministic_llm_critic",
+  "config_list": "ai-society/configs/det-llm-critic-20260522/all.txt",
+  "final_bid_guard": "simulator_exact_match",
+  "forecaster_backend": "f8",
+  "forecaster_routing_mode": "persona",
+  "full_run_count": 3,
+  "full_runs": [
+    {
+      "agent_count": 6,
+      "chooser_mode": "deterministic_llm_critic",
+      "config": "ai-society/configs/det-llm-critic-20260522/full/s06-actioncore/dlc-s06-actioncore-critic-apr02-0530-seed42-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "dlc-s06-actioncore-critic-apr02-0530-seed42-24-q32",
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "chooser_mode": "deterministic_llm_critic",
+      "config": "ai-society/configs/det-llm-critic-20260522/full/s06-actioncore/dlc-s06-actioncore-critic-apr09-1830-seed42-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "dlc-s06-actioncore-critic-apr09-1830-seed42-24-q32",
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "chooser_mode": "deterministic_llm_critic",
+      "config": "ai-society/configs/det-llm-critic-20260522/full/s06-actioncore/dlc-s06-actioncore-critic-apr13-0015-seed42-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "dlc-s06-actioncore-critic-apr13-0015-seed42-24-q32",
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 24
+    }
+  ],
+  "generated_at": "2026-05-22",
+  "matrix": "det-llm-critic-20260522",
+  "question": "Can a forecast-diverse LLM critic reduce wrong-side and low-clearability deterministic bids without mutating simulator-backed candidates?",
+  "run_root": "ai-society/runs/det-llm-critic-20260522",
+  "scope": "s06-only first pass",
+  "seed": 42,
+  "smoke_list": "ai-society/configs/det-llm-critic-20260522/smoke.txt",
+  "smoke_run_count": 3,
+  "smoke_runs": [
+    {
+      "agent_count": 6,
+      "chooser_mode": "deterministic_llm_critic",
+      "config": "ai-society/configs/det-llm-critic-20260522/smoke/s06-actioncore/smoke-dlc-s06-actioncore-critic-apr02-0530-seed42-2-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "smoke-dlc-s06-actioncore-critic-apr02-0530-seed42-2-q32",
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 2
+    },
+    {
+      "agent_count": 6,
+      "chooser_mode": "deterministic_llm_critic",
+      "config": "ai-society/configs/det-llm-critic-20260522/smoke/s06-actioncore/smoke-dlc-s06-actioncore-critic-apr09-1830-seed42-2-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "smoke-dlc-s06-actioncore-critic-apr09-1830-seed42-2-q32",
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 2
+    },
+    {
+      "agent_count": 6,
+      "chooser_mode": "deterministic_llm_critic",
+      "config": "ai-society/configs/det-llm-critic-20260522/smoke/s06-actioncore/smoke-dlc-s06-actioncore-critic-apr13-0015-seed42-2-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "smoke-dlc-s06-actioncore-critic-apr13-0015-seed42-2-q32",
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 2
+    }
+  ],
+  "society": {
+    "agent_count": 6,
+    "persona_profile": "action_core_8",
+    "slug": "s06-actioncore"
+  },
+  "windows": {
+    "apr02-0530": "2026-04-02T05:30:00Z",
+    "apr09-1830": "2026-04-09T18:30:00Z",
+    "apr13-0015": "2026-04-13T00:15:00Z"
+  }
+}

@@ -1,0 +1,2 @@
+ai-society/configs/ff4-coordination/ff4-coordination-info-then-action-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/ff4-coordination/ff4-coordination-broadcast-infosoc-apr02-0530-seed42-24-q32.yaml

@@ -1,0 +1,532 @@
+{
+  "models": {
+    "f7": {
+      "n_seeds": 5,
+      "below_q10_freq_mean": 0.21651044581234843,
+      "below_q10_freq_std": 0.015520907814495997,
+      "above_q90_freq_mean": 0.16999860100727476,
+      "above_q90_freq_std": 0.029805555971429587,
+      "left_tail_pinball_q10_mean": 366.73969014322734,
+      "right_tail_pinball_q90_mean": 2295.2825590476396,
+      "seed_results": [
+        {
+          "below_q10_freq": 0.21647080768513338,
+          "above_q90_freq": 0.1629476776720761,
+          "left_tail_pinball_q10": 356.77468605024046,
+          "right_tail_pinball_q90": 2239.214205657511,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 13
+        },
+        {
+          "below_q10_freq": 0.21054840514829323,
+          "above_q90_freq": 0.20153656034321954,
+          "left_tail_pinball_q10": 344.5655655284332,
+          "right_tail_pinball_q90": 2372.266944246183,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 42
+        },
+        {
+          "below_q10_freq": 0.19934480507368027,
+          "above_q90_freq": 0.11657106883044208,
+          "left_tail_pinball_q10": 415.0696215527009,
+          "right_tail_pinball_q90": 2146.6616134675546,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 137
+        },
+        {
+          "below_q10_freq": 0.24549990673381833,
+          "above_q90_freq": 0.19234984144749115,
+          "left_tail_pinball_q10": 363.6056067704609,
+          "right_tail_pinball_q90": 2391.2439938715615,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 1729
+        },
+        {
+          "below_q10_freq": 0.210688304420817,
+          "above_q90_freq": 0.17658785674314492,
+          "left_tail_pinball_q10": 353.68297081430114,
+          "right_tail_pinball_q90": 2327.0260379953875,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 31415
+        }
+      ]
+    },
+    "f3_ensemble": {
+      "n_seeds": 5,
+      "below_q10_freq_mean": 0.19979947770938258,
+      "below_q10_freq_std": 0.0,
+      "above_q90_freq_mean": 0.14373484424547658,
+      "above_q90_freq_std": 0.0,
+      "left_tail_pinball_q10_mean": 352.6974671957474,
+      "right_tail_pinball_q90_mean": 2255.4138663719564,
+      "seed_results": [
+        {
+          "below_q10_freq": 0.19979947770938258,
+          "above_q90_freq": 0.14373484424547658,
+          "left_tail_pinball_q10": 352.6974671957474,
+          "right_tail_pinball_q90": 2255.4138663719564,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 13
+        },
+        {
+          "below_q10_freq": 0.19979947770938258,
+          "above_q90_freq": 0.14373484424547658,
+          "left_tail_pinball_q10": 352.6974671957474,
+          "right_tail_pinball_q90": 2255.4138663719564,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 42
+        },
+        {
+          "below_q10_freq": 0.19979947770938258,
+          "above_q90_freq": 0.14373484424547658,
+          "left_tail_pinball_q10": 352.6974671957474,
+          "right_tail_pinball_q90": 2255.4138663719564,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 137
+        },
+        {
+          "below_q10_freq": 0.19979947770938258,
+          "above_q90_freq": 0.14373484424547658,
+          "left_tail_pinball_q10": 352.6974671957474,
+          "right_tail_pinball_q90": 2255.4138663719564,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 1729
+        },
+        {
+          "below_q10_freq": 0.19979947770938258,
+          "above_q90_freq": 0.14373484424547658,
+          "left_tail_pinball_q10": 352.6974671957474,
+          "right_tail_pinball_q90": 2255.4138663719564,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 31415
+        }
+      ]
+    },
+    "f9": {
+      "n_seeds": 5,
+      "below_q10_freq_mean": 0.1021105410447761,
+      "below_q10_freq_std": 1.3877787807814457e-17,
+      "above_q90_freq_mean": 0.12207322761194031,
+      "above_q90_freq_std": 1.3877787807814457e-17,
+      "left_tail_pinball_q10_mean": 261.64201250774704,
+      "right_tail_pinball_q90_mean": 2005.5038362105292,
+      "seed_results": [
+        {
+          "below_q10_freq": 0.10211054104477611,
+          "above_q90_freq": 0.1220732276119403,
+          "left_tail_pinball_q10": 261.64201250774704,
+          "right_tail_pinball_q90": 2005.5038362105295,
+          "left_tail_threshold_dkk": -99.88940000000001,
+          "right_tail_threshold_dkk": 1896.7795999999998,
+          "n_left_tail": 8608,
+          "n_right_tail": 8599,
+          "seed": 13
+        },
+        {
+          "below_q10_freq": 0.10211054104477611,
+          "above_q90_freq": 0.1220732276119403,
+          "left_tail_pinball_q10": 261.64201250774704,
+          "right_tail_pinball_q90": 2005.5038362105295,
+          "left_tail_threshold_dkk": -99.88940000000001,
+          "right_tail_threshold_dkk": 1896.7795999999998,
+          "n_left_tail": 8608,
+          "n_right_tail": 8599,
+          "seed": 42
+        },
+        {
+          "below_q10_freq": 0.10211054104477611,
+          "above_q90_freq": 0.1220732276119403,
+          "left_tail_pinball_q10": 261.64201250774704,
+          "right_tail_pinball_q90": 2005.5038362105295,
+          "left_tail_threshold_dkk": -99.88940000000001,
+          "right_tail_threshold_dkk": 1896.7795999999998,
+          "n_left_tail": 8608,
+          "n_right_tail": 8599,
+          "seed": 137
+        },
+        {
+          "below_q10_freq": 0.10211054104477611,
+          "above_q90_freq": 0.1220732276119403,
+          "left_tail_pinball_q10": 261.64201250774704,
+          "right_tail_pinball_q90": 2005.5038362105295,
+          "left_tail_threshold_dkk": -99.88940000000001,
+          "right_tail_threshold_dkk": 1896.7795999999998,
+          "n_left_tail": 8608,
+          "n_right_tail": 8599,
+          "seed": 1729
+        },
+        {
+          "below_q10_freq": 0.10211054104477611,
+          "above_q90_freq": 0.1220732276119403,
+          "left_tail_pinball_q10": 261.64201250774704,
+          "right_tail_pinball_q90": 2005.5038362105295,
+          "left_tail_threshold_dkk": -99.88940000000001,
+          "right_tail_threshold_dkk": 1896.7795999999998,
+          "n_left_tail": 8608,
+          "n_right_tail": 8599,
+          "seed": 31415
+        }
+      ]
+    },
+    "f12_ebm": {
+      "n_seeds": 5,
+      "below_q10_freq_mean": 0.18102033202760678,
+      "below_q10_freq_std": 0.033405928314583895,
+      "above_q90_freq_mean": 0.17875163215817946,
+      "above_q90_freq_std": 0.02756646208538194,
+      "left_tail_pinball_q10_mean": 322.8936678156732,
+      "right_tail_pinball_q90_mean": 2351.83157359111,
+      "seed_results": [
+        {
+          "below_q10_freq": 0.1523852825965305,
+          "above_q90_freq": 0.16384536467077038,
+          "left_tail_pinball_q10": 304.19567098621917,
+          "right_tail_pinball_q90": 2226.3955670850582,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 13
+        },
+        {
+          "below_q10_freq": 0.21997994777093827,
+          "above_q90_freq": 0.13766088416340236,
+          "left_tail_pinball_q10": 354.78206031537434,
+          "right_tail_pinball_q90": 2166.1907426792786,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 42
+        },
+        {
+          "below_q10_freq": 0.1386984704346204,
+          "above_q90_freq": 0.22104085058757694,
+          "left_tail_pinball_q10": 294.65100172239255,
+          "right_tail_pinball_q90": 2518.992749301742,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 137
+        },
+        {
+          "below_q10_freq": 0.17535207983585152,
+          "above_q90_freq": 0.18379266927811974,
+          "left_tail_pinball_q10": 322.669600746277,
+          "right_tail_pinball_q90": 2408.131493795498,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 1729
+        },
+        {
+          "below_q10_freq": 0.21868587950009327,
+          "above_q90_freq": 0.18741839209102779,
+          "left_tail_pinball_q10": 338.1700053081032,
+          "right_tail_pinball_q90": 2439.447315093973,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 31415
+        }
+      ]
+    },
+    "f8b": {
+      "n_seeds": 5,
+      "below_q10_freq_mean": 0.34505909840571747,
+      "below_q10_freq_std": 0.09426854009490022,
+      "above_q90_freq_mean": 0.1624060839288987,
+      "above_q90_freq_std": 0.03889317872982789,
+      "left_tail_pinball_q10_mean": 426.204964855662,
+      "right_tail_pinball_q90_mean": 2392.5184015591303,
+      "seed_results": [
+        {
+          "below_q10_freq": 0.4977093641194796,
+          "above_q90_freq": 0.22330263881253437,
+          "left_tail_pinball_q10": 458.87222662533037,
+          "right_tail_pinball_q90": 2716.4534843577444,
+          "left_tail_threshold_dkk": -100.03857421875,
+          "right_tail_threshold_dkk": 1890.662353515625,
+          "n_left_tail": 8772,
+          "n_right_tail": 8744,
+          "seed": 13
+        },
+        {
+          "below_q10_freq": 0.25033214220267547,
+          "above_q90_freq": 0.1207737768004398,
+          "left_tail_pinball_q10": 446.32302819707326,
+          "right_tail_pinball_q90": 2219.091556463215,
+          "left_tail_threshold_dkk": -100.03857421875,
+          "right_tail_threshold_dkk": 1890.662353515625,
+          "n_left_tail": 8772,
+          "n_right_tail": 8744,
+          "seed": 42
+        },
+        {
+          "below_q10_freq": 0.24321971779365953,
+          "above_q90_freq": 0.11991478834524465,
+          "left_tail_pinball_q10": 441.3521080403256,
+          "right_tail_pinball_q90": 2202.6500446176487,
+          "left_tail_threshold_dkk": -100.03857421875,
+          "right_tail_threshold_dkk": 1890.662353515625,
+          "n_left_tail": 8772,
+          "n_right_tail": 8744,
+          "seed": 137
+        },
+        {
+          "below_q10_freq": 0.3467450064137805,
+          "above_q90_freq": 0.17884139637163277,
+          "left_tail_pinball_q10": 378.3342355995161,
+          "right_tail_pinball_q90": 2420.2400549938347,
+          "left_tail_threshold_dkk": -100.03857421875,
+          "right_tail_threshold_dkk": 1890.662353515625,
+          "n_left_tail": 8772,
+          "n_right_tail": 8744,
+          "seed": 1729
+        },
+        {
+          "below_q10_freq": 0.3872892614989921,
+          "above_q90_freq": 0.16919781931464176,
+          "left_tail_pinball_q10": 406.14322581606484,
+          "right_tail_pinball_q90": 2404.1568673632064,
+          "left_tail_threshold_dkk": -100.03857421875,
+          "right_tail_threshold_dkk": 1890.662353515625,
+          "n_left_tail": 8772,
+          "n_right_tail": 8744,
+          "seed": 31415
+        }
+      ]
+    },
+    "f8e": {
+      "n_seeds": 5,
+      "below_q10_freq_mean": 0.3699766355140187,
+      "below_q10_freq_std": 0.014923705650329345,
+      "above_q90_freq_mean": 0.1860294117647059,
+      "above_q90_freq_std": 0.006257900680430931,
+      "left_tail_pinball_q10_mean": 407.5359039306641,
+      "right_tail_pinball_q90_mean": 2389.70419050379,
+      "seed_results": [
+        {
+          "below_q10_freq": 0.37843595382078066,
+          "above_q90_freq": 0.18307907275059557,
+          "left_tail_pinball_q10": 417.4859346131457,
+          "right_tail_pinball_q90": 2371.4773490630046,
+          "left_tail_threshold_dkk": -100.03857421875,
+          "right_tail_threshold_dkk": 1890.662353515625,
+          "n_left_tail": 8772,
+          "n_right_tail": 8744,
+          "seed": 13
+        },
+        {
+          "below_q10_freq": 0.3871174638079531,
+          "above_q90_freq": 0.1758864760857614,
+          "left_tail_pinball_q10": 417.38091222725666,
+          "right_tail_pinball_q90": 2351.22245123009,
+          "left_tail_threshold_dkk": -100.03857421875,
+          "right_tail_threshold_dkk": 1890.662353515625,
+          "n_left_tail": 8772,
+          "n_right_tail": 8744,
+          "seed": 42
+        },
+        {
+          "below_q10_freq": 0.3722512369433755,
+          "above_q90_freq": 0.1868700751328569,
+          "left_tail_pinball_q10": 400.4026571918284,
+          "right_tail_pinball_q90": 2413.1928865019163,
+          "left_tail_threshold_dkk": -100.03857421875,
+          "right_tail_threshold_dkk": 1890.662353515625,
+          "n_left_tail": 8772,
+          "n_right_tail": 8744,
+          "seed": 137
+        },
+        {
+          "below_q10_freq": 0.3693535825545171,
+          "above_q90_freq": 0.1900998717243907,
+          "left_tail_pinball_q10": 403.35508216304754,
+          "right_tail_pinball_q90": 2416.8748734954947,
+          "left_tail_threshold_dkk": -100.03857421875,
+          "right_tail_threshold_dkk": 1890.662353515625,
+          "n_left_tail": 8772,
+          "n_right_tail": 8744,
+          "seed": 1729
+        },
+        {
+          "below_q10_freq": 0.34272494044346713,
+          "above_q90_freq": 0.19421156312992488,
+          "left_tail_pinball_q10": 399.05493345804206,
+          "right_tail_pinball_q90": 2395.7533922284433,
+          "left_tail_threshold_dkk": -100.03857421875,
+          "right_tail_threshold_dkk": 1890.662353515625,
+          "n_left_tail": 8772,
+          "n_right_tail": 8744,
+          "seed": 31415
+        }
+      ]
+    },
+    "f11": {
+      "n_seeds": 5,
+      "below_q10_freq_mean": 0.18437796771130105,
+      "below_q10_freq_std": 0.029029686307906876,
+      "above_q90_freq_mean": 0.17414292497625833,
+      "above_q90_freq_std": 0.013247966213217213,
+      "left_tail_pinball_q10_mean": 340.49355357856456,
+      "right_tail_pinball_q90_mean": 2310.3519376277495,
+      "seed_results": [
+        {
+          "below_q10_freq": 0.20649335232668567,
+          "above_q90_freq": 0.1606125356125356,
+          "left_tail_pinball_q10": 353.07829918825263,
+          "right_tail_pinball_q90": 2220.5379896329187,
+          "left_tail_threshold_dkk": -96.457763671875,
+          "right_tail_threshold_dkk": 1895.7352294921875,
+          "n_left_tail": 8448,
+          "n_right_tail": 8426,
+          "seed": 13
+        },
+        {
+          "below_q10_freq": 0.13088793922127256,
+          "above_q90_freq": 0.18624169040835709,
+          "left_tail_pinball_q10": 310.36253601384885,
+          "right_tail_pinball_q90": 2364.212924900956,
+          "left_tail_threshold_dkk": -96.457763671875,
+          "right_tail_threshold_dkk": 1895.7352294921875,
+          "n_left_tail": 8448,
+          "n_right_tail": 8426,
+          "seed": 42
+        },
+        {
+          "below_q10_freq": 0.18868708452041785,
+          "above_q90_freq": 0.16913580246913582,
+          "left_tail_pinball_q10": 337.5818296345797,
+          "right_tail_pinball_q90": 2295.737168160997,
+          "left_tail_threshold_dkk": -96.457763671875,
+          "right_tail_threshold_dkk": 1895.7352294921875,
+          "n_left_tail": 8448,
+          "n_right_tail": 8426,
+          "seed": 137
+        },
+        {
+          "below_q10_freq": 0.18244301994301995,
+          "above_q90_freq": 0.19320987654320987,
+          "left_tail_pinball_q10": 335.63992572408733,
+          "right_tail_pinball_q90": 2390.4122678730005,
+          "left_tail_threshold_dkk": -96.457763671875,
+          "right_tail_threshold_dkk": 1895.7352294921875,
+          "n_left_tail": 8448,
+          "n_right_tail": 8426,
+          "seed": 1729
+        },
+        {
+          "below_q10_freq": 0.2133784425451092,
+          "above_q90_freq": 0.16151471984805318,
+          "left_tail_pinball_q10": 365.8051773320544,
+          "right_tail_pinball_q90": 2280.8593375708747,
+          "left_tail_threshold_dkk": -96.457763671875,
+          "right_tail_threshold_dkk": 1895.7352294921875,
+          "n_left_tail": 8448,
+          "n_right_tail": 8426,
+          "seed": 31415
+        }
+      ]
+    },
+    "f1_lgbm": {
+      "n_seeds": 5,
+      "below_q10_freq_mean": 0.2408948890132438,
+      "below_q10_freq_std": 0.0006838150889180724,
+      "above_q90_freq_mean": 0.16975844058944226,
+      "above_q90_freq_std": 0.00041135038593546305,
+      "left_tail_pinball_q10_mean": 353.18117954119487,
+      "right_tail_pinball_q90_mean": 2295.5829487828923,
+      "seed_results": [
+        {
+          "below_q10_freq": 0.24105810483118822,
+          "above_q90_freq": 0.16954626002611453,
+          "left_tail_pinball_q10": 353.07360412942955,
+          "right_tail_pinball_q90": 2296.955188562663,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 13
+        },
+        {
+          "below_q10_freq": 0.24166433501212461,
+          "above_q90_freq": 0.16970947584405893,
+          "left_tail_pinball_q10": 353.85573009446,
+          "right_tail_pinball_q90": 2294.3741530813704,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 42
+        },
+        {
+          "below_q10_freq": 0.23972906174221228,
+          "above_q90_freq": 0.17018746502518187,
+          "left_tail_pinball_q10": 350.95343781550656,
+          "right_tail_pinball_q90": 2297.308213056364,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 137
+        },
+        {
+          "below_q10_freq": 0.2406034321954859,
+          "above_q90_freq": 0.1691265622085432,
+          "left_tail_pinball_q10": 352.8777395537226,
+          "right_tail_pinball_q90": 2293.5446058239554,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 1729
+        },
+        {
+          "below_q10_freq": 0.24141951128520797,
+          "above_q90_freq": 0.1702224398433128,
+          "left_tail_pinball_q10": 355.1453861128555,
+          "right_tail_pinball_q90": 2295.7325833901086,
+          "left_tail_threshold_dkk": -99.9639892578125,
+          "right_tail_threshold_dkk": 1873.13134765625,
+          "n_left_tail": 8740,
+          "n_right_tail": 8586,
+          "seed": 31415
+        }
+      ]
+    }
+  }
+}

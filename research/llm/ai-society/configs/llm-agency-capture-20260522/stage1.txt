@@ -1,0 +1,12 @@
+ai-society/configs/llm-agency-capture-20260522/full/a2pure-cp11/lac-s06-a2pure-cp11-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a2pure-cp11/lac-s06-a2pure-cp11-apr09-1830-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a2pure-cp11/lac-s06-a2pure-cp11-apr13-0015-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a2hyb-cp12/lac-s06-a2hyb-cp12-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a2hyb-cp12/lac-s06-a2hyb-cp12-apr09-1830-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a2hyb-cp12/lac-s06-a2hyb-cp12-apr13-0015-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a3-tau100/lac-s06-a3-tau100-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a3-tau100/lac-s06-a3-tau100-apr09-1830-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a3-tau100/lac-s06-a3-tau100-apr13-0015-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a3-tau250/lac-s06-a3-tau250-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a3-tau250/lac-s06-a3-tau250-apr09-1830-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a3-tau250/lac-s06-a3-tau250-apr13-0015-seed42-24-q32.yaml

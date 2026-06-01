@@ -1,0 +1,8 @@
+ai-society/configs/follow-on-breadth-matrix/ticks24/s06-actioncore/fob-s06-actioncore-bcast-apr06-1300-seed42-q32.yaml
+ai-society/configs/follow-on-breadth-matrix/ticks24/s20-mixed/fob-s20-mixed-bcast-apr06-1300-seed42-q32.yaml
+ai-society/configs/follow-on-breadth-matrix/ticks24/s06-actioncore/fob-s06-actioncore-bcast-apr22-0830-seed42-q32.yaml
+ai-society/configs/follow-on-breadth-matrix/ticks24/s20-mixed/fob-s20-mixed-bcast-apr22-0830-seed42-q32.yaml
+ai-society/configs/follow-on-breadth-matrix/ticks24/s06-actioncore/fob-s06-actioncore-bcast-apr27-1730-seed42-q32.yaml
+ai-society/configs/follow-on-breadth-matrix/ticks24/s20-mixed/fob-s20-mixed-bcast-apr27-1730-seed42-q32.yaml
+ai-society/configs/follow-on-breadth-matrix/ticks96/mixed20-real-controls/fob-mixed20-apr06-96-real-controls-q32.yaml
+ai-society/configs/follow-on-breadth-matrix/ticks96/mixed20-real-controls/fob-mixed20-apr07-96-real-controls-q32.yaml

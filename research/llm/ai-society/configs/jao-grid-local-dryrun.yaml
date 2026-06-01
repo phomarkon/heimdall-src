@@ -1,0 +1,25 @@
+# Laptop-safe JAO/info-specialist smoke: no live JAO fetch, no vLLM.
+run_id: jao-grid-local-dryrun
+seed: 42
+zone: DK1
+agent_count: 12
+ticks: 2
+start_timestamp: "2025-03-04T03:00:00Z"
+forecaster_backend: f0
+chooser_mode: deterministic_watch_threshold
+verifier_mode: mock
+market_context: synthetic
+tool_mode: openai_tools
+objective: worth_bidding
+ablation_strategy: comm_info_then_action
+persona_profile: jao_grid_v1
+output_dir: research/llm/ai-society/runs
+llm:
+  enabled: false
+  base_url: http://127.0.0.1:8000/v1
+  api_key: heimdall-local
+  model: Qwen/Qwen3-32B
+  temperature: 0.2
+  max_tokens: 350
+  timeout_seconds: 120
+  max_concurrency: 2

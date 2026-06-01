@@ -1,0 +1,47 @@
+[
+  {
+    "agent_count": 20,
+    "model": "Qwen/Qwen3-32B",
+    "persona_profile": "mixed_expert_20_sideaware",
+    "run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr02-0530-24",
+    "run_id": "msa-screen-mixed20-apr02-0530-24",
+    "strategy": "comm_broadcast_digest",
+    "window": "apr02-0530"
+  },
+  {
+    "agent_count": 20,
+    "model": "Qwen/Qwen3-32B",
+    "persona_profile": "mixed_expert_20_sideaware",
+    "run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr03-1430-24",
+    "run_id": "msa-screen-mixed20-apr03-1430-24",
+    "strategy": "comm_broadcast_digest",
+    "window": "apr03-1430"
+  },
+  {
+    "agent_count": 20,
+    "model": "Qwen/Qwen3-32B",
+    "persona_profile": "mixed_expert_20_sideaware",
+    "run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr05-1030-24",
+    "run_id": "msa-screen-mixed20-apr05-1030-24",
+    "strategy": "comm_broadcast_digest",
+    "window": "apr05-1030"
+  },
+  {
+    "agent_count": 20,
+    "model": "Qwen/Qwen3-32B",
+    "persona_profile": "mixed_expert_20_sideaware",
+    "run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr09-1830-24",
+    "run_id": "msa-screen-mixed20-apr09-1830-24",
+    "strategy": "comm_broadcast_digest",
+    "window": "apr09-1830"
+  },
+  {
+    "agent_count": 20,
+    "model": "Qwen/Qwen3-32B",
+    "persona_profile": "mixed_expert_20_sideaware",
+    "run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr13-0015-24",
+    "run_id": "msa-screen-mixed20-apr13-0015-24",
+    "strategy": "comm_broadcast_digest",
+    "window": "apr13-0015"
+  }
+]

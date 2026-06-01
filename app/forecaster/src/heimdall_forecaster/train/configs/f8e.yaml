@@ -1,0 +1,23 @@
+# F8e — F8b + mFRR activation volumes.
+# Reviewer-audit fix: mfrr_up_volume_mw / mfrr_down_volume_mw were present
+# in the rich panel but missing from earlier feature lists. mFRR activations
+# are the direct driver of the imbalance price, so this should be the largest
+# remaining feature-engineering win.
+name: f8e
+multivariate: false
+train_panel: data/processed/dk1_panel_rich_train.parquet
+val_panel: data/processed/dk1_panel_rich_val.parquet
+seq_len: 96
+horizon: 16
+patch_len: 8
+d_model: 128
+nhead: 8
+n_layers: 6
+dropout: 0.1
+epochs: 20
+batch_size: 64
+lr: 1.0e-3
+weight_decay: 1.0e-4
+seed: 42
+quantiles: [0.1, 0.5, 0.9]
+# feature_names resolved at runtime via F8E_FEATURES.

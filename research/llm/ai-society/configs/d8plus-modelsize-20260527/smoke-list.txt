@@ -1,0 +1,1 @@
+ai-society/configs/d8plus-modelsize-20260527/smoke/d8p-smoke-q1.7-s06-actioncore-apr02-0530-seed42-2.yaml

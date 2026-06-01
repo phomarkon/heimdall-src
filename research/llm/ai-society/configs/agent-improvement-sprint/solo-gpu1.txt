@@ -1,0 +1,2 @@
+ai-society/configs/agent-improvement-sprint/p2h-v2-solo-apr13-0545-12-q32.yaml
+ai-society/configs/agent-improvement-sprint/ev-v2-solo-apr13-0545-12-q32.yaml

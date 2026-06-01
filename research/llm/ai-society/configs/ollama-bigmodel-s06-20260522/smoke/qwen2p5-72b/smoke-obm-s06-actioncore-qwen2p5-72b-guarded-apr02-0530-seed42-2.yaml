@@ -1,0 +1,42 @@
+run_id: smoke-obm-s06-actioncore-qwen2p5-72b-guarded-apr02-0530-seed42-2
+seed: 42
+forecaster_seed: 42
+zone: DK1
+agent_count: 6
+ticks: 2
+start_timestamp: '2026-04-02T05:30:00Z'
+forecaster_backend: f8
+forecaster_routing_mode: persona
+chooser_mode: llm
+verifier_mode: simulator
+market_context: real
+context_dataset_dir: data/cache/real_context/april_2026
+cache_refresh: false
+tool_mode: json_response
+preprobe_mode: full
+objective: bid_seeking
+final_bid_guard: simulator_exact_match
+safety_toolset: full
+ablation_strategy: comm_broadcast_digest_priority_calibration
+persona_profile: action_core_8
+tool_policy: asset_simulator_v1
+asset_simulator_mode: scenario_envelope
+candidate_sizing_mode: large
+candidate_sizing_max_candidates: 8
+candidate_sizing_min_mwh: 0.25
+candidate_sizing_cap_fraction: 1.0
+output_dir: research/llm/ai-society/runs/ollama-bigmodel-s06-20260522
+llm:
+  enabled: true
+  provider: ollama
+  model: qwen2.5:72b-instruct-q3_K_L
+  base_url: http://127.0.0.1:11434/v1
+  api_key: ollama
+  temperature: 0.2
+  max_tokens: 1000
+  timeout_seconds: 600
+  max_concurrency: 2
+  per_endpoint_max_concurrency: 2
+  require_served_model_match: true
+  supports_response_format: true
+  supports_tools: true

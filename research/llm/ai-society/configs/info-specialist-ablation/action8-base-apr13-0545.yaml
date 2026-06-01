@@ -1,0 +1,31 @@
+seed: 430
+zone: DK1
+ticks: 10
+forecaster_backend: f0
+verifier_mode: simulator
+verifier_tau_eur: 0.0
+market_context: real
+tool_mode: openai_tools
+objective: bid_seeking
+scenario_id: p2h_dk1_pypsa
+tool_policy: p2h_only_simulator
+max_tool_rounds: 4
+data_start: '2026-04-01T00:00:00Z'
+data_end: '2026-05-01T00:00:00Z'
+context_dataset_dir: data/cache/real_context/april_2026
+data_cache_dir: data/cache/real_context/april_2026/source_cache
+default_lookback_hours: 24
+cache_refresh: false
+output_dir: research/llm/ai-society/runs/info-specialist-ablation
+llm:
+  enabled: true
+  model: Qwen/Qwen3-32B
+  temperature: 0.2
+  max_tokens: 256
+  timeout_seconds: 180
+  max_concurrency: 8
+run_id: action8-base-apr13-0545
+start_timestamp: '2026-04-13T05:45:00Z'
+agent_count: 8
+ablation_strategy: comm_broadcast_digest
+persona_profile: action_core_8

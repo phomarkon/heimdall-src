@@ -1,0 +1,15 @@
+ai-society/configs/final-option-a-model-scale/s12-balanced/q8/foa-s12-balanced-bcast-apr02-0530-seed42-q8.yaml
+ai-society/configs/final-option-a-model-scale/s12-balanced/q8/foa-s12-balanced-bcast-apr09-1830-seed42-q8.yaml
+ai-society/configs/final-option-a-model-scale/s12-balanced/q8/foa-s12-balanced-bcast-apr13-0015-seed42-q8.yaml
+ai-society/configs/final-option-a-model-scale/s12-balanced/q72/foa-s12-balanced-bcast-apr02-0530-seed42-q72.yaml
+ai-society/configs/final-option-a-model-scale/s12-balanced/q72/foa-s12-balanced-bcast-apr09-1830-seed42-q72.yaml
+ai-society/configs/final-option-a-model-scale/s12-balanced/q72/foa-s12-balanced-bcast-apr13-0015-seed42-q72.yaml
+ai-society/configs/final-option-a-model-scale/s06-actioncore/q8/foa-s06-actioncore-bcast-apr09-1830-seed42-q8.yaml
+ai-society/configs/final-option-a-model-scale/s06-actioncore/q8/foa-s06-actioncore-bcast-apr13-0015-seed42-q8.yaml
+ai-society/configs/final-option-a-model-scale/s06-actioncore/q72/foa-s06-actioncore-bcast-apr02-0530-seed42-q72.yaml
+ai-society/configs/final-option-a-model-scale/s06-actioncore/q72/foa-s06-actioncore-bcast-apr09-1830-seed42-q72.yaml
+ai-society/configs/final-option-a-model-scale/s06-actioncore/q72/foa-s06-actioncore-bcast-apr13-0015-seed42-q72.yaml
+ai-society/configs/final-option-a-model-scale/s20-mixed/q32/foa-s20-mixed-bcast-apr02-0530-seed42-q32.yaml
+ai-society/configs/final-option-a-model-scale/s20-mixed/q32/foa-s20-mixed-bcast-apr09-1830-seed42-q32.yaml
+ai-society/configs/final-option-a-model-scale/s20-mixed/q72/foa-s20-mixed-bcast-apr02-0530-seed42-q72.yaml
+ai-society/configs/final-option-a-model-scale/s20-mixed/q72/foa-s20-mixed-bcast-apr09-1830-seed42-q72.yaml

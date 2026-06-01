@@ -1,0 +1,24 @@
+{
+  "name": "b3_hagstrom_herre",
+  "seed": 1729,
+  "n_ticks": 5472,
+  "total_profit_dkk": 249962.3326,
+  "total_profit_eur": 33507.0151,
+  "profit_per_mwh_dkk": 59.2549,
+  "profit_per_mwh_eur": 7.943,
+  "sharpe": 37.2244,
+  "cvar5_daily_dkk": 1179.6812,
+  "cvar5_daily_eur": 158.1342,
+  "participation_rate": 0.9448,
+  "physical_violation_rate": 0.706,
+  "runtime_seconds": 26.11,
+  "extras": {
+    "energy_delivered_mwh": 4218.4271,
+    "ticks_with_bid": 5170,
+    "heat_unmet_tick_rate": 0.0556,
+    "n_scenarios_per_lp": 24,
+    "horizon_ticks": 16,
+    "cvar_alpha": 0.05,
+    "cvar_lambda": 1.0
+  }
+}

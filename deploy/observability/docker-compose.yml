@@ -1,0 +1,33 @@
+# Local observability stack — Prometheus + Grafana only (per minimum-viable
+# scope; Loki and Jaeger deferred per mark-todos.md cuts 2026-05-09).
+#
+# Usage:  docker compose -f deploy/observability/docker-compose.yml up -d
+# Targets the same scrape config that ships with the k3s + Helm deploy
+# (deploy/helm/heimdall/values.yaml mounts this same prometheus.yml).
+
+services:
+  prometheus:
+    image: prom/prometheus:v2.55.0
+    container_name: heimdall-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus/heimdall.rules.yml:/etc/prometheus/rules/heimdall.rules.yml:ro
+      - prom-data:/prometheus
+
+  grafana:
+    image: grafana/grafana:11.2.2
+    container_name: heimdall-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: "Viewer"
+    volumes:
+      - ./grafana/dashboards:/etc/grafana/provisioning/dashboards/heimdall:ro
+      - grafana-data:/var/lib/grafana
+
+volumes:
+  prom-data: {}
+  grafana-data: {}

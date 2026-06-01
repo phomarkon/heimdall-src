@@ -1,0 +1,39 @@
+run_id: d8p-s06-actioncore-bcast-apr02-0530-seed13-q72
+seed: 13
+forecaster_seed: 13
+zone: DK1
+agent_count: 6
+ticks: 24
+start_timestamp: '2026-04-02T05:30:00Z'
+forecaster_backend: f8
+chooser_mode: llm
+verifier_mode: simulator
+verifier_tau_eur: 0.0
+market_context: real
+tool_mode: openai_tools
+objective: bid_seeking
+ablation_strategy: comm_broadcast_digest
+persona_profile: action_core_8
+scenario_id: p2h_dk1_pypsa
+tool_policy: p2h_only_simulator
+max_tool_rounds: 6
+data_start: '2026-04-01T00:00:00Z'
+data_end: '2026-05-01T00:00:00Z'
+context_dataset_dir: data/cache/real_context/april_2026
+data_cache_dir: data/cache/real_context/april_2026/source_cache
+default_lookback_hours: 24
+cache_refresh: false
+output_dir: research/llm/ai-society/runs/d8plus-modelsize-20260527
+reviewer_mode: code_only
+llm:
+  enabled: true
+  base_urls:
+  - http://127.0.0.1:8000/v1
+  - http://127.0.0.1:8001/v1
+  api_key: heimdall-local
+  model: Qwen/Qwen2.5-72B-Instruct
+  temperature: 0.2
+  max_tokens: 1000
+  timeout_seconds: 180
+  max_concurrency: 8
+  per_endpoint_max_concurrency: 4

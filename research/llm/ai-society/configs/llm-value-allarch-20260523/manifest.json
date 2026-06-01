@@ -1,0 +1,101 @@
+{
+  "matrix": "llm-value-allarch-20260523",
+  "generated_at": "2026-05-23",
+  "society": {
+    "agent_count": 6,
+    "persona_profile": "all_archetypes_v1"
+  },
+  "windows": {
+    "apr02-0530": "2026-04-02T05:30:00Z",
+    "apr09-1830": "2026-04-09T18:30:00Z"
+  },
+  "seeds": [
+    42
+  ],
+  "arms": [
+    "det",
+    "selector",
+    "cp12",
+    "cp13"
+  ],
+  "primary_metric": "P2H-focal capture_capacity (rescore_runs.py) + realized_profit_eur",
+  "verifier_tau_eur": 0.0,
+  "endpoints": [
+    "http://127.0.0.1:8000/v1",
+    "http://127.0.0.1:8001/v1",
+    "http://127.0.0.1:8002/v1"
+  ],
+  "context_dir": "data/cache/real_context/april_2026",
+  "truth_dir": "data/cache/evaluation_truth/april_2026",
+  "full_runs": 8,
+  "smoke_runs": 2,
+  "modes": {
+    "det": {
+      "chooser_mode": "deterministic_best_accepted",
+      "llm_enabled": false,
+      "preprobe_mode": "full",
+      "final_bid_guard": "schema_only_shadow",
+      "ablation_strategy": "baseline",
+      "temperature": 0.0,
+      "max_tokens": 512
+    },
+    "selector": {
+      "chooser_mode": "llm",
+      "llm_enabled": true,
+      "preprobe_mode": "full",
+      "final_bid_guard": "simulator_exact_match",
+      "ablation_strategy": "baseline",
+      "temperature": 0.2,
+      "max_tokens": 1024
+    },
+    "cp12": {
+      "chooser_mode": "llm",
+      "llm_enabled": true,
+      "preprobe_mode": "context_only",
+      "final_bid_guard": "schema_only_shadow",
+      "ablation_strategy": "cp12_llm_suggest_plus_code_ladder",
+      "temperature": 0.2,
+      "max_tokens": 1024
+    },
+    "cp13": {
+      "chooser_mode": "llm",
+      "llm_enabled": true,
+      "preprobe_mode": "context_only",
+      "final_bid_guard": "simulator_exact_match",
+      "ablation_strategy": "cp13_llm_probe_refine_frontier",
+      "temperature": 0.2,
+      "max_tokens": 1024
+    }
+  },
+  "constants": {
+    "zone": "DK1",
+    "agent_count": 6,
+    "forecaster_backend": "f8",
+    "forecaster_routing_mode": "persona",
+    "verifier_mode": "simulator",
+    "verifier_tau_eur": 0.0,
+    "market_context": "real",
+    "tool_mode": "openai_tools",
+    "objective": "bid_seeking",
+    "safety_toolset": "full",
+    "persona_profile": "all_archetypes_v1",
+    "scenario_id": "p2h_dk1_pypsa",
+    "tool_policy": "asset_simulator_v1",
+    "asset_simulator_mode": "scenario_envelope",
+    "asset_proxy_style": "market",
+    "candidate_sizing_mode": "large",
+    "candidate_sizing_cap_fraction": 1.0,
+    "candidate_sizing_min_mwh": 0.25,
+    "candidate_sizing_max_candidates": 8,
+    "max_tool_rounds": 6,
+    "simulator_max_concurrency": 12,
+    "data_start": "2026-04-01T00:00:00Z",
+    "data_end": "2026-05-01T00:00:00Z",
+    "context_dataset_dir": "data/cache/real_context/april_2026",
+    "data_cache_dir": "data/cache/real_context/april_2026/source_cache",
+    "default_lookback_hours": 24,
+    "cache_refresh": false,
+    "memory_enabled": false,
+    "reviewer_mode": "code_only"
+  }
+}

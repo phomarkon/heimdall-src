@@ -1,0 +1,2 @@
+ai-society/configs/qwen-large-baseline-s06-20260522/smoke/q120/smoke-qlb-s06-actioncore-baseline-apr02-0530-seed42-2-q120.yaml
+ai-society/configs/qwen-large-baseline-s06-20260522/smoke/q72/smoke-qlb-s06-actioncore-baseline-apr02-0530-seed42-2-q72.yaml

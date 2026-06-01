@@ -1,0 +1,2 @@
+ai-society/configs/final-sizing-robustness-20260519/smoke-fsr-s06-actioncore-apr02-0530-2-medium-q32.yaml
+ai-society/configs/final-sizing-robustness-20260519/smoke-fsr-s20-mixed-apr02-0530-2-large-seed13-q32.yaml

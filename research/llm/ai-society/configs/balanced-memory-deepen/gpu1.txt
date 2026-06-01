@@ -1,0 +1,6 @@
+ai-society/configs/balanced-memory-deepen/bmd-8-bcast-apr02-0530-f8-q32.yaml
+ai-society/configs/balanced-memory-deepen/bmd-5-bcast-apr03-1430-f8-q32.yaml
+ai-society/configs/balanced-memory-deepen/bmd-12-bcast-mem-apr03-1430-f8-q32.yaml
+ai-society/configs/balanced-memory-deepen/bmd-8-bcast-apr13-0015-f8-q32.yaml
+ai-society/configs/balanced-memory-deepen/bmd-5-bcast-roll1-apr27-1730-f8-q32.yaml
+ai-society/configs/balanced-memory-deepen/bmd-12-bcast-mem-roll1-apr27-1730-f8-q32.yaml

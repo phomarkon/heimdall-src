@@ -1,0 +1,4 @@
+ai-society/configs/sim-backend-sizing-20260519/smoke/scenario/current/smoke-sbs-s06-scenario-current-apr02-0530-2-seed42-q32.yaml
+ai-society/configs/sim-backend-sizing-20260519/smoke/scenario/large/smoke-sbs-s06-scenario-large-apr02-0530-2-seed42-q32.yaml
+ai-society/configs/sim-backend-sizing-20260519/smoke/pypsa/current/smoke-sbs-s06-pypsa-current-apr02-0530-2-seed42-q32.yaml
+ai-society/configs/sim-backend-sizing-20260519/smoke/pypsa/large/smoke-sbs-s06-pypsa-large-apr02-0530-2-seed42-q32.yaml

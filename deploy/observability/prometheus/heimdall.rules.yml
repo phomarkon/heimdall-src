@@ -1,0 +1,37 @@
+# Heimdall alerting rules (per docs/RESEARCH-PROPOSAL.md §6.8).
+
+groups:
+  - name: heimdall-verifier
+    interval: 1m
+    rules:
+      - alert: VerifierAcceptRateLow
+        expr: |
+          (
+            rate(heimdall_verifier_accepted_total[5m])
+            /
+            clamp_min(rate(heimdall_verifier_decisions_total[5m]), 1)
+          ) < 0.5
+        for: 5m
+        labels: { severity: warning }
+        annotations:
+          summary: "Verifier acceptance < 50% — LLM broken or scenario misconfigured"
+          runbook: "docs/runbooks/verifier-low-accept.md"
+
+      - alert: ConformalCoverageDrift
+        expr: abs(heimdall_conformal_marginal_coverage - 0.9) > 0.10
+        for: 10m
+        labels: { severity: warning }
+        annotations:
+          summary: "Conformal coverage drifted >10pp from target — possible regime shift"
+
+  - name: heimdall-runtime
+    interval: 1m
+    rules:
+      - alert: GPULowUtilDuringRun
+        expr: |
+          avg_over_time(DCGM_FI_DEV_GPU_UTIL[5m]) < 20
+          and on() heimdall_society_run_active == 1
+        for: 5m
+        labels: { severity: warning }
+        annotations:
+          summary: "GPU < 20% util during an active run — inference path likely broken"

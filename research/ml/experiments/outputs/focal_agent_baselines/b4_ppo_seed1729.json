@@ -1,0 +1,22 @@
+{
+  "name": "b4_ppo",
+  "seed": 1729,
+  "n_ticks": 5472,
+  "total_profit_dkk": 242584.2232,
+  "total_profit_eur": 32517.9924,
+  "profit_per_mwh_dkk": 132.0386,
+  "profit_per_mwh_eur": 17.6995,
+  "sharpe": 114.2981,
+  "cvar5_daily_dkk": 2117.3301,
+  "cvar5_daily_eur": 283.8244,
+  "participation_rate": 0.9978,
+  "physical_violation_rate": 0.002,
+  "runtime_seconds": 0.37,
+  "extras": {
+    "energy_delivered_mwh": 1837.2217,
+    "ticks_with_bid": 5460,
+    "heat_unmet_tick_rate": 0.002,
+    "bid_attempts": 5471,
+    "bid_violations": 11
+  }
+}

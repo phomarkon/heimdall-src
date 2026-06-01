@@ -1,0 +1,22 @@
+# F7-Optuna: best config from the 50-trial Optuna TPE study (Phase 5).
+# Best trial: 31; val pinball 257.01 at 15 epochs.
+# This config TRAINED FOR 50 EPOCHS (apples-to-apples vs F7 baseline 270.3
+# at 50 epochs default). The leaderboard's F7-Optuna entry should be the
+# 5-seed mean of this config.
+name: f7_optuna
+multivariate: false
+seq_len: 96
+horizon: 16
+# === Optuna best (trial 31) ===
+patch_len: 16
+d_model: 64
+nhead: 8
+n_layers: 5
+dropout: 0.1768185604506277
+epochs: 50
+batch_size: 128
+lr: 0.0015978995182196255
+weight_decay: 1.8966342766299018e-05
+# ============================
+seed: 42
+quantiles: [0.1, 0.5, 0.9]

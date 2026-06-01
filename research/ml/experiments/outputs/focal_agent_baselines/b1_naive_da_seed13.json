@@ -1,0 +1,22 @@
+{
+  "name": "b1_naive_da",
+  "seed": 13,
+  "n_ticks": 5472,
+  "total_profit_dkk": 0.0,
+  "total_profit_eur": 0.0,
+  "profit_per_mwh_dkk": 0.0,
+  "profit_per_mwh_eur": 0.0,
+  "sharpe": 0.0,
+  "cvar5_daily_dkk": 0.0,
+  "cvar5_daily_eur": 0.0,
+  "participation_rate": 0.0,
+  "physical_violation_rate": 0.0,
+  "runtime_seconds": 0.01,
+  "extras": {
+    "energy_delivered_mwh": 0.0,
+    "ticks_with_bid": 0,
+    "heat_unmet_tick_rate": 0.9932,
+    "bid_attempts": 0,
+    "bid_violations": 0
+  }
+}

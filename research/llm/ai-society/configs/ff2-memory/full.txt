@@ -1,0 +1,3 @@
+ai-society/configs/ff2-memory/ff2-memory-mem-off-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/ff2-memory/ff2-memory-mem-conservative-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/ff2-memory/ff2-memory-mem-participation-apr02-0530-seed42-24-q32.yaml

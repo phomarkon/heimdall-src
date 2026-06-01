@@ -1,0 +1,3 @@
+ai-society/configs/d6-fill-20260524/smoke/d6-detbest-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/d6-fill-20260524/smoke/d6-dethighfill-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/d6-fill-20260524/smoke/d6-llmfill-apr02-0530-seed42-2-q32.yaml

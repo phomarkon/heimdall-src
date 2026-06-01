@@ -1,0 +1,2 @@
+ai-society/configs/sizing-forecaster-generalization-20260519/smoke-sfg-s12-balanced-apr03-1430-2-medium-real-q32.yaml
+ai-society/configs/sizing-forecaster-generalization-20260519/smoke-sfg-s20-mixed-persona-apr03-1430-2-medium-real-q32.yaml

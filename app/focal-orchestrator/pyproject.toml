@@ -1,0 +1,19 @@
+[project]
+name = "heimdall-focal-orchestrator"
+version = "0.0.1"
+description = "Coordinator for the focal multi-specialist team. Day-1 stub: forecaster -> verifier round-trip."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "heimdall-contracts",
+  "heimdall-markets",
+  "heimdall-ml",
+  "heimdall-verifier",
+  "heimdall-forecaster",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/heimdall_focal_orchestrator"]

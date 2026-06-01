@@ -1,0 +1,95 @@
+name: PR checks
+
+on:
+  pull_request:
+    branches: [main, dev]
+  push:
+    branches: [dev]
+
+concurrency:
+  group: pr-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  UV_VERSION: "0.5.31"
+  PYTHON_VERSION: "3.12"
+
+jobs:
+  lint:
+    name: Lint (ruff + biome)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: ${{ env.UV_VERSION }}
+      - name: Setup Python
+        run: uv python install ${{ env.PYTHON_VERSION }}
+      - name: uv sync
+        run: uv sync --frozen
+      - name: ruff format check
+        run: uv run ruff format --check .
+      - name: ruff lint
+        run: uv run ruff check .
+      - name: import-linter (architecture contracts)
+        run: |
+          uv run python -c "from importlinter.cli import lint_imports; raise SystemExit(lint_imports())"
+
+  test:
+    name: pytest (CPU only)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: ${{ env.UV_VERSION }}
+      - name: Setup Python
+        run: uv python install ${{ env.PYTHON_VERSION }}
+      - name: uv sync
+        run: uv sync --frozen
+      - name: pytest
+        # GPU-bound integration tests are gated behind the `gpu` marker; CI is CPU-only.
+        run: uv run pytest -q -m "not gpu and not slow"
+        env:
+          PYTHONPATH: .:research:research/llm/ai-society/src
+
+  leakage:
+    name: Test-set leakage assertion
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: ${{ env.UV_VERSION }}
+      - name: Setup Python
+        run: uv python install ${{ env.PYTHON_VERSION }}
+      - name: uv sync
+        run: uv sync --frozen
+      - name: Assert no test-set leakage
+        run: uv run pytest tests/test_leakage.py -q
+        env:
+          PYTHONPATH: .:research:research/llm/ai-society/src
+
+  frontend:
+    name: Frontend (tsc + vitest)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app/frontend
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: bun install
+        run: bun install --frozen-lockfile
+      - name: typecheck (tsc --noEmit)
+        run: bun run lint
+      - name: unit + component + integration (vitest)
+        run: bun run test
+      # Playwright e2e (e2e/*.spec.ts) needs browser binaries + a live dev
+      # server; it is run locally / nightly via `bun run test:e2e`, not per-PR.

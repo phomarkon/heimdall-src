@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-05-22T05:26:51.048100Z",
+  "full_count": 12,
+  "matrix": "high-fill-llm-s06-20260522",
+  "smoke_count": 4,
+  "variants": [
+    "deterministic-highfill",
+    "llm-fill-selector",
+    "llm-fill-selector-retry",
+    "llm-fill-selector-memory-v2"
+  ],
+  "windows": {
+    "apr02-0530": "2026-04-02T05:30:00Z",
+    "apr09-1830": "2026-04-09T18:30:00Z",
+    "apr13-0015": "2026-04-13T00:15:00Z"
+  }
+}

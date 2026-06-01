@@ -1,0 +1,36 @@
+run_id: big-jao-grid-apr13-0545-24-dualgpu
+seed: 42
+zone: DK1
+agent_count: 12
+ticks: 24
+start_timestamp: "2026-04-13T05:45:00Z"
+forecaster_backend: f0
+verifier_mode: simulator
+verifier_tau_eur: 0.0
+market_context: real
+tool_mode: openai_tools
+objective: bid_seeking
+ablation_strategy: comm_info_then_action
+persona_profile: jao_grid_v1
+scenario_id: p2h_dk1_pypsa
+tool_policy: p2h_only_simulator
+max_tool_rounds: 4
+simulator_max_concurrency: 8
+data_start: "2026-04-01T00:00:00Z"
+data_end: "2026-05-01T00:00:00Z"
+context_dataset_dir: data/cache/real_context/april_2026
+data_cache_dir: data/cache/real_context/april_2026/source_cache
+default_lookback_hours: 24
+cache_refresh: false
+output_dir: research/llm/ai-society/runs/big-society-dualgpu
+llm:
+  enabled: true
+  model: Qwen/Qwen3-32B
+  base_urls:
+    - http://127.0.0.1:8000/v1
+    - http://127.0.0.1:8001/v1
+  temperature: 0.2
+  max_tokens: 256
+  timeout_seconds: 180
+  max_concurrency: 12
+

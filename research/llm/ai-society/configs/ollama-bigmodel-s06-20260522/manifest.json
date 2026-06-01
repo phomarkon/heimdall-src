@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-05-22T10:27:22.848000Z",
+  "full_count": 9,
+  "matrix": "ollama-bigmodel-s06-20260522",
+  "models": {
+    "qwen110b": "qwen:110b",
+    "qwen2p5-72b": "qwen2.5:72b-instruct-q3_K_L",
+    "qwen3-235b": "qwen3:235b"
+  },
+  "note": "Generated candidates for all target Ollama models; launch script records which models are available after pull/serve checks.",
+  "ollama_base_url": "http://127.0.0.1:11434/v1",
+  "smoke_count": 3,
+  "tool_mode": "json_response",
+  "windows": {
+    "apr02-0530": "2026-04-02T05:30:00Z",
+    "apr09-1830": "2026-04-09T18:30:00Z",
+    "apr13-0015": "2026-04-13T00:15:00Z"
+  }
+}

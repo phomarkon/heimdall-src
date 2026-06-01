@@ -1,0 +1,63 @@
+{
+  "ablation_strategy": "comm_broadcast_digest_priority_calibration",
+  "chain_after": {
+    "required_completed": 8,
+    "required_failed": 0,
+    "session": "follow-on-breadth",
+    "summary_root": "ai-society/runs/follow-on-breadth-matrix/logs"
+  },
+  "config_list": "ai-society/configs/priority-calibration-matrix/config-list.txt",
+  "forecaster_backend": "f8",
+  "minimum_run_count": 4,
+  "model": "Qwen/Qwen3-32B",
+  "run_count": 6,
+  "run_root": "ai-society/runs/priority-calibration-matrix",
+  "runs": [
+    {
+      "config": "ai-society/configs/priority-calibration-matrix/minimum/pcm-mixed20-apr02-96-priority-real-q32.yaml",
+      "run_id": "pcm-mixed20-apr02-96-priority-real-q32",
+      "ticks": 96,
+      "tier": "minimum"
+    },
+    {
+      "config": "ai-society/configs/priority-calibration-matrix/minimum/pcm-mixed20-apr03-96-priority-real-q32.yaml",
+      "run_id": "pcm-mixed20-apr03-96-priority-real-q32",
+      "ticks": 96,
+      "tier": "minimum"
+    },
+    {
+      "config": "ai-society/configs/priority-calibration-matrix/minimum/pcm-mixed20-apr07-96-priority-real-q32.yaml",
+      "run_id": "pcm-mixed20-apr07-96-priority-real-q32",
+      "ticks": 96,
+      "tier": "minimum"
+    },
+    {
+      "config": "ai-society/configs/priority-calibration-matrix/minimum/pcm-mixed20-apr09-96-priority-real-q32.yaml",
+      "run_id": "pcm-mixed20-apr09-96-priority-real-q32",
+      "ticks": 96,
+      "tier": "minimum"
+    },
+    {
+      "config": "ai-society/configs/priority-calibration-matrix/stretch/pcm-mixed20-apr02-96-priority-proxy-q32.yaml",
+      "run_id": "pcm-mixed20-apr02-96-priority-proxy-q32",
+      "ticks": 96,
+      "tier": "stretch"
+    },
+    {
+      "config": "ai-society/configs/priority-calibration-matrix/stretch/pcm-mixed18-apr09-96-priority-real-q32.yaml",
+      "run_id": "pcm-mixed18-apr09-96-priority-real-q32",
+      "ticks": 96,
+      "tier": "stretch"
+    }
+  ],
+  "seed": 42,
+  "stretch_run_count": 2,
+  "success_criteria": {
+    "lift_over_random_top_10_or_12_min": 1.5,
+    "priority_field_coverage_min": 0.95,
+    "top_10_capture_mean_min": 0.2,
+    "top_12_capture_mean_min": 0.25,
+    "top_24_capture_mean_min": 0.4,
+    "verifier_realized_profit_breach_rate": 0.0
+  }
+}

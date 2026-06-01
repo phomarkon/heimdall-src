@@ -1,0 +1,131 @@
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+!manuscript/.vscode/
+!manuscript/.vscode/**
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.python-version
+
+# Node / bun
+node_modules/
+.next/
+.turbo/
+dist/
+build/
+bun.lockb
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+# Secrets / env
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+
+# Data — raw API responses are too large; see tools/get_data.sh to refetch.
+data/raw/
+data/cache/
+*.parquet
+*.csv
+*.pkl
+# Keep the small processed DK1 panels (~6.5 MB total) for reproducibility.
+!data/processed/
+!data/processed/*.parquet
+
+# data/external/ holds vendored upstream parquets (e.g., Trinity). Bulk is gitignored
+# via the *.parquet rule above; provenance + docs are always trackable.
+!data/external/
+!data/external/**/*.md
+
+# Models / artifacts.  Heavy binaries live on HuggingFace
+# (Phongsakon/heimdall-forecasters); we don't track them here.
+# `mlruns/` IS tracked in git: small (~10 MB), examiner-grade
+# reproducibility provenance, and crash-safety duplication of the HF copy.
+*.bin
+*.safetensors
+*.ckpt
+*.pt
+checkpoints/
+wandb/
+
+# Logs / experiments
+logs/
+*.log
+results/runs/
+
+# UCloud native vLLM runtime: keep generated state outside git.
+research/llm/ai-society/ucloud-vllm/.env
+research/llm/ai-society/ucloud-vllm/.venv/
+research/llm/ai-society/ucloud-vllm/logs/
+research/llm/ai-society/ucloud-vllm/.cache/
+research/llm/ai-society/ucloud-vllm/huggingface/
+
+# LaTeX build
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Local-only docs
+.scratch/
+
+# Test coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Reference PDFs — track only references/papers/README.md, not the PDFs.
+references/papers/*.pdf
+
+# AI society experiment artifacts: keep run logs and evaluation tables.
+!research/llm/ai-society/runs/**/*.log
+!research/llm/evaluations/**/*.parquet
+
+# Dev branch keeps thesis sources in a separate repository and release model
+# bundles out of git.
+thesis/
+models/release/
+
+# LaTeX build artifacts
+*.aux
+*.bcf
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.lof
+*.lot
+*.loa
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*-SAVE-ERROR
+
+# stray cwd-relative HF hydration dirs (hydrate to HF cache / models/forecaster instead)
+/f7
+/f8
+/f11
+/f3
+/f3_ensemble
+
+# run-view disk catalog cache (regenerated on demand)
+research/llm/ai-society/.run-catalog-cache.json

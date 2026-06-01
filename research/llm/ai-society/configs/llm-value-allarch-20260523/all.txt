@@ -1,0 +1,8 @@
+ai-society/configs/llm-value-allarch-20260523/full/det/lva-det-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-value-allarch-20260523/full/det/lva-det-apr09-1830-seed42-24-q32.yaml
+ai-society/configs/llm-value-allarch-20260523/full/selector/lva-selector-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-value-allarch-20260523/full/selector/lva-selector-apr09-1830-seed42-24-q32.yaml
+ai-society/configs/llm-value-allarch-20260523/full/cp12/lva-cp12-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-value-allarch-20260523/full/cp12/lva-cp12-apr09-1830-seed42-24-q32.yaml
+ai-society/configs/llm-value-allarch-20260523/full/cp13/lva-cp13-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-value-allarch-20260523/full/cp13/lva-cp13-apr09-1830-seed42-24-q32.yaml

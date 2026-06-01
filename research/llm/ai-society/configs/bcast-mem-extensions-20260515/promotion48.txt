@@ -1,0 +1,4 @@
+ai-society/configs/bcast-mem-extensions-20260515/bme-promote-jao12-bcast-mem-apr02-0530-48-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-promote-info14-bcast-mem-apr02-0530-48-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-promote-jao12-bcast-mem-apr09-1830-48-f8.yaml
+ai-society/configs/bcast-mem-extensions-20260515/bme-promote-info14-bcast-mem-apr09-1830-48-f8.yaml

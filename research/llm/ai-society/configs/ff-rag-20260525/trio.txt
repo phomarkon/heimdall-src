@@ -1,0 +1,3 @@
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-det-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-cp12-norag-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-cp12-rag-apr02-0530-seed42-24-q32.yaml

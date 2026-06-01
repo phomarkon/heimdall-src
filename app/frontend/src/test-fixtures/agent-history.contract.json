@@ -1,0 +1,162 @@
+{
+  "run_id": "contract-smoke",
+  "agent_id": "agent-000",
+  "trace_sha256": "c4742e3f404351c021c4a47b1dee7ecc3c340ee10ec7e92d7cea94cee4bba31c",
+  "total_records": 2,
+  "records": [
+    {
+      "run_id": "contract-smoke",
+      "step": 0,
+      "timestamp": "2026-04-02T12:00:00Z",
+      "observed_at": null,
+      "agent_id": "agent-000",
+      "zone": null,
+      "archetype": "p2h",
+      "market_price_eur_mwh": 80.0,
+      "forecast_interval_eur_mwh": [
+        70.0,
+        90.0
+      ],
+      "decision": {
+        "action": "bid",
+        "side": "up",
+        "quantity_mwh": 2.0,
+        "limit_price_eur_mwh": 60.0,
+        "rationale": "contract row"
+      },
+      "rationale": "contract row",
+      "verifier": {
+        "accepted": true,
+        "reason_codes": [],
+        "stage_failed": null
+      },
+      "realized_outcome": {
+        "fill_mw": 2.0,
+        "realized_price_eur_per_mwh": 80.0,
+        "pnl_eur": 120.0
+      },
+      "tool_calls": [
+        {
+          "name": "society_communication_context",
+          "arguments": {},
+          "ok": true,
+          "result": {
+            "context": {
+              "roster": [
+                {
+                  "agent_id": "agent-000",
+                  "archetype": "p2h"
+                },
+                {
+                  "agent_id": "agent-001",
+                  "archetype": "ev"
+                },
+                {
+                  "agent_id": "agent-002",
+                  "archetype": "wind"
+                }
+              ]
+            }
+          },
+          "error": null,
+          "provenance": "unknown"
+        },
+        {
+          "name": "simulate_bid",
+          "arguments": {
+            "side": "up",
+            "quantity_mwh": 2.0,
+            "limit_price_eur_mwh": 60.0
+          },
+          "ok": true,
+          "result": {
+            "accepted": true,
+            "worst_case_profit_eur": 5.0,
+            "rough_expected_profit_eur": 9.0,
+            "reason_codes": []
+          },
+          "error": null,
+          "provenance": "unknown"
+        }
+      ],
+      "tool_call_provenance_counts": {}
+    },
+    {
+      "run_id": "contract-smoke",
+      "step": 1,
+      "timestamp": "2026-04-02T13:00:00Z",
+      "observed_at": null,
+      "agent_id": "agent-000",
+      "zone": null,
+      "archetype": "p2h",
+      "market_price_eur_mwh": 80.0,
+      "forecast_interval_eur_mwh": [
+        70.0,
+        90.0
+      ],
+      "decision": {
+        "action": "bid",
+        "side": "up",
+        "quantity_mwh": 2.0,
+        "limit_price_eur_mwh": 60.0,
+        "rationale": "contract row"
+      },
+      "rationale": "contract row",
+      "verifier": {
+        "accepted": true,
+        "reason_codes": [],
+        "stage_failed": null
+      },
+      "realized_outcome": {
+        "fill_mw": 2.0,
+        "realized_price_eur_per_mwh": 80.0,
+        "pnl_eur": 60.0
+      },
+      "tool_calls": [
+        {
+          "name": "society_communication_context",
+          "arguments": {},
+          "ok": true,
+          "result": {
+            "context": {
+              "roster": [
+                {
+                  "agent_id": "agent-000",
+                  "archetype": "p2h"
+                },
+                {
+                  "agent_id": "agent-001",
+                  "archetype": "ev"
+                },
+                {
+                  "agent_id": "agent-002",
+                  "archetype": "wind"
+                }
+              ]
+            }
+          },
+          "error": null,
+          "provenance": "unknown"
+        },
+        {
+          "name": "simulate_bid",
+          "arguments": {
+            "side": "up",
+            "quantity_mwh": 2.0,
+            "limit_price_eur_mwh": 60.0
+          },
+          "ok": true,
+          "result": {
+            "accepted": true,
+            "worst_case_profit_eur": 5.0,
+            "rough_expected_profit_eur": 9.0,
+            "reason_codes": []
+          },
+          "error": null,
+          "provenance": "unknown"
+        }
+      ],
+      "tool_call_provenance_counts": {}
+    }
+  ]
+}

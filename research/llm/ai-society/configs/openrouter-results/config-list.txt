@@ -1,0 +1,2 @@
+ai-society/configs/openrouter-results/deepseek-v32-s06-apr02-0530-24.yaml
+ai-society/configs/openrouter-results/qwen235b-s06-apr02-0530-24.yaml

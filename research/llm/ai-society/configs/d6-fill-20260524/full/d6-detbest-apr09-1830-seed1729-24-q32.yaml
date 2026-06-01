@@ -1,0 +1,53 @@
+run_id: d6-detbest-apr09-1830-seed1729-24-q32
+seed: 1729
+forecaster_seed: 1729
+ticks: 24
+start_timestamp: '2026-04-09T18:30:00Z'
+chooser_mode: deterministic_best_accepted
+preprobe_mode: full
+final_bid_guard: simulator_exact_match
+ablation_strategy: cp12_llm_suggest_plus_code_ladder
+output_dir: research/llm/ai-society/runs/d6-fill-20260524
+zone: DK1
+agent_count: 6
+forecaster_backend: f8
+forecaster_routing_mode: persona
+verifier_mode: simulator
+verifier_tau_eur: 0.0
+market_context: real
+tool_mode: openai_tools
+objective: bid_seeking
+safety_toolset: full
+persona_profile: all_archetypes_v1
+scenario_id: p2h_dk1_pypsa
+tool_policy: asset_simulator_v1
+asset_simulator_mode: scenario_envelope
+asset_proxy_style: market
+candidate_sizing_mode: large
+candidate_sizing_cap_fraction: 1.0
+candidate_sizing_min_mwh: 0.25
+candidate_sizing_max_candidates: 8
+max_tool_rounds: 6
+simulator_max_concurrency: 12
+data_start: '2026-04-01T00:00:00Z'
+data_end: '2026-05-01T00:00:00Z'
+context_dataset_dir: data/cache/real_context/april_2026
+data_cache_dir: data/cache/real_context/april_2026/source_cache
+default_lookback_hours: 24
+cache_refresh: false
+memory_enabled: false
+reviewer_mode: code_only
+llm:
+  enabled: false
+  base_urls:
+  - http://127.0.0.1:8000/v1
+  - http://127.0.0.1:8001/v1
+  - http://127.0.0.1:8002/v1
+  - http://127.0.0.1:8003/v1
+  api_key: heimdall-local
+  model: Qwen/Qwen3-32B
+  temperature: 0.2
+  max_tokens: 1024
+  timeout_seconds: 180
+  max_concurrency: 24
+  per_endpoint_max_concurrency: 6

@@ -1,0 +1,72 @@
+# Mark-side service stack: forecaster, conformal-calibrator, verifier,
+# market-simulator.  All four FastAPI services + Redis (memory-store).
+#
+# Usage:
+#   docker compose -f deploy/docker-compose.mark-stack.yml up --build
+#
+# Per docs/RESEARCH-PROPOSAL.md §6.2.  Tim's gateway, agent-runner,
+# focal-orchestrator, and frontend run in their own compose stack and
+# point at the four services exposed here.
+
+services:
+  forecaster:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.service
+      args: { MODULE: heimdall_forecaster }
+    image: heimdall/forecaster:dev
+    container_name: heimdall-forecaster
+    environment:
+      HEIMDALL_FORECASTER_BACKEND: ${HEIMDALL_FORECASTER_BACKEND:-f7}
+      HF_TOKEN: ${HF_TOKEN:-}
+    ports: ["8001:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/healthz').read()"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+
+  conformal_calibrator:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.service
+      args: { MODULE: heimdall_conformal_calibrator }
+    image: heimdall/conformal-calibrator:dev
+    container_name: heimdall-conformal-calibrator
+    ports: ["8002:8000"]
+    depends_on: [forecaster]
+
+  verifier:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.service
+      args: { MODULE: heimdall_verifier }
+    image: heimdall/verifier:dev
+    container_name: heimdall-verifier
+    ports: ["8003:8000"]
+    depends_on: [conformal_calibrator]
+
+  market_simulator:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.service
+      args: { MODULE: heimdall_market_simulator }
+    image: heimdall/market-simulator:dev
+    container_name: heimdall-market-simulator
+    ports: ["8004:8000"]
+
+  pypsa_scenario:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.service
+      args: { MODULE: heimdall_pypsa_scenario }
+    image: heimdall/pypsa-scenario:dev
+    container_name: heimdall-pypsa-scenario
+    ports: ["8005:8000"]
+    volumes:
+      - ../data/raw/pypsa_eursec:/app/data/raw/pypsa_eursec:ro
+
+  redis:
+    image: redis:7-alpine
+    container_name: heimdall-redis
+    ports: ["6379:6379"]

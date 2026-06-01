@@ -1,0 +1,90 @@
+{
+  "ablation_strategy": "comm_broadcast_digest",
+  "config_list": "ai-society/configs/final-core-overnight-matrix/large-bid-sizing-config-list.txt",
+  "forecaster_backend": "f8",
+  "forecaster_seed": 42,
+  "hard_wall_clock_cap_hours": 10,
+  "model": "Qwen/Qwen3-32B",
+  "purpose": "large_bid_sizing",
+  "run_count": 12,
+  "run_root": "ai-society/runs/final-core-overnight-matrix",
+  "runs": [
+    {
+      "candidate_sizing_mode": "medium",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s06-actioncore/medium/fco-size-s06-actioncore-medium-apr02-0530-seed42-q32.yaml",
+      "run_id": "fco-size-s06-actioncore-medium-apr02-0530-seed42-q32",
+      "society": "s06-actioncore"
+    },
+    {
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s06-actioncore/large/fco-size-s06-actioncore-large-apr02-0530-seed42-q32.yaml",
+      "run_id": "fco-size-s06-actioncore-large-apr02-0530-seed42-q32",
+      "society": "s06-actioncore"
+    },
+    {
+      "candidate_sizing_mode": "medium",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s06-actioncore/medium/fco-size-s06-actioncore-medium-apr09-1830-seed42-q32.yaml",
+      "run_id": "fco-size-s06-actioncore-medium-apr09-1830-seed42-q32",
+      "society": "s06-actioncore"
+    },
+    {
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s06-actioncore/large/fco-size-s06-actioncore-large-apr09-1830-seed42-q32.yaml",
+      "run_id": "fco-size-s06-actioncore-large-apr09-1830-seed42-q32",
+      "society": "s06-actioncore"
+    },
+    {
+      "candidate_sizing_mode": "medium",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s06-actioncore/medium/fco-size-s06-actioncore-medium-apr13-0015-seed42-q32.yaml",
+      "run_id": "fco-size-s06-actioncore-medium-apr13-0015-seed42-q32",
+      "society": "s06-actioncore"
+    },
+    {
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s06-actioncore/large/fco-size-s06-actioncore-large-apr13-0015-seed42-q32.yaml",
+      "run_id": "fco-size-s06-actioncore-large-apr13-0015-seed42-q32",
+      "society": "s06-actioncore"
+    },
+    {
+      "candidate_sizing_mode": "medium",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s20-mixed/medium/fco-size-s20-mixed-medium-apr02-0530-seed42-q32.yaml",
+      "run_id": "fco-size-s20-mixed-medium-apr02-0530-seed42-q32",
+      "society": "s20-mixed"
+    },
+    {
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s20-mixed/large/fco-size-s20-mixed-large-apr02-0530-seed42-q32.yaml",
+      "run_id": "fco-size-s20-mixed-large-apr02-0530-seed42-q32",
+      "society": "s20-mixed"
+    },
+    {
+      "candidate_sizing_mode": "medium",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s20-mixed/medium/fco-size-s20-mixed-medium-apr09-1830-seed42-q32.yaml",
+      "run_id": "fco-size-s20-mixed-medium-apr09-1830-seed42-q32",
+      "society": "s20-mixed"
+    },
+    {
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s20-mixed/large/fco-size-s20-mixed-large-apr09-1830-seed42-q32.yaml",
+      "run_id": "fco-size-s20-mixed-large-apr09-1830-seed42-q32",
+      "society": "s20-mixed"
+    },
+    {
+      "candidate_sizing_mode": "medium",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s20-mixed/medium/fco-size-s20-mixed-medium-apr13-0015-seed42-q32.yaml",
+      "run_id": "fco-size-s20-mixed-medium-apr13-0015-seed42-q32",
+      "society": "s20-mixed"
+    },
+    {
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/final-core-overnight-matrix/large_bid_sizing/s20-mixed/large/fco-size-s20-mixed-large-apr13-0015-seed42-q32.yaml",
+      "run_id": "fco-size-s20-mixed-large-apr13-0015-seed42-q32",
+      "society": "s20-mixed"
+    }
+  ],
+  "sizing_arms": {
+    "large": "candidate quantities up to archetype cap",
+    "medium": "candidate quantities around 25-50% of archetype cap"
+  },
+  "target_wall_clock_hours": "6-8"
+}

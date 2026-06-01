@@ -1,0 +1,69 @@
+# Heimdall Prometheus configuration.
+# Per docs/RESEARCH-PROPOSAL.md §6.8 — every service exposes /metrics. This file
+# pins the scrape targets for k3s + Helm + ArgoCD; in dev a single
+# docker-compose stack reads this same file via volume mount.
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    cluster: heimdall-dev
+    project: heimdall
+
+rule_files:
+  - "/etc/prometheus/rules/*.rules.yml"
+
+scrape_configs:
+  - job_name: gateway
+    static_configs:
+      - targets: ["gateway:8000"]
+
+  - job_name: society-orchestrator
+    static_configs:
+      - targets: ["society-orchestrator:8000"]
+
+  - job_name: focal-orchestrator
+    static_configs:
+      - targets: ["focal-orchestrator:8000"]
+
+  - job_name: agent-runner
+    static_configs:
+      - targets: ["agent-runner:8000"]
+
+  - job_name: verifier
+    static_configs:
+      - targets: ["verifier:8000"]
+
+  - job_name: market-simulator
+    static_configs:
+      - targets: ["market-simulator:8000"]
+
+  - job_name: forecaster
+    static_configs:
+      - targets: ["forecaster:8000"]
+
+  - job_name: conformal-calibrator
+    static_configs:
+      - targets: ["conformal-calibrator:8000"]
+
+  - job_name: vllm-society
+    static_configs:
+      - targets: ["llm-inference:8000"]
+
+  - job_name: vllm-focal
+    static_configs:
+      - targets: ["focal-llm-inference:8000"]
+
+  - job_name: kubernetes-pods
+    kubernetes_sd_configs:
+      - role: pod
+        namespaces:
+          names: [heimdall-prod, heimdall-staging]
+    relabel_configs:
+      - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
+        action: keep
+        regex: "true"
+      - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_path]
+        action: replace
+        target_label: __metrics_path__
+        regex: (.+)

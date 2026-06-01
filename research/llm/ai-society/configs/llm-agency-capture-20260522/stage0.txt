@@ -1,0 +1,6 @@
+ai-society/configs/llm-agency-capture-20260522/full/a0-det/lac-s06-a0-det-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a0-det/lac-s06-a0-det-apr09-1830-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a0-det/lac-s06-a0-det-apr13-0015-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a1-selector/lac-s06-a1-selector-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a1-selector/lac-s06-a1-selector-apr09-1830-seed42-24-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/full/a1-selector/lac-s06-a1-selector-apr13-0015-seed42-24-q32.yaml

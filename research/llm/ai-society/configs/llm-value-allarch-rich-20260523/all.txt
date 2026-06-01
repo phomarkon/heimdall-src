@@ -1,0 +1,4 @@
+ai-society/configs/llm-value-allarch-rich-20260523/full/det_rich/lvar-det_rich-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-value-allarch-rich-20260523/full/det_rich/lvar-det_rich-apr09-1830-seed42-24-q32.yaml
+ai-society/configs/llm-value-allarch-rich-20260523/full/selector_rich/lvar-selector_rich-apr02-0530-seed42-24-q32.yaml
+ai-society/configs/llm-value-allarch-rich-20260523/full/selector_rich/lvar-selector_rich-apr09-1830-seed42-24-q32.yaml

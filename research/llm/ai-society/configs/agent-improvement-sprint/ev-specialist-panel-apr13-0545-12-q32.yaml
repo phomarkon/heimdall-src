@@ -1,0 +1,31 @@
+run_id: ev-specialist-panel-apr13-0545-12-q32
+seed: 191
+zone: DK1
+agent_count: 3
+ticks: 12
+start_timestamp: "2026-04-13T05:45:00Z"
+forecaster_backend: f0
+verifier_mode: simulator
+verifier_tau_eur: 0.0
+market_context: real
+tool_mode: openai_tools
+objective: bid_seeking
+ablation_strategy: comm_broadcast_digest
+persona_profile: ev_specialist_v2
+scenario_id: p2h_dk1_pypsa
+tool_policy: p2h_only_simulator
+max_tool_rounds: 4
+data_start: "2026-04-01T00:00:00Z"
+data_end: "2026-05-01T00:00:00Z"
+context_dataset_dir: data/cache/real_context/april_2026
+data_cache_dir: data/cache/real_context/april_2026/source_cache
+default_lookback_hours: 24
+cache_refresh: false
+output_dir: research/llm/ai-society/runs
+llm:
+  enabled: true
+  model: Qwen/Qwen3-32B
+  temperature: 0.2
+  max_tokens: 256
+  timeout_seconds: 180
+  max_concurrency: 6

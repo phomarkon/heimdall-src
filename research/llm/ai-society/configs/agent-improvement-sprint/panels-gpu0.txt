@@ -1,0 +1,3 @@
+ai-society/configs/agent-improvement-sprint/market-expert-panel-apr09-1815-12-q32.yaml
+ai-society/configs/agent-improvement-sprint/p2h-specialist-panel-apr09-1815-12-q32.yaml
+ai-society/configs/agent-improvement-sprint/ev-specialist-panel-apr09-1815-12-q32.yaml

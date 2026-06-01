@@ -1,0 +1,2 @@
+ai-society/configs/scenario-envelope-thesis-ablation-20260520/smoke/s06-actioncore/smoke-seta-s06-actioncore-scenario-large-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/scenario-envelope-thesis-ablation-20260520/smoke/s20-mixed/smoke-seta-s20-mixed-scenario-large-apr02-0530-seed13-2-q32.yaml

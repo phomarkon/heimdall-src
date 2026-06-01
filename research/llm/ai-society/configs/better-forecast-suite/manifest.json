@@ -1,0 +1,230 @@
+{
+  "config_counts": {
+    "bid_conversion": 48,
+    "no_llm": 16,
+    "rolling_eval": 18,
+    "smoke": 4,
+    "watch_study": 32
+  },
+  "configs": {
+    "bid_conversion": [
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f0-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f0-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f7-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f7-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f8-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f8-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f3_ensemble-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-1200-24-f3_ensemble-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f0-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f0-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f7-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f7-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f8-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f8-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f3_ensemble-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr02-0530-48-f3_ensemble-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f0-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f0-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f7-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f7-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f8-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f8-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f3_ensemble-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr03-1430-48-f3_ensemble-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f0-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f0-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f7-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f7-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f8-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f8-taum100-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f3_ensemble-taum50-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/bid-conversion/da-bid-apr09-1830-48-f3_ensemble-taum100-llm-q32.yaml"
+    ],
+    "no_llm": [
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr02-1200-24-f0-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr02-1200-24-f7-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr02-1200-24-f8-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr02-1200-24-f3_ensemble-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr02-0530-48-f0-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr02-0530-48-f7-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr02-0530-48-f8-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr02-0530-48-f3_ensemble-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr03-1430-48-f0-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr03-1430-48-f7-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr03-1430-48-f8-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr03-1430-48-f3_ensemble-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr09-1830-48-f0-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr09-1830-48-f7-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr09-1830-48-f8-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/no-llm/da-detbase-apr09-1830-48-f3_ensemble-tau0-det.yaml"
+    ],
+    "rolling_eval": [
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll1-apr27-1730-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll1-apr27-1730-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll1-apr27-1730-48-f8-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll2-apr04-0600-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll2-apr04-0600-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll2-apr04-0600-48-f8-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll3-apr07-2230-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll3-apr07-2230-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll3-apr07-2230-48-f8-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll4-apr19-1915-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll4-apr19-1915-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll4-apr19-1915-48-f8-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll5-apr17-1900-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll5-apr17-1900-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll5-apr17-1900-48-f8-tau0-det.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll6-apr28-1900-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll6-apr28-1900-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/rolling-eval/da-roll-roll6-apr28-1900-48-f8-tau0-det.yaml"
+    ],
+    "smoke": [
+      "ai-society/configs/better-forecast-suite/smoke/da-smoke-apr02-1200-24-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/smoke/da-smoke-apr02-1200-24-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/smoke/da-smoke-apr02-1200-24-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/smoke/da-smoke-apr02-1200-24-f8-tau0-det.yaml"
+    ],
+    "watch_study": [
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr02-1200-24-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr02-1200-24-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr02-1200-24-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr02-1200-24-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr02-0530-48-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr02-0530-48-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr02-0530-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr02-0530-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr03-1430-48-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr03-1430-48-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr03-1430-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr03-1430-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr09-1830-48-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr09-1830-48-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr09-1830-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr09-1830-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr13-0015-48-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr13-0015-48-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr13-0015-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr13-0015-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr06-1300-48-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr06-1300-48-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr06-1300-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr06-1300-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr22-0830-48-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr22-0830-48-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr22-0830-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr22-0830-48-f3_ensemble-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr05-1030-48-f0-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr05-1030-48-f7-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr05-1030-48-f8-tau0-llm-q32.yaml",
+      "ai-society/configs/better-forecast-suite/watch-study/da-watch-apr05-1030-48-f3_ensemble-tau0-llm-q32.yaml"
+    ]
+  },
+  "context_dataset_dir": "data/cache/real_context/april_2026",
+  "known_windows": [
+    {
+      "reason": "strong profit and good side precision",
+      "slug": "apr02-1200",
+      "start": "2026-04-02T12:00:00Z",
+      "ticks": 24
+    },
+    {
+      "reason": "strong profit and many actions",
+      "slug": "apr02-0530",
+      "start": "2026-04-02T05:30:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "new profitable screened run",
+      "slug": "apr03-1430",
+      "start": "2026-04-03T14:30:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "best absolute profit",
+      "slug": "apr09-1830",
+      "start": "2026-04-09T18:30:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "huge independent oracle and mostly watch-only",
+      "slug": "apr13-0015",
+      "start": "2026-04-13T00:15:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "high watch recall and no bid conversion",
+      "slug": "apr06-1300",
+      "start": "2026-04-06T13:00:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "smaller profitable sanity window",
+      "slug": "apr22-0830",
+      "start": "2026-04-22T08:30:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "small-profit sanity window",
+      "slug": "apr05-1030",
+      "start": "2026-04-05T10:30:00Z",
+      "ticks": 48
+    }
+  ],
+  "rolling_selection_rule": "Rank non-overlapping 48-tick April DK1 windows using only prior 24h agent-context price spreads and volatility; no evaluation truth.",
+  "rolling_windows": [
+    {
+      "reason": "pre-registered agent-context score=0.929688",
+      "slug": "roll1-apr27-1730",
+      "start": "2026-04-27T17:30:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "pre-registered agent-context score=0.925000",
+      "slug": "roll2-apr04-0600",
+      "start": "2026-04-04T06:00:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "pre-registered agent-context score=0.920312",
+      "slug": "roll3-apr07-2230",
+      "start": "2026-04-07T22:30:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "pre-registered agent-context score=0.864062",
+      "slug": "roll4-apr19-1915",
+      "start": "2026-04-19T19:15:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "pre-registered agent-context score=0.835938",
+      "slug": "roll5-apr17-1900",
+      "start": "2026-04-17T19:00:00Z",
+      "ticks": 48
+    },
+    {
+      "reason": "pre-registered agent-context score=0.831250",
+      "slug": "roll6-apr28-1900",
+      "start": "2026-04-28T19:00:00Z",
+      "ticks": 48
+    }
+  ],
+  "schema_version": "1.0.0"
+}

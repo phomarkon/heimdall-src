@@ -1,0 +1,2 @@
+ai-society/configs/bigger-societies-20260525/bigsoc-double-rag-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/bigger-societies-20260525/bigsoc-doubleinfo-rag-apr02-0530-seed42-2-q32.yaml

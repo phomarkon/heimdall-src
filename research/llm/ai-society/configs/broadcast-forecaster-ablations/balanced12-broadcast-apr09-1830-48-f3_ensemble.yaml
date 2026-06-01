@@ -1,0 +1,37 @@
+run_id: bfa-balanced12-broadcast-apr09-1830-48-f3_ensemble
+seed: 42
+zone: DK1
+agent_count: 12
+ticks: 48
+start_timestamp: "2026-04-09T18:30:00Z"
+forecaster_backend: f3_ensemble
+forecaster_routing_mode: run_level
+chooser_mode: llm
+verifier_mode: simulator
+verifier_tau_eur: 0.0
+market_context: real
+tool_mode: openai_tools
+objective: bid_seeking
+ablation_strategy: comm_broadcast_digest
+persona_profile: balanced_intelligence
+scenario_id: p2h_dk1_pypsa
+tool_policy: p2h_only_simulator
+max_tool_rounds: 6
+simulator_max_concurrency: 8
+data_start: "2026-04-01T00:00:00Z"
+data_end: "2026-05-01T00:00:00Z"
+context_dataset_dir: data/cache/real_context/april_2026
+data_cache_dir: data/cache/real_context/april_2026/source_cache
+default_lookback_hours: 24
+cache_refresh: false
+output_dir: research/llm/ai-society/runs/broadcast-forecaster-ablations
+llm:
+  enabled: true
+  model: Qwen/Qwen3-32B
+  base_urls:
+    - http://127.0.0.1:8000/v1
+    - http://127.0.0.1:8001/v1
+  temperature: 0.2
+  max_tokens: 512
+  timeout_seconds: 180
+  max_concurrency: 12

@@ -1,0 +1,65 @@
+{
+  "ablation_strategy": "comm_broadcast_digest",
+  "chain_after": {
+    "required_completed": 12,
+    "required_failed": 0,
+    "session": "foa-model-scale",
+    "summary_root": "ai-society/runs/final-option-a-model-scale/logs"
+  },
+  "config_list": "ai-society/configs/follow-on-breadth-matrix/config-list.txt",
+  "forecaster_backend": "f8",
+  "model": "Qwen/Qwen3-32B",
+  "run_count": 8,
+  "run_root": "ai-society/runs/follow-on-breadth-matrix",
+  "runs": [
+    {
+      "config": "ai-society/configs/follow-on-breadth-matrix/ticks24/s06-actioncore/fob-s06-actioncore-bcast-apr06-1300-seed42-q32.yaml",
+      "priority": 1,
+      "run_id": "fob-s06-actioncore-bcast-apr06-1300-seed42-q32",
+      "ticks": 24
+    },
+    {
+      "config": "ai-society/configs/follow-on-breadth-matrix/ticks24/s20-mixed/fob-s20-mixed-bcast-apr06-1300-seed42-q32.yaml",
+      "priority": 1,
+      "run_id": "fob-s20-mixed-bcast-apr06-1300-seed42-q32",
+      "ticks": 24
+    },
+    {
+      "config": "ai-society/configs/follow-on-breadth-matrix/ticks24/s06-actioncore/fob-s06-actioncore-bcast-apr22-0830-seed42-q32.yaml",
+      "priority": 1,
+      "run_id": "fob-s06-actioncore-bcast-apr22-0830-seed42-q32",
+      "ticks": 24
+    },
+    {
+      "config": "ai-society/configs/follow-on-breadth-matrix/ticks24/s20-mixed/fob-s20-mixed-bcast-apr22-0830-seed42-q32.yaml",
+      "priority": 1,
+      "run_id": "fob-s20-mixed-bcast-apr22-0830-seed42-q32",
+      "ticks": 24
+    },
+    {
+      "config": "ai-society/configs/follow-on-breadth-matrix/ticks24/s06-actioncore/fob-s06-actioncore-bcast-apr27-1730-seed42-q32.yaml",
+      "priority": 1,
+      "run_id": "fob-s06-actioncore-bcast-apr27-1730-seed42-q32",
+      "ticks": 24
+    },
+    {
+      "config": "ai-society/configs/follow-on-breadth-matrix/ticks24/s20-mixed/fob-s20-mixed-bcast-apr27-1730-seed42-q32.yaml",
+      "priority": 1,
+      "run_id": "fob-s20-mixed-bcast-apr27-1730-seed42-q32",
+      "ticks": 24
+    },
+    {
+      "config": "ai-society/configs/follow-on-breadth-matrix/ticks96/mixed20-real-controls/fob-mixed20-apr06-96-real-controls-q32.yaml",
+      "priority": 2,
+      "run_id": "fob-mixed20-apr06-96-real-controls-q32",
+      "ticks": 96
+    },
+    {
+      "config": "ai-society/configs/follow-on-breadth-matrix/ticks96/mixed20-real-controls/fob-mixed20-apr07-96-real-controls-q32.yaml",
+      "priority": 2,
+      "run_id": "fob-mixed20-apr07-96-real-controls-q32",
+      "ticks": 96
+    }
+  ],
+  "seed": 42
+}

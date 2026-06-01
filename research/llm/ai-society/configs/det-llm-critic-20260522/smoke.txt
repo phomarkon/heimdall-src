@@ -1,0 +1,3 @@
+ai-society/configs/det-llm-critic-20260522/smoke/s06-actioncore/smoke-dlc-s06-actioncore-critic-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/det-llm-critic-20260522/smoke/s06-actioncore/smoke-dlc-s06-actioncore-critic-apr09-1830-seed42-2-q32.yaml
+ai-society/configs/det-llm-critic-20260522/smoke/s06-actioncore/smoke-dlc-s06-actioncore-critic-apr13-0015-seed42-2-q32.yaml

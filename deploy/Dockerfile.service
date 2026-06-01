@@ -1,0 +1,26 @@
+# Shared base image for all FastAPI services in apps/.
+# Build args:
+#   SERVICE=verifier|forecaster|agent-runner|market-simulator|focal-orchestrator
+#   MODULE=heimdall_verifier|heimdall_forecaster|...
+# Example:
+#   docker build -f deploy/Dockerfile.service \
+#     --build-arg SERVICE=verifier --build-arg MODULE=heimdall_verifier \
+#     -t heimdall/verifier:dev .
+
+FROM python:3.12-slim AS base
+ENV PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PYTHONDONTWRITEBYTECODE=1
+RUN pip install --no-cache-dir uv
+
+WORKDIR /app
+COPY pyproject.toml uv.lock* ./
+COPY packages/ packages/
+COPY app/ app/
+RUN uv sync --frozen --no-dev || uv sync --no-dev
+
+ARG MODULE=heimdall_verifier
+ENV HEIMDALL_MODULE=${MODULE}
+
+EXPOSE 8000
+CMD ["sh", "-c", "uv run uvicorn ${HEIMDALL_MODULE}.service:app --host 0.0.0.0 --port 8000"]

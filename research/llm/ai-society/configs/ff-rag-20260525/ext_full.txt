@@ -1,0 +1,15 @@
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-det-apr13-0015-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-cp12-norag-apr13-0015-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-cp12-rag-apr13-0015-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-det-apr17-1900-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-cp12-norag-apr17-1900-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-cp12-rag-apr17-1900-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-det-apr28-1900-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-cp12-norag-apr28-1900-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-cp12-rag-apr28-1900-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-det-mar11-0000-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-cp12-norag-mar11-0000-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-cp12-rag-mar11-0000-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-det-mar24-1915-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-cp12-norag-mar24-1915-seed42-24-q32.yaml
+ai-society/configs/ff-rag-20260525/ff-rag-20260525-ext-cp12-rag-mar24-1915-seed42-24-q32.yaml

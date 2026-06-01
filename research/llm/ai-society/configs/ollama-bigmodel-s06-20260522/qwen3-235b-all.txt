@@ -1,0 +1,3 @@
+ai-society/configs/ollama-bigmodel-s06-20260522/full/qwen3-235b/obm-s06-actioncore-qwen3-235b-guarded-apr02-0530-seed42-24.yaml
+ai-society/configs/ollama-bigmodel-s06-20260522/full/qwen3-235b/obm-s06-actioncore-qwen3-235b-guarded-apr09-1830-seed42-24.yaml
+ai-society/configs/ollama-bigmodel-s06-20260522/full/qwen3-235b/obm-s06-actioncore-qwen3-235b-guarded-apr13-0015-seed42-24.yaml

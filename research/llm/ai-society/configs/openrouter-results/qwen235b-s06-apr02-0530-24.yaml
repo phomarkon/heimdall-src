@@ -1,0 +1,40 @@
+run_id: or-s06-actioncore-qwen235b-a22b-apr02-0530-seed42-24
+seed: 42
+forecaster_seed: 42
+zone: DK1
+agent_count: 6
+ticks: 24
+start_timestamp: "2026-04-02T05:30:00Z"
+forecaster_backend: f8
+forecaster_routing_mode: persona
+chooser_mode: llm
+verifier_mode: simulator
+market_context: real
+context_dataset_dir: data/cache/real_context/april_2026
+cache_refresh: false
+tool_mode: json_response
+preprobe_mode: full
+objective: bid_seeking
+final_bid_guard: simulator_exact_match
+safety_toolset: full
+ablation_strategy: comm_broadcast_digest_priority_calibration
+persona_profile: action_core_8
+tool_policy: asset_simulator_v1
+asset_simulator_mode: scenario_envelope
+candidate_sizing_mode: large
+candidate_sizing_max_candidates: 8
+candidate_sizing_min_mwh: 0.25
+candidate_sizing_cap_fraction: 1.0
+output_dir: research/llm/ai-society/runs/openrouter-results
+llm:
+  enabled: true
+  provider: openrouter
+  model: qwen/qwen3-235b-a22b-2507
+  temperature: 0.2
+  max_tokens: 1000
+  timeout_seconds: 600
+  max_concurrency: 2
+  per_endpoint_max_concurrency: 2
+  require_served_model_match: false
+  supports_response_format: true
+  supports_tools: true

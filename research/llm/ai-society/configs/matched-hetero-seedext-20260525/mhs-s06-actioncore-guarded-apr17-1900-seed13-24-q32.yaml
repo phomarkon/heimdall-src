@@ -1,0 +1,53 @@
+run_id: mhs-s06-actioncore-guarded-apr17-1900-seed13-24-q32
+seed: 13
+forecaster_seed: 13
+zone: DK1
+agent_count: 6
+ticks: 24
+start_timestamp: '2026-04-17T19:00:00Z'
+forecaster_backend: f8
+forecaster_routing_mode: persona
+chooser_mode: llm
+verifier_mode: simulator
+verifier_tau_eur: 0.0
+market_context: real
+tool_mode: openai_tools
+preprobe_mode: full
+objective: bid_seeking
+final_bid_guard: simulator_exact_match
+safety_toolset: full
+ablation_strategy: comm_broadcast_digest_priority_calibration
+persona_profile: action_core_8
+scenario_id: p2h_dk1_pypsa
+tool_policy: asset_simulator_v1
+asset_simulator_mode: scenario_envelope
+asset_proxy_style: market
+candidate_sizing_mode: medium
+candidate_sizing_cap_fraction: 1.0
+candidate_sizing_min_mwh: 0.25
+candidate_sizing_max_candidates: 8
+max_tool_rounds: 6
+simulator_max_concurrency: 12
+data_start: '2026-04-01T00:00:00Z'
+data_end: '2026-05-01T00:00:00Z'
+context_dataset_dir: data/cache/real_context/april_2026
+data_cache_dir: data/cache/real_context/april_2026/source_cache
+default_lookback_hours: 24
+cache_refresh: false
+output_dir: research/llm/ai-society/runs/matched-hetero-seedext-20260525
+memory_enabled: false
+reviewer_mode: code_only
+llm:
+  enabled: true
+  base_urls:
+  - http://127.0.0.1:8000/v1
+  - http://127.0.0.1:8001/v1
+  - http://127.0.0.1:8002/v1
+  - http://127.0.0.1:8003/v1
+  api_key: heimdall-local
+  model: Qwen/Qwen3-32B
+  temperature: 0.2
+  max_tokens: 640
+  timeout_seconds: 180
+  max_concurrency: 24
+  per_endpoint_max_concurrency: 6

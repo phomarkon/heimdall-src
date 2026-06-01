@@ -1,0 +1,13 @@
+apiVersion: v2
+name: heimdall
+description: |
+  Heimdall — verifier-guarded LLM-agent society for the Nordic 15-min mFRR
+  balancing market.  Per docs/RESEARCH-PROPOSAL.md §6.7.  Single umbrella chart
+  with sub-charts for each long-running service; CI uses `helm lint` and
+  `helm template` against this directory in PR.
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+maintainers:
+  - name: Phongsakon Konrad
+  - name: Tim Lukas Adam

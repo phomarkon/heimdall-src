@@ -1,0 +1,115 @@
+{
+  "ablation_strategy": "comm_broadcast_digest",
+  "config_list": "ai-society/configs/final-completion-matrix/config-list.txt",
+  "forecaster_backend": "f8",
+  "known_existing_inputs_not_duplicated": [
+    "oba-s06-actioncore-bcast-*-seed42-q14",
+    "oba-s12-balanced-bcast-*-seed42-q14",
+    "foa/fob/oba q32 seed42 cells",
+    "lmsm-s06-actioncore-bcast-apr02-0530-seed{13,42,137}-q8"
+  ],
+  "models": {
+    "q14": "Qwen/Qwen3-14B",
+    "q32": "Qwen/Qwen3-32B"
+  },
+  "run_count": 16,
+  "run_root": "ai-society/runs/final-completion-matrix",
+  "runs": [
+    {
+      "config": "ai-society/configs/final-completion-matrix/seed_robustness/s12-balanced/q32/fcm-s12-balanced-bcast-apr09-1830-seed13-q32.yaml",
+      "model_slug": "q32",
+      "purpose": "seed_robustness",
+      "run_id": "fcm-s12-balanced-bcast-apr09-1830-seed13-q32"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/seed_robustness/s12-balanced/q32/fcm-s12-balanced-bcast-apr13-0015-seed13-q32.yaml",
+      "model_slug": "q32",
+      "purpose": "seed_robustness",
+      "run_id": "fcm-s12-balanced-bcast-apr13-0015-seed13-q32"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/seed_robustness/s12-balanced/q32/fcm-s12-balanced-bcast-apr09-1830-seed137-q32.yaml",
+      "model_slug": "q32",
+      "purpose": "seed_robustness",
+      "run_id": "fcm-s12-balanced-bcast-apr09-1830-seed137-q32"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/seed_robustness/s12-balanced/q32/fcm-s12-balanced-bcast-apr13-0015-seed137-q32.yaml",
+      "model_slug": "q32",
+      "purpose": "seed_robustness",
+      "run_id": "fcm-s12-balanced-bcast-apr13-0015-seed137-q32"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/seed_robustness/s06-actioncore/q32/fcm-s06-actioncore-bcast-apr09-1830-seed13-q32.yaml",
+      "model_slug": "q32",
+      "purpose": "seed_robustness",
+      "run_id": "fcm-s06-actioncore-bcast-apr09-1830-seed13-q32"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/seed_robustness/s06-actioncore/q32/fcm-s06-actioncore-bcast-apr13-0015-seed13-q32.yaml",
+      "model_slug": "q32",
+      "purpose": "seed_robustness",
+      "run_id": "fcm-s06-actioncore-bcast-apr13-0015-seed13-q32"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/seed_robustness/s06-actioncore/q32/fcm-s06-actioncore-bcast-apr09-1830-seed137-q32.yaml",
+      "model_slug": "q32",
+      "purpose": "seed_robustness",
+      "run_id": "fcm-s06-actioncore-bcast-apr09-1830-seed137-q32"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/seed_robustness/s06-actioncore/q32/fcm-s06-actioncore-bcast-apr13-0015-seed137-q32.yaml",
+      "model_slug": "q32",
+      "purpose": "seed_robustness",
+      "run_id": "fcm-s06-actioncore-bcast-apr13-0015-seed137-q32"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/q14_core_fill/s20-mixed/q14/fcm-s20-mixed-bcast-apr02-0530-seed42-q14.yaml",
+      "model_slug": "q14",
+      "purpose": "q14_core_fill",
+      "run_id": "fcm-s20-mixed-bcast-apr02-0530-seed42-q14"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/q14_core_fill/s20-mixed/q14/fcm-s20-mixed-bcast-apr09-1830-seed42-q14.yaml",
+      "model_slug": "q14",
+      "purpose": "q14_core_fill",
+      "run_id": "fcm-s20-mixed-bcast-apr09-1830-seed42-q14"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/q14_breadth_fill/s06-actioncore/q14/fcm-s06-actioncore-bcast-apr06-1300-seed42-q14.yaml",
+      "model_slug": "q14",
+      "purpose": "q14_breadth_fill",
+      "run_id": "fcm-s06-actioncore-bcast-apr06-1300-seed42-q14"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/q14_breadth_fill/s06-actioncore/q14/fcm-s06-actioncore-bcast-apr22-0830-seed42-q14.yaml",
+      "model_slug": "q14",
+      "purpose": "q14_breadth_fill",
+      "run_id": "fcm-s06-actioncore-bcast-apr22-0830-seed42-q14"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/q14_breadth_fill/s06-actioncore/q14/fcm-s06-actioncore-bcast-apr27-1730-seed42-q14.yaml",
+      "model_slug": "q14",
+      "purpose": "q14_breadth_fill",
+      "run_id": "fcm-s06-actioncore-bcast-apr27-1730-seed42-q14"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/q14_breadth_fill/s20-mixed/q14/fcm-s20-mixed-bcast-apr06-1300-seed42-q14.yaml",
+      "model_slug": "q14",
+      "purpose": "q14_breadth_fill",
+      "run_id": "fcm-s20-mixed-bcast-apr06-1300-seed42-q14"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/q14_breadth_fill/s20-mixed/q14/fcm-s20-mixed-bcast-apr22-0830-seed42-q14.yaml",
+      "model_slug": "q14",
+      "purpose": "q14_breadth_fill",
+      "run_id": "fcm-s20-mixed-bcast-apr22-0830-seed42-q14"
+    },
+    {
+      "config": "ai-society/configs/final-completion-matrix/q14_breadth_fill/s20-mixed/q14/fcm-s20-mixed-bcast-apr27-1730-seed42-q14.yaml",
+      "model_slug": "q14",
+      "purpose": "q14_breadth_fill",
+      "run_id": "fcm-s20-mixed-bcast-apr27-1730-seed42-q14"
+    }
+  ]
+}

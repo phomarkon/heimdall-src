@@ -1,0 +1,8 @@
+ai-society/configs/adaptive-thesis-matrix/atm-5-bcast-apr02-1200-f8-q32.yaml
+ai-society/configs/adaptive-thesis-matrix/atm-8-bcast-apr02-1200-f8-q32.yaml
+ai-society/configs/adaptive-thesis-matrix/atm-12-bcast-mem-apr02-1200-f8-q32.yaml
+ai-society/configs/adaptive-thesis-matrix/atm-8-peer-mem-apr02-1200-f8-q32.yaml
+ai-society/configs/adaptive-thesis-matrix/atm-5-bcast-apr09-1830-f8-q32.yaml
+ai-society/configs/adaptive-thesis-matrix/atm-8-bcast-apr09-1830-f8-q32.yaml
+ai-society/configs/adaptive-thesis-matrix/atm-12-bcast-mem-apr09-1830-f8-q32.yaml
+ai-society/configs/adaptive-thesis-matrix/atm-8-peer-mem-apr09-1830-f8-q32.yaml

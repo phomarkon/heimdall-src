@@ -1,0 +1,22 @@
+{
+  "name": "b2_stochastic_lp",
+  "seed": 1729,
+  "n_ticks": 5472,
+  "total_profit_dkk": 222789.7628,
+  "total_profit_eur": 29864.5795,
+  "profit_per_mwh_dkk": 133.2793,
+  "profit_per_mwh_eur": 17.8659,
+  "sharpe": 267.5905,
+  "cvar5_daily_dkk": 0.0,
+  "cvar5_daily_eur": 0.0,
+  "participation_rate": 0.9017,
+  "physical_violation_rate": 0.0,
+  "runtime_seconds": 0.26,
+  "extras": {
+    "energy_delivered_mwh": 1671.6012,
+    "ticks_with_bid": 4934,
+    "heat_unmet_tick_rate": 0.0969,
+    "bid_attempts": 4934,
+    "bid_violations": 0
+  }
+}

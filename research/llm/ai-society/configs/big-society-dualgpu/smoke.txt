@@ -1,0 +1,3 @@
+ai-society/configs/big-society-dualgpu/smoke-single-balanced-2.yaml
+ai-society/configs/big-society-dualgpu/smoke-dual-balanced-2.yaml
+ai-society/configs/big-society-dualgpu/smoke-dual-action-info-2.yaml

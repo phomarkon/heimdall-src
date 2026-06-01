@@ -1,0 +1,30 @@
+# Real April cached-data smoke: requires data/cache/real_context/april_2026.
+run_id: p2h-april-smoke-5
+seed: 42
+zone: DK1
+agent_count: 5
+archetype_cycle:
+  - p2h
+ticks: 4
+start_timestamp: "2026-04-02T12:00:00Z"
+forecaster_backend: f0
+verifier_mode: simulator
+market_context: real
+tool_mode: openai_tools
+objective: worth_bidding
+scenario_id: p2h_dk1_pypsa
+tool_policy: p2h_only_simulator
+max_tool_rounds: 4
+data_start: "2026-04-01T00:00:00Z"
+data_end: "2026-05-01T00:00:00Z"
+context_dataset_dir: data/cache/real_context/april_2026
+data_cache_dir: data/cache/real_context/april_2026/source_cache
+default_lookback_hours: 24
+cache_refresh: false
+output_dir: research/llm/ai-society/runs
+llm:
+  enabled: true
+  temperature: 0.2
+  max_tokens: 700
+  timeout_seconds: 180
+  max_concurrency: 4

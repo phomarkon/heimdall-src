@@ -1,0 +1,5 @@
+# test + build artifacts (the committed fixtures under src/test-fixtures are kept)
+/coverage
+/playwright-report
+/test-results
+/.next

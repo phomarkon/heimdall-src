@@ -1,0 +1,66 @@
+{
+  "chooser_mode": "deterministic_best_accepted",
+  "communication_arm": {
+    "slug": "bcast",
+    "strategy": "comm_broadcast_digest"
+  },
+  "configs": [
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s06-actioncore/oba-det-s06-actioncore-bcast-apr02-0530-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s06-actioncore/oba-det-s06-actioncore-bcast-apr03-1430-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s06-actioncore/oba-det-s06-actioncore-bcast-apr05-1030-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s06-actioncore/oba-det-s06-actioncore-bcast-apr09-1830-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s06-actioncore/oba-det-s06-actioncore-bcast-apr13-0015-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s12-balanced/oba-det-s12-balanced-bcast-apr02-0530-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s12-balanced/oba-det-s12-balanced-bcast-apr03-1430-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s12-balanced/oba-det-s12-balanced-bcast-apr05-1030-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s12-balanced/oba-det-s12-balanced-bcast-apr09-1830-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s12-balanced/oba-det-s12-balanced-bcast-apr13-0015-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s20-mixed/oba-det-s20-mixed-bcast-apr02-0530-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s20-mixed/oba-det-s20-mixed-bcast-apr03-1430-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s20-mixed/oba-det-s20-mixed-bcast-apr05-1030-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s20-mixed/oba-det-s20-mixed-bcast-apr09-1830-seed42.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/deterministic-baselines/s20-mixed/oba-det-s20-mixed-bcast-apr13-0015-seed42.yaml"
+  ],
+  "run_count": 15,
+  "seed": 42,
+  "societies": [
+    {
+      "agent_count": 6,
+      "profile": "action_core_8",
+      "slug": "s06-actioncore"
+    },
+    {
+      "agent_count": 12,
+      "profile": "balanced_intelligence",
+      "slug": "s12-balanced"
+    },
+    {
+      "agent_count": 20,
+      "profile": "mixed_expert_20_sideaware",
+      "slug": "s20-mixed"
+    }
+  ],
+  "ticks": 24,
+  "windows": [
+    [
+      "apr02-0530",
+      "2026-04-02T05:30:00Z"
+    ],
+    [
+      "apr03-1430",
+      "2026-04-03T14:30:00Z"
+    ],
+    [
+      "apr05-1030",
+      "2026-04-05T10:30:00Z"
+    ],
+    [
+      "apr09-1830",
+      "2026-04-09T18:30:00Z"
+    ],
+    [
+      "apr13-0015",
+      "2026-04-13T00:15:00Z"
+    ]
+  ]
+}

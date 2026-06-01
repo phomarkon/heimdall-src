@@ -1,0 +1,1 @@
+ai-society/configs/ollama-bigmodel-s06-20260522/smoke/qwen3-235b/smoke-obm-s06-actioncore-qwen3-235b-guarded-apr02-0530-seed42-2.yaml

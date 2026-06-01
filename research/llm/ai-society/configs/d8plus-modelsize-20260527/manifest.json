@@ -1,0 +1,57 @@
+{
+  "ablation_strategy": "comm_broadcast_digest",
+  "forecaster_backend": "f8",
+  "models": {
+    "q1.7": "Qwen/Qwen3-1.7B",
+    "q14": "Qwen/Qwen3-14B",
+    "q32": "Qwen/Qwen3-32B",
+    "q72": "Qwen/Qwen2.5-72B-Instruct",
+    "q8": "Qwen/Qwen3-8B"
+  },
+  "overlaps_to_skip_by_existing_summary": [
+    "lmsm-s06-actioncore-bcast-apr02-0530-seed13-q8 -- existing as lmsm-*",
+    "lmsm-s06-actioncore-bcast-apr02-0530-seed137-q8 -- existing as lmsm-*"
+  ],
+  "run_count": 66,
+  "runs_by_model": {
+    "q1.7": 18,
+    "q14": 12,
+    "q32": 12,
+    "q72": 12,
+    "q8": 12
+  },
+  "seeds_by_model": {
+    "q1.7": [
+      42,
+      13,
+      137
+    ],
+    "q14": [
+      13,
+      137
+    ],
+    "q32": [
+      13,
+      137
+    ],
+    "q72": [
+      13,
+      137
+    ],
+    "q8": [
+      13,
+      137
+    ]
+  },
+  "smoke_count": 1,
+  "societies": [
+    "s06-actioncore",
+    "s12-balanced"
+  ],
+  "ticks": 24,
+  "windows": [
+    "apr02-0530",
+    "apr09-1830",
+    "apr13-0015"
+  ]
+}

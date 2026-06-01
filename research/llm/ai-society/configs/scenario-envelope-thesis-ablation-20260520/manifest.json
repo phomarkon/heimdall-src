@@ -1,0 +1,407 @@
+{
+  "asset_simulator_mode": "scenario_envelope",
+  "breadth_windows": {
+    "apr06-1300": "2026-04-06T13:00:00Z",
+    "apr22-0830": "2026-04-22T08:30:00Z",
+    "apr27-1730": "2026-04-27T17:30:00Z"
+  },
+  "candidate_sizing_mode": "large",
+  "chain_after": {
+    "matrix": "scenario-envelope-breadth-20260520",
+    "required_completed": 26,
+    "required_failed": 0
+  },
+  "config_list": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/all.txt",
+  "core_windows": {
+    "apr02-0530": "2026-04-02T05:30:00Z",
+    "apr09-1830": "2026-04-09T18:30:00Z",
+    "apr13-0015": "2026-04-13T00:15:00Z"
+  },
+  "default_seed": 42,
+  "full_run_count": 30,
+  "full_runs": [
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s06-actioncore/seta-s06-actioncore-scenario-large-apr02-0530-seed42-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr02-0530-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 12,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s12-balanced/seta-s12-balanced-scenario-large-apr02-0530-seed42-24-q32.yaml",
+      "persona_profile": "balanced_intelligence",
+      "run_id": "seta-s12-balanced-scenario-large-apr02-0530-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s20-mixed/seta-s20-mixed-scenario-large-apr02-0530-seed42-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr02-0530-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s06-actioncore/seta-s06-actioncore-scenario-large-apr09-1830-seed42-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr09-1830-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 12,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s12-balanced/seta-s12-balanced-scenario-large-apr09-1830-seed42-24-q32.yaml",
+      "persona_profile": "balanced_intelligence",
+      "run_id": "seta-s12-balanced-scenario-large-apr09-1830-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s20-mixed/seta-s20-mixed-scenario-large-apr09-1830-seed42-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr09-1830-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s06-actioncore/seta-s06-actioncore-scenario-large-apr13-0015-seed42-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr13-0015-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 12,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s12-balanced/seta-s12-balanced-scenario-large-apr13-0015-seed42-24-q32.yaml",
+      "persona_profile": "balanced_intelligence",
+      "run_id": "seta-s12-balanced-scenario-large-apr13-0015-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s20-mixed/seta-s20-mixed-scenario-large-apr13-0015-seed42-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr13-0015-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s06-actioncore/seta-s06-actioncore-scenario-large-apr06-1300-seed42-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr06-1300-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-06T13:00:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 12,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s12-balanced/seta-s12-balanced-scenario-large-apr06-1300-seed42-24-q32.yaml",
+      "persona_profile": "balanced_intelligence",
+      "run_id": "seta-s12-balanced-scenario-large-apr06-1300-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-06T13:00:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s20-mixed/seta-s20-mixed-scenario-large-apr06-1300-seed42-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr06-1300-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-06T13:00:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s06-actioncore/seta-s06-actioncore-scenario-large-apr22-0830-seed42-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr22-0830-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-22T08:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 12,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s12-balanced/seta-s12-balanced-scenario-large-apr22-0830-seed42-24-q32.yaml",
+      "persona_profile": "balanced_intelligence",
+      "run_id": "seta-s12-balanced-scenario-large-apr22-0830-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-22T08:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s20-mixed/seta-s20-mixed-scenario-large-apr22-0830-seed42-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr22-0830-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-22T08:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s06-actioncore/seta-s06-actioncore-scenario-large-apr27-1730-seed42-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr27-1730-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-27T17:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 12,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s12-balanced/seta-s12-balanced-scenario-large-apr27-1730-seed42-24-q32.yaml",
+      "persona_profile": "balanced_intelligence",
+      "run_id": "seta-s12-balanced-scenario-large-apr27-1730-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-27T17:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/breadth/s20-mixed/seta-s20-mixed-scenario-large-apr27-1730-seed42-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr27-1730-seed42-24-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-27T17:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s06-actioncore/seta-s06-actioncore-scenario-large-apr02-0530-seed13-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr02-0530-seed13-24-q32",
+      "seed": 13,
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s06-actioncore/seta-s06-actioncore-scenario-large-apr02-0530-seed137-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr02-0530-seed137-24-q32",
+      "seed": 137,
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s20-mixed/seta-s20-mixed-scenario-large-apr02-0530-seed13-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr02-0530-seed13-24-q32",
+      "seed": 13,
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s20-mixed/seta-s20-mixed-scenario-large-apr02-0530-seed137-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr02-0530-seed137-24-q32",
+      "seed": 137,
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s06-actioncore/seta-s06-actioncore-scenario-large-apr09-1830-seed13-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr09-1830-seed13-24-q32",
+      "seed": 13,
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s06-actioncore/seta-s06-actioncore-scenario-large-apr09-1830-seed137-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr09-1830-seed137-24-q32",
+      "seed": 137,
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s20-mixed/seta-s20-mixed-scenario-large-apr09-1830-seed13-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr09-1830-seed13-24-q32",
+      "seed": 13,
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s20-mixed/seta-s20-mixed-scenario-large-apr09-1830-seed137-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr09-1830-seed137-24-q32",
+      "seed": 137,
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s06-actioncore/seta-s06-actioncore-scenario-large-apr13-0015-seed13-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr13-0015-seed13-24-q32",
+      "seed": 13,
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s06-actioncore/seta-s06-actioncore-scenario-large-apr13-0015-seed137-24-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "seta-s06-actioncore-scenario-large-apr13-0015-seed137-24-q32",
+      "seed": 137,
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s20-mixed/seta-s20-mixed-scenario-large-apr13-0015-seed13-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr13-0015-seed13-24-q32",
+      "seed": 13,
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 24
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/full/seed-robustness/s20-mixed/seta-s20-mixed-scenario-large-apr13-0015-seed137-24-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "seta-s20-mixed-scenario-large-apr13-0015-seed137-24-q32",
+      "seed": 137,
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 24
+    }
+  ],
+  "generated_at": "2026-05-20",
+  "matrix": "scenario-envelope-thesis-ablation-20260520",
+  "robustness_seeds": [
+    13,
+    137
+  ],
+  "run_root": "ai-society/runs/scenario-envelope-thesis-ablation-20260520",
+  "smoke_list": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/smoke.txt",
+  "smoke_run_count": 2,
+  "smoke_runs": [
+    {
+      "agent_count": 6,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/smoke/s06-actioncore/smoke-seta-s06-actioncore-scenario-large-apr02-0530-seed42-2-q32.yaml",
+      "persona_profile": "action_core_8",
+      "run_id": "smoke-seta-s06-actioncore-scenario-large-apr02-0530-seed42-2-q32",
+      "seed": 42,
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 2
+    },
+    {
+      "agent_count": 20,
+      "asset_simulator_mode": "scenario_envelope",
+      "candidate_sizing_mode": "large",
+      "config": "ai-society/configs/scenario-envelope-thesis-ablation-20260520/smoke/s20-mixed/smoke-seta-s20-mixed-scenario-large-apr02-0530-seed13-2-q32.yaml",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_id": "smoke-seta-s20-mixed-scenario-large-apr02-0530-seed13-2-q32",
+      "seed": 13,
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 2
+    }
+  ],
+  "societies": {
+    "s06-actioncore": {
+      "agent_count": 6,
+      "max_concurrency": 8,
+      "per_endpoint_max_concurrency": 4,
+      "persona_profile": "action_core_8"
+    },
+    "s12-balanced": {
+      "agent_count": 12,
+      "max_concurrency": 12,
+      "per_endpoint_max_concurrency": 6,
+      "persona_profile": "balanced_intelligence"
+    },
+    "s20-mixed": {
+      "agent_count": 20,
+      "max_concurrency": 16,
+      "per_endpoint_max_concurrency": 8,
+      "persona_profile": "mixed_expert_20_sideaware"
+    }
+  }
+}

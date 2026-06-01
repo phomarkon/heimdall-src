@@ -1,0 +1,67 @@
+# Tim-side persistence stack: PostgreSQL + run-view replay API.
+#
+# run-view serves the catalogue and per-run replay payloads to the frontend.
+# It runs in a hybrid persistence mode:
+#   - the run catalogue and per-run replay are read from the on-disk traces
+#     (ai-society/runs/**/traces.jsonl), memoised by a signature cache;
+#   - PostgreSQL persists the operator-authored artefacts that have no on-disk
+#     home: custom agent templates (agent_templates) and saved society specs
+#     (society_specs), written from the dashboard's Config view.
+#
+# Usage:
+#   docker compose -f deploy/docker-compose.run-view.yml up --build
+#
+# As with the vLLM stack, on a container-less host (e.g. the UCloud instance)
+# the same processes are launched natively; this file mirrors the launch for
+# portability. Native equivalent:
+#   pg_ctlcluster 16 main start
+#   HEIMDALL_RUN_VIEW_DATABASE_URL=postgresql://heimdall:heimdall@127.0.0.1:5432/heimdall \
+#     uv run heimdall-run-view init-db
+#   HEIMDALL_RUN_VIEW_DATABASE_URL=... uv run uvicorn heimdall_run_view.service:app \
+#     --host 127.0.0.1 --port 8091
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: heimdall-postgres
+    environment:
+      POSTGRES_USER: ${HEIMDALL_PG_USER:-heimdall}
+      POSTGRES_PASSWORD: ${HEIMDALL_PG_PASSWORD:-heimdall}
+      POSTGRES_DB: ${HEIMDALL_PG_DB:-heimdall}
+    ports: ["5432:5432"]
+    volumes:
+      - heimdall-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${HEIMDALL_PG_USER:-heimdall} -d ${HEIMDALL_PG_DB:-heimdall}"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+
+  run_view:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.service
+      args: { MODULE: heimdall_run_view }
+    image: heimdall/run-view:dev
+    container_name: heimdall-run-view
+    environment:
+      # Hybrid mode: Postgres holds society specs + agent templates; runs stay on disk.
+      HEIMDALL_RUN_VIEW_DATABASE_URL: postgresql://${HEIMDALL_PG_USER:-heimdall}:${HEIMDALL_PG_PASSWORD:-heimdall}@postgres:5432/${HEIMDALL_PG_DB:-heimdall}
+      HEIMDALL_RUN_VIEW_ROOT: /repo
+    ports: ["8091:8000"]
+    volumes:
+      # Run data is read-only; the catalogue signature cache falls back to in-memory
+      # when the mount is read-only (handled in RunCatalog._write_cache_file).
+      - ../research/llm/ai-society/runs:/repo/research/llm/ai-society/runs:ro
+      - ../research/llm/evaluations:/repo/research/llm/evaluations:ro
+      - ../research/notes:/repo/research/notes:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command:
+      - sh
+      - -c
+      - heimdall-run-view init-db && uvicorn heimdall_run_view.service:app --host 0.0.0.0 --port 8000
+
+volumes:
+  heimdall-pgdata:

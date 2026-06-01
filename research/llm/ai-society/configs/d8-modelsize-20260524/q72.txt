@@ -1,0 +1,9 @@
+ai-society/configs/d8-modelsize-20260524/full/d8-q72-apr02-0530-seed42-24-q.yaml
+ai-society/configs/d8-modelsize-20260524/full/d8-q72-apr09-1830-seed42-24-q.yaml
+ai-society/configs/d8-modelsize-20260524/full/d8-q72-apr13-0700-seed42-24-q.yaml
+ai-society/configs/d8-modelsize-20260524/full/d8-q72-apr02-0530-seed13-24-q.yaml
+ai-society/configs/d8-modelsize-20260524/full/d8-q72-apr09-1830-seed13-24-q.yaml
+ai-society/configs/d8-modelsize-20260524/full/d8-q72-apr13-0700-seed13-24-q.yaml
+ai-society/configs/d8-modelsize-20260524/full/d8-q72-apr02-0530-seed137-24-q.yaml
+ai-society/configs/d8-modelsize-20260524/full/d8-q72-apr09-1830-seed137-24-q.yaml
+ai-society/configs/d8-modelsize-20260524/full/d8-q72-apr13-0700-seed137-24-q.yaml

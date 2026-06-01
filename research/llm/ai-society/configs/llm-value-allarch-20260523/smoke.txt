@@ -1,0 +1,2 @@
+ai-society/configs/llm-value-allarch-20260523/smoke/cp12/smoke-lva-cp12-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/llm-value-allarch-20260523/smoke/cp13/smoke-lva-cp13-apr02-0530-seed42-2-q32.yaml

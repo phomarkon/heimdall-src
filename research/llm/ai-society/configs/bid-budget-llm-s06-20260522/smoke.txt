@@ -1,0 +1,4 @@
+ai-society/configs/bid-budget-llm-s06-20260522/smoke/budget4-llm-fill-selector/smoke-bbl-s06-actioncore-budget4-llm-fill-selector-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/bid-budget-llm-s06-20260522/smoke/budget6-llm-fill-selector/smoke-bbl-s06-actioncore-budget6-llm-fill-selector-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/bid-budget-llm-s06-20260522/smoke/budget4-llm-fill-selector/smoke-bbl-s06-actioncore-budget4-llm-fill-selector-memory-v2-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/bid-budget-llm-s06-20260522/smoke/budget4-llm-baseline-guarded/smoke-bbl-s06-actioncore-budget4-llm-baseline-guarded-apr02-0530-seed42-2-q32.yaml

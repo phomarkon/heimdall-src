@@ -1,0 +1,1794 @@
+[
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99473246182725,
+    "pi_min_median": 249.9999853032969,
+    "pi_min_p90": 250.00498967573736
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99473246182725,
+    "pi_min_median": 249.9999853032969,
+    "pi_min_p90": 250.00498967573736
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99473246182725,
+    "pi_min_median": 249.9999853032969,
+    "pi_min_p90": 250.00498967573736
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.498,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 502
+    },
+    "pi_min_p10": 249.99473246182725,
+    "pi_min_median": 249.9999853032969,
+    "pi_min_p90": 250.00498967573736
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99473246182725,
+    "pi_min_median": 249.9999853032969,
+    "pi_min_p90": 250.00498967573736
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99473246182725,
+    "pi_min_median": 249.9999853032969,
+    "pi_min_p90": 250.00498967573736
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99508954558743,
+    "pi_min_median": 250.00029084886813,
+    "pi_min_p90": 250.00514932388512
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99508954558743,
+    "pi_min_median": 250.00029084886813,
+    "pi_min_p90": 250.00514932388512
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99508954558743,
+    "pi_min_median": 250.00029084886813,
+    "pi_min_p90": 250.00514932388512
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.527,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 473
+    },
+    "pi_min_p10": 249.99508954558743,
+    "pi_min_median": 250.00029084886813,
+    "pi_min_p90": 250.00514932388512
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99508954558743,
+    "pi_min_median": 250.00029084886813,
+    "pi_min_p90": 250.00514932388512
+  },
+  {
+    "alpha": 0.01,
+    "policy": "aggressive_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99508954558743,
+    "pi_min_median": 250.00029084886813,
+    "pi_min_p90": 250.00514932388512
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "marginal_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.01,
+    "policy": "out_of_money_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99507885720308,
+    "pi_min_median": 250.00020423228207,
+    "pi_min_p90": 250.00498799812863
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99507885720308,
+    "pi_min_median": 250.00020423228207,
+    "pi_min_p90": 250.00498799812863
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99507885720308,
+    "pi_min_median": 250.00020423228207,
+    "pi_min_p90": 250.00498799812863
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.514,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 486
+    },
+    "pi_min_p10": 249.99507885720308,
+    "pi_min_median": 250.00020423228207,
+    "pi_min_p90": 250.00498799812863
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99507885720308,
+    "pi_min_median": 250.00020423228207,
+    "pi_min_p90": 250.00498799812863
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99507885720308,
+    "pi_min_median": 250.00020423228207,
+    "pi_min_p90": 250.00498799812863
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99511595609565,
+    "pi_min_median": 250.0000979136289,
+    "pi_min_p90": 250.00499056733668
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99511595609565,
+    "pi_min_median": 250.0000979136289,
+    "pi_min_p90": 250.00499056733668
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99511595609565,
+    "pi_min_median": 250.0000979136289,
+    "pi_min_p90": 250.00499056733668
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.507,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 493
+    },
+    "pi_min_p10": 249.99511595609565,
+    "pi_min_median": 250.0000979136289,
+    "pi_min_p90": 250.00499056733668
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99511595609565,
+    "pi_min_median": 250.0000979136289,
+    "pi_min_p90": 250.00499056733668
+  },
+  {
+    "alpha": 0.05,
+    "policy": "aggressive_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99511595609565,
+    "pi_min_median": 250.0000979136289,
+    "pi_min_p90": 250.00499056733668
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "marginal_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.05,
+    "policy": "out_of_money_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99515054532006,
+    "pi_min_median": 249.999854167838,
+    "pi_min_p90": 250.00495446726916
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99515054532006,
+    "pi_min_median": 249.999854167838,
+    "pi_min_p90": 250.00495446726916
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99515054532006,
+    "pi_min_median": 249.999854167838,
+    "pi_min_p90": 250.00495446726916
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.483,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 517
+    },
+    "pi_min_p10": 249.99515054532006,
+    "pi_min_median": 249.999854167838,
+    "pi_min_p90": 250.00495446726916
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99515054532006,
+    "pi_min_median": 249.999854167838,
+    "pi_min_p90": 250.00495446726916
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99515054532006,
+    "pi_min_median": 249.999854167838,
+    "pi_min_p90": 250.00495446726916
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99472668967195,
+    "pi_min_median": 250.000014668037,
+    "pi_min_p90": 250.00503593272018
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99472668967195,
+    "pi_min_median": 250.000014668037,
+    "pi_min_p90": 250.00503593272018
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99472668967195,
+    "pi_min_median": 250.000014668037,
+    "pi_min_p90": 250.00503593272018
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.502,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 498
+    },
+    "pi_min_p10": 249.99472668967195,
+    "pi_min_median": 250.000014668037,
+    "pi_min_p90": 250.00503593272018
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99472668967195,
+    "pi_min_median": 250.000014668037,
+    "pi_min_p90": 250.00503593272018
+  },
+  {
+    "alpha": 0.1,
+    "policy": "aggressive_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99472668967195,
+    "pi_min_median": 250.000014668037,
+    "pi_min_p90": 250.00503593272018
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "marginal_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "policy": "out_of_money_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99512763870206,
+    "pi_min_median": 249.99999048056048,
+    "pi_min_p90": 250.00495070622293
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99512763870206,
+    "pi_min_median": 249.99999048056048,
+    "pi_min_p90": 250.00495070622293
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99512763870206,
+    "pi_min_median": 249.99999048056048,
+    "pi_min_p90": 250.00495070622293
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.498,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 502
+    },
+    "pi_min_p10": 249.99512763870206,
+    "pi_min_median": 249.99999048056048,
+    "pi_min_p90": 250.00495070622293
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99512763870206,
+    "pi_min_median": 249.99999048056048,
+    "pi_min_p90": 250.00495070622293
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99512763870206,
+    "pi_min_median": 249.99999048056048,
+    "pi_min_p90": 250.00495070622293
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99491118610524,
+    "pi_min_median": 249.99988504428018,
+    "pi_min_p90": 250.00500163197654
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99491118610524,
+    "pi_min_median": 249.99988504428018,
+    "pi_min_p90": 250.00500163197654
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": 249.99491118610524,
+    "pi_min_median": 249.99988504428018,
+    "pi_min_p90": 250.00500163197654
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.49,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 510
+    },
+    "pi_min_p10": 249.99491118610524,
+    "pi_min_median": 249.99988504428018,
+    "pi_min_p90": 250.00500163197654
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99491118610524,
+    "pi_min_median": 249.99988504428018,
+    "pi_min_p90": 250.00500163197654
+  },
+  {
+    "alpha": 0.2,
+    "policy": "aggressive_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": 249.99491118610524,
+    "pi_min_median": 249.99988504428018,
+    "pi_min_p90": 250.00500163197654
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "marginal_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_buy",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_buy",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_buy",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_buy",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_buy",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_buy",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_sell",
+    "tau_eur": 0.0,
+    "n": 1000,
+    "accept_rate": 1.0,
+    "reject_reasons": {},
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_sell",
+    "tau_eur": 50.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_sell",
+    "tau_eur": 100.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_sell",
+    "tau_eur": 250.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_sell",
+    "tau_eur": 500.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  },
+  {
+    "alpha": 0.2,
+    "policy": "out_of_money_sell",
+    "tau_eur": 1000.0,
+    "n": 1000,
+    "accept_rate": 0.0,
+    "reject_reasons": {
+      "conformal/worst_case_profit": 1000
+    },
+    "pi_min_p10": -0.0,
+    "pi_min_median": 0.0,
+    "pi_min_p90": 0.0
+  }
+]

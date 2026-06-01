@@ -1,0 +1,16 @@
+{
+  "status": "smoke",
+  "note": "Re-run without --smoke after tools/synthetic_bank.py and 5-seed retrains have completed.",
+  "seeds": [
+    13,
+    42,
+    137,
+    1729,
+    31415
+  ],
+  "legs": [
+    "real_only",
+    "honest",
+    "leak_control"
+  ]
+}

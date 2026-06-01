@@ -1,0 +1,49 @@
+{
+  "title": "Heimdall — Overview",
+  "uid": "heimdall-overview",
+  "schemaVersion": 39,
+  "version": 1,
+  "tags": ["heimdall"],
+  "timezone": "browser",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Verifier acceptance rate (5m)",
+      "gridPos": {"h": 6, "w": 6, "x": 0, "y": 0},
+      "targets": [{"expr": "rate(heimdall_verifier_accepted_total[5m]) / clamp_min(rate(heimdall_verifier_decisions_total[5m]), 1)"}]
+    },
+    {
+      "type": "timeseries",
+      "title": "Conformal marginal coverage",
+      "gridPos": {"h": 6, "w": 12, "x": 6, "y": 0},
+      "targets": [{"expr": "heimdall_conformal_marginal_coverage"}]
+    },
+    {
+      "type": "timeseries",
+      "title": "Focal-agent cumulative P&L (DKK)",
+      "gridPos": {"h": 6, "w": 18, "x": 0, "y": 6},
+      "targets": [{"expr": "heimdall_focal_pnl_dkk_total"}]
+    },
+    {
+      "type": "stat",
+      "title": "Active simulation runs",
+      "gridPos": {"h": 4, "w": 6, "x": 18, "y": 0},
+      "targets": [{"expr": "sum(heimdall_society_run_active)"}]
+    },
+    {
+      "type": "timeseries",
+      "title": "GPU utilisation",
+      "gridPos": {"h": 6, "w": 12, "x": 0, "y": 12},
+      "targets": [{"expr": "avg(DCGM_FI_DEV_GPU_UTIL) by (gpu)"}]
+    },
+    {
+      "type": "timeseries",
+      "title": "LLM tokens/s (society + focal)",
+      "gridPos": {"h": 6, "w": 12, "x": 12, "y": 12},
+      "targets": [{"expr": "sum(rate(vllm_tokens_total[1m])) by (instance)"}]
+    }
+  ],
+  "templating": {"list": []},
+  "time": {"from": "now-6h", "to": "now"},
+  "refresh": "30s"
+}

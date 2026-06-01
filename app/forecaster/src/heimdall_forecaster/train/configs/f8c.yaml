@@ -1,0 +1,22 @@
+# F8c — kitchen-sink multivariate forecaster.
+# Adds flows + UMM + anomaly features on top of F8b. Train this to get the
+# XAI ranking that produces F8d's lean feature set (Track D).
+name: f8c
+multivariate: false
+train_panel: data/processed/dk1_panel_rich_train.parquet
+val_panel: data/processed/dk1_panel_rich_val.parquet
+anomaly_panel: data/processed/anomaly_features.parquet
+seq_len: 96
+horizon: 16
+patch_len: 8
+d_model: 128
+nhead: 8
+n_layers: 6
+dropout: 0.1
+epochs: 20
+batch_size: 64
+lr: 1.0e-3
+weight_decay: 1.0e-4
+seed: 42
+quantiles: [0.1, 0.5, 0.9]
+# feature_names resolved at runtime via F8C_FEATURES.

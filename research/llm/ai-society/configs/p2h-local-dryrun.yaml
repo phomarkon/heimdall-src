@@ -1,0 +1,27 @@
+# Laptop-safe: no Docker, no vLLM, no model downloads.
+run_id: p2h-local-dryrun
+seed: 42
+zone: DK1
+agent_count: 4
+archetype_cycle:
+  - p2h
+ticks: 2
+start_timestamp: "2025-03-04T03:00:00Z"
+forecaster_backend: f0
+verifier_mode: mock
+market_context: synthetic
+tool_mode: json_response
+objective: worth_bidding
+scenario_id: p2h_dk1_pypsa
+tool_policy: p2h_only_simulator
+max_tool_rounds: 4
+output_dir: research/llm/ai-society/runs
+llm:
+  enabled: false
+  base_url: http://127.0.0.1:8000/v1
+  api_key: heimdall-local
+  model: Qwen/Qwen3-32B
+  temperature: 0.2
+  max_tokens: 350
+  timeout_seconds: 120
+  max_concurrency: 2

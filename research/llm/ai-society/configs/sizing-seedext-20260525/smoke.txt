@@ -1,0 +1,2 @@
+ai-society/configs/sizing-seedext-20260525/szx-s06-actioncore-medium-apr02-0530-seed13-2-q32.yaml
+ai-society/configs/sizing-seedext-20260525/szx-s06-actioncore-large-apr02-0530-seed13-2-q32.yaml

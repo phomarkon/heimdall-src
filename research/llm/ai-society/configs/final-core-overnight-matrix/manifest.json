@@ -1,0 +1,81 @@
+{
+  "ablation_strategy": "comm_broadcast_digest",
+  "config_list": "ai-society/configs/final-core-overnight-matrix/config-list.txt",
+  "forecaster_backend": "f8",
+  "forecaster_seed": 42,
+  "known_existing_inputs_not_duplicated": [
+    "s06/s12/s20 q32 seed42 core cells where present",
+    "s06/s12 q32 apr09/apr13 seed13/seed137 final-completion cells",
+    "s06/s20 q32 apr06/apr22/apr27 sparse controls"
+  ],
+  "model": "Qwen/Qwen3-32B",
+  "run_count": 13,
+  "run_root": "ai-society/runs/final-core-overnight-matrix",
+  "runs": [
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/core_seed_fill/s06-actioncore/fco-s06-actioncore-bcast-apr02-0530-seed13-q32.yaml",
+      "purpose": "core_seed_fill",
+      "run_id": "fco-s06-actioncore-bcast-apr02-0530-seed13-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/core_seed_fill/s06-actioncore/fco-s06-actioncore-bcast-apr02-0530-seed137-q32.yaml",
+      "purpose": "core_seed_fill",
+      "run_id": "fco-s06-actioncore-bcast-apr02-0530-seed137-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/core_seed_fill/s12-balanced/fco-s12-balanced-bcast-apr02-0530-seed13-q32.yaml",
+      "purpose": "core_seed_fill",
+      "run_id": "fco-s12-balanced-bcast-apr02-0530-seed13-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/core_seed_fill/s12-balanced/fco-s12-balanced-bcast-apr02-0530-seed137-q32.yaml",
+      "purpose": "core_seed_fill",
+      "run_id": "fco-s12-balanced-bcast-apr02-0530-seed137-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr02-0530-seed13-q32.yaml",
+      "purpose": "s20_core_seed_fill",
+      "run_id": "fco-s20-mixed-bcast-apr02-0530-seed13-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr02-0530-seed137-q32.yaml",
+      "purpose": "s20_core_seed_fill",
+      "run_id": "fco-s20-mixed-bcast-apr02-0530-seed137-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr09-1830-seed13-q32.yaml",
+      "purpose": "s20_core_seed_fill",
+      "run_id": "fco-s20-mixed-bcast-apr09-1830-seed13-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr09-1830-seed137-q32.yaml",
+      "purpose": "s20_core_seed_fill",
+      "run_id": "fco-s20-mixed-bcast-apr09-1830-seed137-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr13-0015-seed13-q32.yaml",
+      "purpose": "s20_core_seed_fill",
+      "run_id": "fco-s20-mixed-bcast-apr13-0015-seed13-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr13-0015-seed42-q32.yaml",
+      "purpose": "s20_core_seed_fill",
+      "run_id": "fco-s20-mixed-bcast-apr13-0015-seed42-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/s20_core_seed_fill/s20-mixed/fco-s20-mixed-bcast-apr13-0015-seed137-q32.yaml",
+      "purpose": "s20_core_seed_fill",
+      "run_id": "fco-s20-mixed-bcast-apr13-0015-seed137-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/sparse_control_fill/s06-actioncore/fco-s06-actioncore-bcast-apr07-1715-seed42-q32.yaml",
+      "purpose": "sparse_control_fill",
+      "run_id": "fco-s06-actioncore-bcast-apr07-1715-seed42-q32"
+    },
+    {
+      "config": "ai-society/configs/final-core-overnight-matrix/sparse_control_fill/s20-mixed/fco-s20-mixed-bcast-apr07-1715-seed42-q32.yaml",
+      "purpose": "sparse_control_fill",
+      "run_id": "fco-s20-mixed-bcast-apr07-1715-seed42-q32"
+    }
+  ]
+}

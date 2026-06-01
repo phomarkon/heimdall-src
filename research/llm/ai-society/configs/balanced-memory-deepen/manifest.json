@@ -1,0 +1,52 @@
+{
+  "arms": [
+    {
+      "agent_count": 5,
+      "max_concurrency": 5,
+      "memory": false,
+      "profile": "diverse_action",
+      "slug": "5-bcast",
+      "strategy": "comm_broadcast_digest"
+    },
+    {
+      "agent_count": 8,
+      "max_concurrency": 6,
+      "memory": false,
+      "profile": "diverse_expert_action",
+      "slug": "8-bcast",
+      "strategy": "comm_broadcast_digest"
+    },
+    {
+      "agent_count": 12,
+      "max_concurrency": 8,
+      "memory": true,
+      "profile": "balanced_intelligence",
+      "slug": "12-bcast-mem",
+      "strategy": "comm_broadcast_digest"
+    }
+  ],
+  "memory_bank": "ai-society/runs/balanced-memory-deepen/memory-v2-bank.jsonl",
+  "run_count": 12,
+  "windows": [
+    [
+      "apr02-0530",
+      "2026-04-02T05:30:00Z",
+      24
+    ],
+    [
+      "apr03-1430",
+      "2026-04-03T14:30:00Z",
+      24
+    ],
+    [
+      "apr13-0015",
+      "2026-04-13T00:15:00Z",
+      24
+    ],
+    [
+      "roll1-apr27-1730",
+      "2026-04-27T17:30:00Z",
+      24
+    ]
+  ]
+}

@@ -1,0 +1,88 @@
+# Heimdall Helm umbrella values. Per docs/RESEARCH-PROPOSAL.md §6.7. Each service
+# section can be overridden per environment via -f values-prod.yaml etc.
+
+global:
+  image:
+    registry: ghcr.io
+    repository: heimdall-energy
+    pullPolicy: IfNotPresent
+    tag: ""  # filled by ArgoCD's image-updater
+  namespace: heimdall-prod
+
+# --- service inventory (proposal §6.2) ----------------------------------------
+
+gateway:
+  enabled: true
+  replicas: 2
+  resources:
+    requests: { cpu: 200m, memory: 512Mi }
+    limits:   { cpu: 1,    memory: 1Gi }
+  service:
+    port: 8000
+
+societyOrchestrator: { enabled: true, replicas: 1 }
+focalOrchestrator:   { enabled: true, replicas: 1 }
+agentRunner:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 32  # HPA per proposal §6.7
+  resources:
+    requests: { cpu: 500m, memory: 1Gi }
+    limits:   { cpu: 2,    memory: 4Gi }
+
+verifier: { enabled: true, replicas: 2 }
+marketSimulator: { enabled: true, replicas: 1 }
+forecaster: { enabled: true, replicas: 1 }
+conformalCalibrator: { enabled: true, replicas: 1 }
+pypsaScenario: { enabled: true, replicas: 1 }
+newsTool: { enabled: false }
+regulationTool: { enabled: false }
+
+# --- LLM inference (B200-pinned) ---------------------------------------------
+llmInference:
+  enabled: true
+  replicas: 1
+  model: Qwen/Qwen3-32B
+  resources:
+    limits: { nvidia.com/gpu: 1 }
+  nodeSelector:
+    accelerator: b200
+
+focalLlmInference:
+  enabled: true
+  replicas: 1
+  model: Qwen/Qwen3-32B
+  resources:
+    limits: { nvidia.com/gpu: 1 }
+  nodeSelector:
+    accelerator: b200
+
+# --- storage / data tier ------------------------------------------------------
+redis:
+  enabled: true
+  persistence: { enabled: true, size: 5Gi }
+
+timescaledb:
+  enabled: true
+  persistence: { enabled: true, size: 50Gi }
+
+minio:
+  enabled: true
+  persistence: { enabled: true, size: 200Gi }
+
+# --- observability (proposal §6.8) -------------------------------------------
+observability:
+  prometheus: { enabled: true }
+  grafana:    { enabled: true }
+  loki:       { enabled: false }   # deferred per mark-todos.md cuts
+  jaeger:     { enabled: false }   # deferred per mark-todos.md cuts
+
+# --- experiment tracker -------------------------------------------------------
+mlflow:
+  enabled: true
+  persistence: { enabled: true, size: 20Gi }
+
+# --- frontend (Tim's track; toggle off for backend-only deploys) -------------
+frontend:
+  enabled: true
+  replicas: 1

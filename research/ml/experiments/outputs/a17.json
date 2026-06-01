@@ -1,0 +1,8 @@
+{
+  "status": "placeholder",
+  "note": "Tim-blocked: requires verifier trace JSONL from apps/verifier outputs. Re-run with --rejected-bids <path> once Tim's society-run produces bid traces.",
+  "summary": {
+    "n": 0,
+    "infeasible_pct": 100.0
+  }
+}

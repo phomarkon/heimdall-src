@@ -1,0 +1,26 @@
+# ArgoCD application — Heimdall umbrella. Per docs/RESEARCH-PROPOSAL.md §6.7.
+# Bootstrapping: kubectl apply -n argocd -f deploy/argocd/heimdall-app.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: heimdall
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/heimdall-energy/heimdall.git
+    targetRevision: main
+    path: deploy/helm/heimdall
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: heimdall-prod
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - ApplyOutOfSyncOnly=true

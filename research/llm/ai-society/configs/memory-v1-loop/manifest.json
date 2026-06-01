@@ -1,0 +1,34 @@
+{
+  "configs": [
+    "ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr03-i1-10-f8-q32.yaml",
+    "ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr03-i2-10-f8-q32.yaml",
+    "ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr03-i3-10-f8-q32.yaml",
+    "ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr03-i4-10-f8-q32.yaml",
+    "ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr03-i5-10-f8-q32.yaml",
+    "ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr09-i1-10-f8-q32.yaml",
+    "ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr09-i2-10-f8-q32.yaml",
+    "ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr09-i3-10-f8-q32.yaml",
+    "ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr09-i4-10-f8-q32.yaml",
+    "ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr09-i5-10-f8-q32.yaml"
+  ],
+  "days": [
+    [
+      "apr03",
+      "2026-04-03"
+    ],
+    [
+      "apr09",
+      "2026-04-09"
+    ]
+  ],
+  "memory_bank": "ai-society/runs/memory-v1-loop/memory-bank.jsonl",
+  "run_count": 10,
+  "starts": [
+    "11:00:00",
+    "13:30:00",
+    "16:00:00",
+    "18:30:00",
+    "21:00:00"
+  ],
+  "ticks": 10
+}

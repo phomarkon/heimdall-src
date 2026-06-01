@@ -1,0 +1,28 @@
+[project]
+name = "heimdall-forecaster"
+version = "0.0.1"
+description = "Forecaster service. F9 (TimesFM-2.5) is the day-1 default; other F-codes wired in Week 2."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "heimdall-contracts",
+  "heimdall-ml",
+  "heimdall-data",
+  "fastapi>=0.115",
+  "uvicorn>=0.30",
+  "numpy>=1.26",
+  "torch>=2.4",
+  "polars>=1.0",
+  "pyyaml>=6.0",
+  # timesfm is heavy and pulls torch; install separately via uv extras
+  # `pip install timesfm` per docs/RESEARCH-PROPOSAL.md §4.2.2 footnote.
+]
+
+[project.optional-dependencies]
+timesfm = ["timesfm>=1.2"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/heimdall_forecaster"]

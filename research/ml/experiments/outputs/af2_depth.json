@@ -1,0 +1,22 @@
+[
+  {
+    "n_layers": 2,
+    "val_pinball_mean": 271.59189860026044,
+    "val_q10_q90_coverage": 0.6628660697631039
+  },
+  {
+    "n_layers": 4,
+    "val_pinball_mean": 273.28433481852215,
+    "val_q10_q90_coverage": 0.5943853758627122
+  },
+  {
+    "n_layers": 6,
+    "val_pinball_mean": 267.15992228190106,
+    "val_q10_q90_coverage": 0.5745779705278866
+  },
+  {
+    "n_layers": 8,
+    "val_pinball_mean": 271.5567042032878,
+    "val_q10_q90_coverage": 0.5722929490766648
+  }
+]

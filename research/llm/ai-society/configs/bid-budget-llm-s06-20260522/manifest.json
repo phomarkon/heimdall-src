@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-05-22T07:45:11.707652Z",
+  "full_count": 12,
+  "matrix": "bid-budget-llm-s06-20260522",
+  "model": "Qwen/Qwen3-32B",
+  "smoke_count": 4,
+  "variants": [
+    "budget4-llm-fill-selector",
+    "budget6-llm-fill-selector",
+    "budget4-llm-fill-selector-memory-v2",
+    "budget4-llm-baseline-guarded"
+  ],
+  "windows": {
+    "apr02-0530": "2026-04-02T05:30:00Z",
+    "apr09-1830": "2026-04-09T18:30:00Z",
+    "apr13-0015": "2026-04-13T00:15:00Z"
+  }
+}

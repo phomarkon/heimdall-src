@@ -1,0 +1,6 @@
+ai-society/configs/qwen-large-baseline-s06-20260522/full/q120/qlb-s06-actioncore-baseline-apr02-0530-seed42-24-q120.yaml
+ai-society/configs/qwen-large-baseline-s06-20260522/full/q120/qlb-s06-actioncore-baseline-apr09-1830-seed42-24-q120.yaml
+ai-society/configs/qwen-large-baseline-s06-20260522/full/q120/qlb-s06-actioncore-baseline-apr13-0015-seed42-24-q120.yaml
+ai-society/configs/qwen-large-baseline-s06-20260522/full/q72/qlb-s06-actioncore-baseline-apr02-0530-seed42-24-q72.yaml
+ai-society/configs/qwen-large-baseline-s06-20260522/full/q72/qlb-s06-actioncore-baseline-apr09-1830-seed42-24-q72.yaml
+ai-society/configs/qwen-large-baseline-s06-20260522/full/q72/qlb-s06-actioncore-baseline-apr13-0015-seed42-24-q72.yaml

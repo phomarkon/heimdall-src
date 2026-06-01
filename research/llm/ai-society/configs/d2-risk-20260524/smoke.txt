@@ -1,0 +1,2 @@
+ai-society/configs/d2-risk-20260524/smoke/d2-riskblind-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/d2-risk-20260524/smoke/d2-riskaware-apr02-0530-seed42-2-q32.yaml

@@ -1,0 +1,94 @@
+{
+  "results": [
+    {
+      "model": "f10",
+      "seed": 13,
+      "val_metrics_snapshot": {
+        "seed": 13,
+        "val_pinball_q10": 112.24986267089844,
+        "val_pinball_q50": 341.88482666015625,
+        "val_pinball_q90": 346.943603515625,
+        "val_pinball_mean": 267.0260976155599,
+        "val_q10_q90_coverage": 0.765263526119403,
+        "n_val_windows": 5360,
+        "model_name": "f10",
+        "method": "Chronos-Bolt zero-shot (amazon/chronos-bolt-base)",
+        "_source": "tools/f10_sidevenv/run_f10_eval.py"
+      },
+      "error": "predict() failed at window 0: ImportError(\"huggingface-hub>=0.34.0,<1.0 is required for a normal functioning of this module, but found huggingface-hub==1.14.0.\\nTry: `pip install transformers -U` or `pip install -e '.[dev]'` if you're working with git main\")",
+      "cfg_hash": "2fff9b6f30361bc5"
+    },
+    {
+      "model": "f10",
+      "seed": 42,
+      "val_metrics_snapshot": {
+        "seed": 42,
+        "val_pinball_q10": 112.24986267089844,
+        "val_pinball_q50": 341.88482666015625,
+        "val_pinball_q90": 346.943603515625,
+        "val_pinball_mean": 267.0260976155599,
+        "val_q10_q90_coverage": 0.765263526119403,
+        "n_val_windows": 5360,
+        "model_name": "f10",
+        "method": "Chronos-Bolt zero-shot (amazon/chronos-bolt-base)",
+        "_source": "tools/f10_sidevenv/run_f10_eval.py"
+      },
+      "error": "predict() failed at window 0: ImportError(\"huggingface-hub>=0.34.0,<1.0 is required for a normal functioning of this module, but found huggingface-hub==1.14.0.\\nTry: `pip install transformers -U` or `pip install -e '.[dev]'` if you're working with git main\")",
+      "cfg_hash": "8850e19b79813d49"
+    },
+    {
+      "model": "f10",
+      "seed": 137,
+      "val_metrics_snapshot": {
+        "seed": 137,
+        "val_pinball_q10": 112.24986267089844,
+        "val_pinball_q50": 341.88482666015625,
+        "val_pinball_q90": 346.943603515625,
+        "val_pinball_mean": 267.0260976155599,
+        "val_q10_q90_coverage": 0.765263526119403,
+        "n_val_windows": 5360,
+        "model_name": "f10",
+        "method": "Chronos-Bolt zero-shot (amazon/chronos-bolt-base)",
+        "_source": "tools/f10_sidevenv/run_f10_eval.py"
+      },
+      "error": "predict() failed at window 0: ImportError(\"huggingface-hub>=0.34.0,<1.0 is required for a normal functioning of this module, but found huggingface-hub==1.14.0.\\nTry: `pip install transformers -U` or `pip install -e '.[dev]'` if you're working with git main\")",
+      "cfg_hash": "3fb720087c4e6140"
+    },
+    {
+      "model": "f10",
+      "seed": 1729,
+      "val_metrics_snapshot": {
+        "seed": 1729,
+        "val_pinball_q10": 112.24986267089844,
+        "val_pinball_q50": 341.88482666015625,
+        "val_pinball_q90": 346.943603515625,
+        "val_pinball_mean": 267.0260976155599,
+        "val_q10_q90_coverage": 0.765263526119403,
+        "n_val_windows": 5360,
+        "model_name": "f10",
+        "method": "Chronos-Bolt zero-shot (amazon/chronos-bolt-base)",
+        "_source": "tools/f10_sidevenv/run_f10_eval.py"
+      },
+      "error": "predict() failed at window 0: ImportError(\"huggingface-hub>=0.34.0,<1.0 is required for a normal functioning of this module, but found huggingface-hub==1.14.0.\\nTry: `pip install transformers -U` or `pip install -e '.[dev]'` if you're working with git main\")",
+      "cfg_hash": "ded136544e1d845c"
+    },
+    {
+      "model": "f10",
+      "seed": 31415,
+      "val_metrics_snapshot": {
+        "seed": 31415,
+        "val_pinball_q10": 112.24986267089844,
+        "val_pinball_q50": 341.88482666015625,
+        "val_pinball_q90": 346.943603515625,
+        "val_pinball_mean": 267.0260976155599,
+        "val_q10_q90_coverage": 0.765263526119403,
+        "n_val_windows": 5360,
+        "model_name": "f10",
+        "method": "Chronos-Bolt zero-shot (amazon/chronos-bolt-base)",
+        "_source": "tools/f10_sidevenv/run_f10_eval.py"
+      },
+      "error": "predict() failed at window 0: ImportError(\"huggingface-hub>=0.34.0,<1.0 is required for a normal functioning of this module, but found huggingface-hub==1.14.0.\\nTry: `pip install transformers -U` or `pip install -e '.[dev]'` if you're working with git main\")",
+      "cfg_hash": "060d4b3b4d397f46"
+    }
+  ]
+}

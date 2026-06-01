@@ -1,0 +1,16 @@
+# F7 — univariate price forecaster. docs/RESEARCH-PROPOSAL.md §4.4.
+name: f7
+multivariate: false
+seq_len: 96       # 24 h × 15-min
+horizon: 16       # 4 h × 15-min
+patch_len: 8
+d_model: 128
+nhead: 8
+n_layers: 6
+dropout: 0.1
+epochs: 5
+batch_size: 64
+lr: 1.0e-3
+weight_decay: 1.0e-4
+seed: 42
+quantiles: [0.1, 0.5, 0.9]

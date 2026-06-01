@@ -1,0 +1,1313 @@
+{
+  "run_id": "contract-smoke",
+  "total_steps": 2,
+  "snapshots": [
+    {
+      "run_id": "contract-smoke",
+      "step": 0,
+      "total_steps": 2,
+      "nodes": [
+        {
+          "id": "agent-000",
+          "persona": {
+            "agent_id": "agent-000",
+            "display_name": "P2H focal 000",
+            "archetype": "p2h",
+            "risk_attitude": "seeking",
+            "sophistication": "high",
+            "info_latency_min": 0,
+            "capacity_mw": 50,
+            "storage_mwh": 100,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "x": 0.08,
+          "y": 0.0,
+          "open_position_mw": 2.0,
+          "pnl_eur": 120.0,
+          "tick_pnl_eur": 120.0,
+          "belief": "Replay trace includes a concrete mFRR bid decision for this interval.",
+          "is_focal": true,
+          "verifier_acceptance_rate": 1.0
+        },
+        {
+          "id": "agent-001",
+          "persona": {
+            "agent_id": "agent-001",
+            "display_name": "EV BRP 001",
+            "archetype": "ev",
+            "risk_attitude": "averse",
+            "sophistication": "low",
+            "info_latency_min": 15,
+            "capacity_mw": 47,
+            "storage_mwh": 100,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "x": 0.2737227586441228,
+          "y": 0.24684173784149888,
+          "open_position_mw": 2.0,
+          "pnl_eur": 0.0,
+          "tick_pnl_eur": 0.0,
+          "belief": "Replay trace includes a concrete mFRR bid decision for this interval.",
+          "is_focal": false,
+          "verifier_acceptance_rate": null
+        },
+        {
+          "id": "agent-002",
+          "persona": {
+            "agent_id": "agent-002",
+            "display_name": "WIND BRP 002",
+            "archetype": "wind",
+            "risk_attitude": "neutral",
+            "sophistication": "medium",
+            "info_latency_min": 15,
+            "capacity_mw": 48,
+            "storage_mwh": null,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "x": 0.04324479754727473,
+          "y": 0.36428280951279024,
+          "open_position_mw": -0.0,
+          "pnl_eur": 0,
+          "tick_pnl_eur": 0.0,
+          "belief": "Replay trace records an abstain/watch decision for this interval.",
+          "is_focal": false,
+          "verifier_acceptance_rate": null
+        },
+        {
+          "id": "agent-peer-03",
+          "persona": {
+            "agent_id": "agent-peer-03",
+            "display_name": "P2H BRP -03",
+            "archetype": "p2h",
+            "risk_attitude": "neutral",
+            "sophistication": "medium",
+            "info_latency_min": 15,
+            "capacity_mw": 34,
+            "storage_mwh": 100,
+            "llm_family": "unavailable",
+            "forecaster": "unavailable"
+          },
+          "x": 0.5338405969032287,
+          "y": -0.03787471976655481,
+          "open_position_mw": -0.0,
+          "pnl_eur": 0,
+          "tick_pnl_eur": 0.0,
+          "belief": "Peer placeholder; no decision trace is available for this replay.",
+          "is_focal": false,
+          "verifier_acceptance_rate": null
+        },
+        {
+          "id": "agent-peer-04",
+          "persona": {
+            "agent_id": "agent-peer-04",
+            "display_name": "GENERATOR BRP -04",
+            "archetype": "generator",
+            "risk_attitude": "seeking",
+            "sophistication": "high",
+            "info_latency_min": 15,
+            "capacity_mw": 35,
+            "storage_mwh": null,
+            "llm_family": "unavailable",
+            "forecaster": "unavailable"
+          },
+          "x": 0.21675550272047306,
+          "y": 0.5072346406298446,
+          "open_position_mw": -0.0,
+          "pnl_eur": 0,
+          "tick_pnl_eur": 0.0,
+          "belief": "Peer placeholder; no decision trace is available for this replay.",
+          "is_focal": false,
+          "verifier_acceptance_rate": null
+        },
+        {
+          "id": "agent-peer-05",
+          "persona": {
+            "agent_id": "agent-peer-05",
+            "display_name": "ARBITRAGEUR BRP -05",
+            "archetype": "arbitrageur",
+            "risk_attitude": "averse",
+            "sophistication": "low",
+            "info_latency_min": 15,
+            "capacity_mw": 36,
+            "storage_mwh": null,
+            "llm_family": "unavailable",
+            "forecaster": "unavailable"
+          },
+          "x": -0.38453471637098147,
+          "y": 0.3601140912641506,
+          "open_position_mw": -0.0,
+          "pnl_eur": 0,
+          "tick_pnl_eur": 0.0,
+          "belief": "Peer placeholder; no decision trace is available for this replay.",
+          "is_focal": false,
+          "verifier_acceptance_rate": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "consensus-0-up-agent-000-agent-001",
+          "source": "agent-000",
+          "target": "agent-001",
+          "kind": "consensus",
+          "side": "up",
+          "direction": "sell",
+          "market": "mFRR",
+          "strength": 0.667,
+          "label": "Same-side up",
+          "detail": "2 agents bidding up this interval.",
+          "started_step": 0,
+          "expires_step": 0
+        },
+        {
+          "id": "broadcast-0-agent-002-agent-000",
+          "source": "agent-002",
+          "target": "agent-000",
+          "kind": "broadcast",
+          "side": null,
+          "direction": null,
+          "market": "mFRR",
+          "strength": 0.5,
+          "label": "Society broadcast",
+          "detail": "Shared market digest broadcast to the society this interval.",
+          "started_step": 0,
+          "expires_step": 0
+        },
+        {
+          "id": "broadcast-0-agent-002-agent-001",
+          "source": "agent-002",
+          "target": "agent-001",
+          "kind": "broadcast",
+          "side": null,
+          "direction": null,
+          "market": "mFRR",
+          "strength": 0.5,
+          "label": "Society broadcast",
+          "detail": "Shared market digest broadcast to the society this interval.",
+          "started_step": 0,
+          "expires_step": 0
+        }
+      ],
+      "selected_trace": {
+        "run_id": "contract-smoke",
+        "step": 0,
+        "timestamp": "2026-04-02T12:00:00Z",
+        "agent_id": "agent-000",
+        "persona": {
+          "agent_id": "agent-000",
+          "display_name": "P2H focal 000",
+          "archetype": "p2h",
+          "risk_attitude": "seeking",
+          "sophistication": "high",
+          "info_latency_min": 0,
+          "capacity_mw": 50,
+          "storage_mwh": 100,
+          "llm_family": "L5",
+          "forecaster": "F8"
+        },
+        "state": {
+          "soc_mwh": 50.0,
+          "exposure_mw": 2.0,
+          "cash_eur": 50120.0
+        },
+        "reasoning": "contract row",
+        "tool_calls": [
+          {
+            "id": "society_communication_context-0-0",
+            "kind": "news",
+            "label": "Tool called: society_communication_context",
+            "status": "success",
+            "latency_ms": 40,
+            "summary": "Loaded society broadcast context for 3 agents. Market price n/a EUR/MWh; suggested n/a probe at n/a EUR/MWh.",
+            "provenance": "unknown"
+          },
+          {
+            "id": "simulate_bid-0-1",
+            "kind": "simulate",
+            "label": "Risk-agent: simulator replay",
+            "status": "success",
+            "latency_ms": 68,
+            "summary": "Simulated requested up bid for 2.00 MWh at 60.00 EUR/MWh. Accepted; worst-case profit 5.00 EUR.",
+            "provenance": "unknown"
+          }
+        ],
+        "tool_call_provenance_counts": {},
+        "proposed_action": {
+          "market": "mFRR",
+          "direction": "sell",
+          "quantity_mw": 2.0,
+          "price_eur_per_mwh": 60.0,
+          "delivery_quarter": "2026-04-02T12:00:00Z"
+        },
+        "verifier_verdict": {
+          "accepted": true,
+          "stage_failed": null,
+          "physical_violation": null,
+          "worst_case_profit_eur": 5.0,
+          "threshold_eur": 0.0,
+          "retry_suggestion": null,
+          "conformal_interval": {
+            "horizon_minutes": 15,
+            "quantile_low": 70.0,
+            "quantile_high": 90.0,
+            "alpha": 0.1
+          }
+        },
+        "realized_outcome": {
+          "fill_mw": 2.0,
+          "realized_price_eur_per_mwh": 80.0,
+          "pnl_eur": 120.0
+        },
+        "info_digest": null
+      },
+      "agent_traces": {
+        "agent-000": {
+          "run_id": "contract-smoke",
+          "step": 0,
+          "timestamp": "2026-04-02T12:00:00Z",
+          "agent_id": "agent-000",
+          "persona": {
+            "agent_id": "agent-000",
+            "display_name": "P2H focal 000",
+            "archetype": "p2h",
+            "risk_attitude": "seeking",
+            "sophistication": "high",
+            "info_latency_min": 0,
+            "capacity_mw": 50,
+            "storage_mwh": 100,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "state": {
+            "soc_mwh": 50.0,
+            "exposure_mw": 2.0,
+            "cash_eur": 50120.0
+          },
+          "reasoning": "contract row",
+          "tool_calls": [
+            {
+              "id": "society_communication_context-0-0",
+              "kind": "news",
+              "label": "Tool called: society_communication_context",
+              "status": "success",
+              "latency_ms": 40,
+              "summary": "Loaded society broadcast context for 3 agents. Market price n/a EUR/MWh; suggested n/a probe at n/a EUR/MWh.",
+              "provenance": "unknown"
+            },
+            {
+              "id": "simulate_bid-0-1",
+              "kind": "simulate",
+              "label": "Risk-agent: simulator replay",
+              "status": "success",
+              "latency_ms": 68,
+              "summary": "Simulated requested up bid for 2.00 MWh at 60.00 EUR/MWh. Accepted; worst-case profit 5.00 EUR.",
+              "provenance": "unknown"
+            }
+          ],
+          "tool_call_provenance_counts": {},
+          "proposed_action": {
+            "market": "mFRR",
+            "direction": "sell",
+            "quantity_mw": 2.0,
+            "price_eur_per_mwh": 60.0,
+            "delivery_quarter": "2026-04-02T12:00:00Z"
+          },
+          "verifier_verdict": {
+            "accepted": true,
+            "stage_failed": null,
+            "physical_violation": null,
+            "worst_case_profit_eur": 5.0,
+            "threshold_eur": 0.0,
+            "retry_suggestion": null,
+            "conformal_interval": {
+              "horizon_minutes": 15,
+              "quantile_low": 70.0,
+              "quantile_high": 90.0,
+              "alpha": 0.1
+            }
+          },
+          "realized_outcome": {
+            "fill_mw": 2.0,
+            "realized_price_eur_per_mwh": 80.0,
+            "pnl_eur": 120.0
+          },
+          "info_digest": null
+        },
+        "agent-001": {
+          "run_id": "contract-smoke",
+          "step": 0,
+          "timestamp": "2026-04-02T12:00:00Z",
+          "agent_id": "agent-001",
+          "persona": {
+            "agent_id": "agent-001",
+            "display_name": "EV focal 001",
+            "archetype": "ev",
+            "risk_attitude": "averse",
+            "sophistication": "low",
+            "info_latency_min": 0,
+            "capacity_mw": 50,
+            "storage_mwh": 100,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "state": {
+            "soc_mwh": 50.0,
+            "exposure_mw": 2.0,
+            "cash_eur": 50000.0
+          },
+          "reasoning": "contract row",
+          "tool_calls": [
+            {
+              "id": "society_communication_context-0-0",
+              "kind": "news",
+              "label": "Tool called: society_communication_context",
+              "status": "success",
+              "latency_ms": 40,
+              "summary": "Loaded society broadcast context for 3 agents. Market price n/a EUR/MWh; suggested n/a probe at n/a EUR/MWh.",
+              "provenance": "unknown"
+            },
+            {
+              "id": "simulate_bid-0-1",
+              "kind": "simulate",
+              "label": "Risk-agent: simulator replay",
+              "status": "success",
+              "latency_ms": 68,
+              "summary": "Simulated requested up bid for 2.00 MWh at 60.00 EUR/MWh. Accepted; worst-case profit 5.00 EUR.",
+              "provenance": "unknown"
+            }
+          ],
+          "tool_call_provenance_counts": {},
+          "proposed_action": {
+            "market": "mFRR",
+            "direction": "sell",
+            "quantity_mw": 2.0,
+            "price_eur_per_mwh": 60.0,
+            "delivery_quarter": "2026-04-02T12:00:00Z"
+          },
+          "verifier_verdict": {
+            "accepted": true,
+            "stage_failed": null,
+            "physical_violation": null,
+            "worst_case_profit_eur": 5.0,
+            "threshold_eur": 0.0,
+            "retry_suggestion": null,
+            "conformal_interval": {
+              "horizon_minutes": 15,
+              "quantile_low": 70.0,
+              "quantile_high": 90.0,
+              "alpha": 0.1
+            }
+          },
+          "realized_outcome": {
+            "fill_mw": 0.0,
+            "realized_price_eur_per_mwh": 80.0,
+            "pnl_eur": 0.0
+          },
+          "info_digest": null
+        },
+        "agent-002": {
+          "run_id": "contract-smoke",
+          "step": 0,
+          "timestamp": "2026-04-02T12:00:00Z",
+          "agent_id": "agent-002",
+          "persona": {
+            "agent_id": "agent-002",
+            "display_name": "WIND focal 002",
+            "archetype": "wind",
+            "risk_attitude": "neutral",
+            "sophistication": "medium",
+            "info_latency_min": 0,
+            "capacity_mw": 50,
+            "storage_mwh": null,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "state": {
+            "soc_mwh": null,
+            "exposure_mw": -0.0,
+            "cash_eur": 50000
+          },
+          "reasoning": "contract row",
+          "tool_calls": [
+            {
+              "id": "society_communication_context-0-0",
+              "kind": "news",
+              "label": "Tool called: society_communication_context",
+              "status": "success",
+              "latency_ms": 40,
+              "summary": "Loaded society broadcast context for 3 agents. Market price n/a EUR/MWh; suggested n/a probe at n/a EUR/MWh.",
+              "provenance": "unknown"
+            }
+          ],
+          "tool_call_provenance_counts": {},
+          "proposed_action": {
+            "market": "mFRR",
+            "direction": "buy",
+            "quantity_mw": 0.0,
+            "price_eur_per_mwh": 80.0,
+            "delivery_quarter": "2026-04-02T12:00:00Z"
+          },
+          "verifier_verdict": {
+            "accepted": false,
+            "stage_failed": "physical",
+            "physical_violation": {
+              "reason": ""
+            },
+            "worst_case_profit_eur": null,
+            "threshold_eur": 0.0,
+            "retry_suggestion": "Adjust quantity or price and retry against the simulator envelope.",
+            "conformal_interval": {
+              "horizon_minutes": 15,
+              "quantile_low": 70.0,
+              "quantile_high": 90.0,
+              "alpha": 0.1
+            }
+          },
+          "realized_outcome": null,
+          "info_digest": null
+        }
+      },
+      "market": {
+        "step": 0,
+        "timestamp": "2026-04-02T12:00:00Z",
+        "dk1_price_eur_per_mwh": 80.0,
+        "dk2_price_eur_per_mwh": 76.8,
+        "mfrr_price_eur_per_mwh": 80.0,
+        "imbalance_mw": 0.0,
+        "gate_closure_minutes": 45,
+        "events": [
+          {
+            "id": "watch-0",
+            "kind": "watch",
+            "label": "Watch interval"
+          },
+          {
+            "id": "accept-0-agent-000",
+            "kind": "accepted_bid",
+            "label": "Verifier accepted bid"
+          },
+          {
+            "id": "accept-0-agent-001",
+            "kind": "accepted_bid",
+            "label": "Verifier accepted bid"
+          }
+        ],
+        "priority_signal": {
+          "score": 120.0,
+          "rank": 1,
+          "percentile": 1.0,
+          "tier": "critical",
+          "label": "Top value captured",
+          "drivers": [
+            "captured EUR 120",
+            "accepted candidate",
+            "same-side consensus",
+            "activation score"
+          ],
+          "risks": [],
+          "components": {
+            "must_watch_share": 0.0,
+            "watch_share": 0.333,
+            "accepted_bid_available": true,
+            "side_consensus": 1.0,
+            "activation_score": 0.583,
+            "clearability": 0.5,
+            "price_not_clearable_risk": 0.0,
+            "side_activation_mismatch_risk": 0.0,
+            "negative_worst_case_rejection_risk": 0.0,
+            "expected_profit_eur": 9.0,
+            "worst_case_profit_eur": 5.0,
+            "realized_profit_eur": 120.0
+          },
+          "grounding": "realized_outcome"
+        }
+      },
+      "forecast_diagnostics": {
+        "forecaster_id": "f8",
+        "interval_low_eur_mwh": 70.0,
+        "interval_high_eur_mwh": 90.0,
+        "interval_width_eur_mwh": 20.0,
+        "realized_price_eur_mwh": 80.0,
+        "covered": true,
+        "spot_mfrr_spread_eur_mwh": 0.0,
+        "up_edge_eur_mwh": null,
+        "down_edge_eur_mwh": null,
+        "expected_spread_eur_mwh": null,
+        "worst_case_profit_eur": 5.0
+      },
+      "health": {
+        "coverage": 1.0,
+        "verifier_acceptance_rate": 1.0,
+        "cumulative_pnl_eur": 120.0,
+        "gpu_utilization": 0.0,
+        "wall_time_minutes": 0.0,
+        "tick_pnl_eur": 120.0,
+        "cleared_mwh": 2.0,
+        "filled_count": 1,
+        "bid_count": 2,
+        "status_counts": {
+          "filled": 1,
+          "price_not_crossed": 1
+        }
+      },
+      "source": {
+        "trace_sha256": "c4742e3f404351c021c4a47b1dee7ecc3c340ee10ec7e92d7cea94cee4bba31c",
+        "manifest_schema_version": "1.0.0"
+      }
+    },
+    {
+      "run_id": "contract-smoke",
+      "step": 1,
+      "total_steps": 2,
+      "nodes": [
+        {
+          "id": "agent-000",
+          "persona": {
+            "agent_id": "agent-000",
+            "display_name": "P2H focal 000",
+            "archetype": "p2h",
+            "risk_attitude": "seeking",
+            "sophistication": "high",
+            "info_latency_min": 0,
+            "capacity_mw": 50,
+            "storage_mwh": 100,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "x": 0.08,
+          "y": 0.0,
+          "open_position_mw": 2.0,
+          "pnl_eur": 180.0,
+          "tick_pnl_eur": 60.0,
+          "belief": "Replay trace includes a concrete mFRR bid decision for this interval.",
+          "is_focal": true,
+          "verifier_acceptance_rate": 1.0
+        },
+        {
+          "id": "agent-001",
+          "persona": {
+            "agent_id": "agent-001",
+            "display_name": "EV BRP 001",
+            "archetype": "ev",
+            "risk_attitude": "averse",
+            "sophistication": "low",
+            "info_latency_min": 15,
+            "capacity_mw": 47,
+            "storage_mwh": 100,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "x": 0.2737227586441228,
+          "y": 0.24684173784149888,
+          "open_position_mw": 2.0,
+          "pnl_eur": 0.0,
+          "tick_pnl_eur": 0.0,
+          "belief": "Replay trace includes a concrete mFRR bid decision for this interval.",
+          "is_focal": false,
+          "verifier_acceptance_rate": null
+        },
+        {
+          "id": "agent-002",
+          "persona": {
+            "agent_id": "agent-002",
+            "display_name": "WIND BRP 002",
+            "archetype": "wind",
+            "risk_attitude": "neutral",
+            "sophistication": "medium",
+            "info_latency_min": 15,
+            "capacity_mw": 48,
+            "storage_mwh": null,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "x": 0.04324479754727473,
+          "y": 0.36428280951279024,
+          "open_position_mw": -0.0,
+          "pnl_eur": 0,
+          "tick_pnl_eur": 0.0,
+          "belief": "Replay trace records an abstain/watch decision for this interval.",
+          "is_focal": false,
+          "verifier_acceptance_rate": null
+        },
+        {
+          "id": "agent-peer-03",
+          "persona": {
+            "agent_id": "agent-peer-03",
+            "display_name": "P2H BRP -03",
+            "archetype": "p2h",
+            "risk_attitude": "neutral",
+            "sophistication": "medium",
+            "info_latency_min": 15,
+            "capacity_mw": 34,
+            "storage_mwh": 100,
+            "llm_family": "unavailable",
+            "forecaster": "unavailable"
+          },
+          "x": 0.5338405969032287,
+          "y": -0.03787471976655481,
+          "open_position_mw": -0.0,
+          "pnl_eur": 0,
+          "tick_pnl_eur": 0.0,
+          "belief": "Peer placeholder; no decision trace is available for this replay.",
+          "is_focal": false,
+          "verifier_acceptance_rate": null
+        },
+        {
+          "id": "agent-peer-04",
+          "persona": {
+            "agent_id": "agent-peer-04",
+            "display_name": "GENERATOR BRP -04",
+            "archetype": "generator",
+            "risk_attitude": "seeking",
+            "sophistication": "high",
+            "info_latency_min": 15,
+            "capacity_mw": 35,
+            "storage_mwh": null,
+            "llm_family": "unavailable",
+            "forecaster": "unavailable"
+          },
+          "x": 0.21675550272047306,
+          "y": 0.5072346406298446,
+          "open_position_mw": -0.0,
+          "pnl_eur": 0,
+          "tick_pnl_eur": 0.0,
+          "belief": "Peer placeholder; no decision trace is available for this replay.",
+          "is_focal": false,
+          "verifier_acceptance_rate": null
+        },
+        {
+          "id": "agent-peer-05",
+          "persona": {
+            "agent_id": "agent-peer-05",
+            "display_name": "ARBITRAGEUR BRP -05",
+            "archetype": "arbitrageur",
+            "risk_attitude": "averse",
+            "sophistication": "low",
+            "info_latency_min": 15,
+            "capacity_mw": 36,
+            "storage_mwh": null,
+            "llm_family": "unavailable",
+            "forecaster": "unavailable"
+          },
+          "x": -0.38453471637098147,
+          "y": 0.3601140912641506,
+          "open_position_mw": -0.0,
+          "pnl_eur": 0,
+          "tick_pnl_eur": 0.0,
+          "belief": "Peer placeholder; no decision trace is available for this replay.",
+          "is_focal": false,
+          "verifier_acceptance_rate": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "consensus-1-up-agent-000-agent-001",
+          "source": "agent-000",
+          "target": "agent-001",
+          "kind": "consensus",
+          "side": "up",
+          "direction": "sell",
+          "market": "mFRR",
+          "strength": 0.667,
+          "label": "Same-side up",
+          "detail": "2 agents bidding up this interval.",
+          "started_step": 1,
+          "expires_step": 1
+        },
+        {
+          "id": "broadcast-1-agent-002-agent-000",
+          "source": "agent-002",
+          "target": "agent-000",
+          "kind": "broadcast",
+          "side": null,
+          "direction": null,
+          "market": "mFRR",
+          "strength": 0.5,
+          "label": "Society broadcast",
+          "detail": "Shared market digest broadcast to the society this interval.",
+          "started_step": 1,
+          "expires_step": 1
+        },
+        {
+          "id": "broadcast-1-agent-002-agent-001",
+          "source": "agent-002",
+          "target": "agent-001",
+          "kind": "broadcast",
+          "side": null,
+          "direction": null,
+          "market": "mFRR",
+          "strength": 0.5,
+          "label": "Society broadcast",
+          "detail": "Shared market digest broadcast to the society this interval.",
+          "started_step": 1,
+          "expires_step": 1
+        }
+      ],
+      "selected_trace": {
+        "run_id": "contract-smoke",
+        "step": 1,
+        "timestamp": "2026-04-02T13:00:00Z",
+        "agent_id": "agent-000",
+        "persona": {
+          "agent_id": "agent-000",
+          "display_name": "P2H focal 000",
+          "archetype": "p2h",
+          "risk_attitude": "seeking",
+          "sophistication": "high",
+          "info_latency_min": 0,
+          "capacity_mw": 50,
+          "storage_mwh": 100,
+          "llm_family": "L5",
+          "forecaster": "F8"
+        },
+        "state": {
+          "soc_mwh": 50.0,
+          "exposure_mw": 2.0,
+          "cash_eur": 50180.0
+        },
+        "reasoning": "contract row",
+        "tool_calls": [
+          {
+            "id": "society_communication_context-1-0",
+            "kind": "news",
+            "label": "Tool called: society_communication_context",
+            "status": "success",
+            "latency_ms": 40,
+            "summary": "Loaded society broadcast context for 3 agents. Market price n/a EUR/MWh; suggested n/a probe at n/a EUR/MWh.",
+            "provenance": "unknown"
+          },
+          {
+            "id": "simulate_bid-1-1",
+            "kind": "simulate",
+            "label": "Risk-agent: simulator replay",
+            "status": "success",
+            "latency_ms": 68,
+            "summary": "Simulated requested up bid for 2.00 MWh at 60.00 EUR/MWh. Accepted; worst-case profit 5.00 EUR.",
+            "provenance": "unknown"
+          }
+        ],
+        "tool_call_provenance_counts": {},
+        "proposed_action": {
+          "market": "mFRR",
+          "direction": "sell",
+          "quantity_mw": 2.0,
+          "price_eur_per_mwh": 60.0,
+          "delivery_quarter": "2026-04-02T13:00:00Z"
+        },
+        "verifier_verdict": {
+          "accepted": true,
+          "stage_failed": null,
+          "physical_violation": null,
+          "worst_case_profit_eur": 5.0,
+          "threshold_eur": 0.0,
+          "retry_suggestion": null,
+          "conformal_interval": {
+            "horizon_minutes": 15,
+            "quantile_low": 70.0,
+            "quantile_high": 90.0,
+            "alpha": 0.1
+          }
+        },
+        "realized_outcome": {
+          "fill_mw": 2.0,
+          "realized_price_eur_per_mwh": 80.0,
+          "pnl_eur": 60.0
+        },
+        "info_digest": null
+      },
+      "agent_traces": {
+        "agent-000": {
+          "run_id": "contract-smoke",
+          "step": 1,
+          "timestamp": "2026-04-02T13:00:00Z",
+          "agent_id": "agent-000",
+          "persona": {
+            "agent_id": "agent-000",
+            "display_name": "P2H focal 000",
+            "archetype": "p2h",
+            "risk_attitude": "seeking",
+            "sophistication": "high",
+            "info_latency_min": 0,
+            "capacity_mw": 50,
+            "storage_mwh": 100,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "state": {
+            "soc_mwh": 50.0,
+            "exposure_mw": 2.0,
+            "cash_eur": 50180.0
+          },
+          "reasoning": "contract row",
+          "tool_calls": [
+            {
+              "id": "society_communication_context-1-0",
+              "kind": "news",
+              "label": "Tool called: society_communication_context",
+              "status": "success",
+              "latency_ms": 40,
+              "summary": "Loaded society broadcast context for 3 agents. Market price n/a EUR/MWh; suggested n/a probe at n/a EUR/MWh.",
+              "provenance": "unknown"
+            },
+            {
+              "id": "simulate_bid-1-1",
+              "kind": "simulate",
+              "label": "Risk-agent: simulator replay",
+              "status": "success",
+              "latency_ms": 68,
+              "summary": "Simulated requested up bid for 2.00 MWh at 60.00 EUR/MWh. Accepted; worst-case profit 5.00 EUR.",
+              "provenance": "unknown"
+            }
+          ],
+          "tool_call_provenance_counts": {},
+          "proposed_action": {
+            "market": "mFRR",
+            "direction": "sell",
+            "quantity_mw": 2.0,
+            "price_eur_per_mwh": 60.0,
+            "delivery_quarter": "2026-04-02T13:00:00Z"
+          },
+          "verifier_verdict": {
+            "accepted": true,
+            "stage_failed": null,
+            "physical_violation": null,
+            "worst_case_profit_eur": 5.0,
+            "threshold_eur": 0.0,
+            "retry_suggestion": null,
+            "conformal_interval": {
+              "horizon_minutes": 15,
+              "quantile_low": 70.0,
+              "quantile_high": 90.0,
+              "alpha": 0.1
+            }
+          },
+          "realized_outcome": {
+            "fill_mw": 2.0,
+            "realized_price_eur_per_mwh": 80.0,
+            "pnl_eur": 60.0
+          },
+          "info_digest": null
+        },
+        "agent-001": {
+          "run_id": "contract-smoke",
+          "step": 1,
+          "timestamp": "2026-04-02T13:00:00Z",
+          "agent_id": "agent-001",
+          "persona": {
+            "agent_id": "agent-001",
+            "display_name": "EV focal 001",
+            "archetype": "ev",
+            "risk_attitude": "averse",
+            "sophistication": "low",
+            "info_latency_min": 0,
+            "capacity_mw": 50,
+            "storage_mwh": 100,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "state": {
+            "soc_mwh": 50.0,
+            "exposure_mw": 2.0,
+            "cash_eur": 50000.0
+          },
+          "reasoning": "contract row",
+          "tool_calls": [
+            {
+              "id": "society_communication_context-1-0",
+              "kind": "news",
+              "label": "Tool called: society_communication_context",
+              "status": "success",
+              "latency_ms": 40,
+              "summary": "Loaded society broadcast context for 3 agents. Market price n/a EUR/MWh; suggested n/a probe at n/a EUR/MWh.",
+              "provenance": "unknown"
+            },
+            {
+              "id": "simulate_bid-1-1",
+              "kind": "simulate",
+              "label": "Risk-agent: simulator replay",
+              "status": "success",
+              "latency_ms": 68,
+              "summary": "Simulated requested up bid for 2.00 MWh at 60.00 EUR/MWh. Accepted; worst-case profit 5.00 EUR.",
+              "provenance": "unknown"
+            }
+          ],
+          "tool_call_provenance_counts": {},
+          "proposed_action": {
+            "market": "mFRR",
+            "direction": "sell",
+            "quantity_mw": 2.0,
+            "price_eur_per_mwh": 60.0,
+            "delivery_quarter": "2026-04-02T13:00:00Z"
+          },
+          "verifier_verdict": {
+            "accepted": true,
+            "stage_failed": null,
+            "physical_violation": null,
+            "worst_case_profit_eur": 5.0,
+            "threshold_eur": 0.0,
+            "retry_suggestion": null,
+            "conformal_interval": {
+              "horizon_minutes": 15,
+              "quantile_low": 70.0,
+              "quantile_high": 90.0,
+              "alpha": 0.1
+            }
+          },
+          "realized_outcome": {
+            "fill_mw": 2.0,
+            "realized_price_eur_per_mwh": 80.0,
+            "pnl_eur": 40.0
+          },
+          "info_digest": null
+        },
+        "agent-002": {
+          "run_id": "contract-smoke",
+          "step": 1,
+          "timestamp": "2026-04-02T13:00:00Z",
+          "agent_id": "agent-002",
+          "persona": {
+            "agent_id": "agent-002",
+            "display_name": "WIND focal 002",
+            "archetype": "wind",
+            "risk_attitude": "neutral",
+            "sophistication": "medium",
+            "info_latency_min": 0,
+            "capacity_mw": 50,
+            "storage_mwh": null,
+            "llm_family": "L5",
+            "forecaster": "F8"
+          },
+          "state": {
+            "soc_mwh": null,
+            "exposure_mw": -0.0,
+            "cash_eur": 50000
+          },
+          "reasoning": "contract row",
+          "tool_calls": [
+            {
+              "id": "society_communication_context-1-0",
+              "kind": "news",
+              "label": "Tool called: society_communication_context",
+              "status": "success",
+              "latency_ms": 40,
+              "summary": "Loaded society broadcast context for 3 agents. Market price n/a EUR/MWh; suggested n/a probe at n/a EUR/MWh.",
+              "provenance": "unknown"
+            }
+          ],
+          "tool_call_provenance_counts": {},
+          "proposed_action": {
+            "market": "mFRR",
+            "direction": "buy",
+            "quantity_mw": 0.0,
+            "price_eur_per_mwh": 80.0,
+            "delivery_quarter": "2026-04-02T13:00:00Z"
+          },
+          "verifier_verdict": {
+            "accepted": false,
+            "stage_failed": "physical",
+            "physical_violation": {
+              "reason": ""
+            },
+            "worst_case_profit_eur": null,
+            "threshold_eur": 0.0,
+            "retry_suggestion": "Adjust quantity or price and retry against the simulator envelope.",
+            "conformal_interval": {
+              "horizon_minutes": 15,
+              "quantile_low": 70.0,
+              "quantile_high": 90.0,
+              "alpha": 0.1
+            }
+          },
+          "realized_outcome": null,
+          "info_digest": null
+        }
+      },
+      "market": {
+        "step": 1,
+        "timestamp": "2026-04-02T13:00:00Z",
+        "dk1_price_eur_per_mwh": 80.0,
+        "dk2_price_eur_per_mwh": 76.8,
+        "mfrr_price_eur_per_mwh": 80.0,
+        "imbalance_mw": 24.40469091547548,
+        "gate_closure_minutes": 30,
+        "events": [
+          {
+            "id": "watch-1",
+            "kind": "watch",
+            "label": "Watch interval"
+          },
+          {
+            "id": "accept-1-agent-000",
+            "kind": "accepted_bid",
+            "label": "Verifier accepted bid"
+          },
+          {
+            "id": "accept-1-agent-001",
+            "kind": "accepted_bid",
+            "label": "Verifier accepted bid"
+          }
+        ],
+        "priority_signal": {
+          "score": 60.0,
+          "rank": 2,
+          "percentile": 0.5,
+          "tier": "medium",
+          "label": "Minor value captured",
+          "drivers": [
+            "captured EUR 60",
+            "accepted candidate",
+            "same-side consensus",
+            "activation score"
+          ],
+          "risks": [],
+          "components": {
+            "must_watch_share": 0.0,
+            "watch_share": 0.333,
+            "accepted_bid_available": true,
+            "side_consensus": 1.0,
+            "activation_score": 1.0,
+            "clearability": 1.0,
+            "price_not_clearable_risk": 0.0,
+            "side_activation_mismatch_risk": 0.0,
+            "negative_worst_case_rejection_risk": 0.0,
+            "expected_profit_eur": 9.0,
+            "worst_case_profit_eur": 5.0,
+            "realized_profit_eur": 60.0
+          },
+          "grounding": "realized_outcome"
+        }
+      },
+      "forecast_diagnostics": {
+        "forecaster_id": "f8",
+        "interval_low_eur_mwh": 70.0,
+        "interval_high_eur_mwh": 90.0,
+        "interval_width_eur_mwh": 20.0,
+        "realized_price_eur_mwh": 80.0,
+        "covered": true,
+        "spot_mfrr_spread_eur_mwh": 0.0,
+        "up_edge_eur_mwh": null,
+        "down_edge_eur_mwh": null,
+        "expected_spread_eur_mwh": null,
+        "worst_case_profit_eur": 5.0
+      },
+      "health": {
+        "coverage": 1.0,
+        "verifier_acceptance_rate": 1.0,
+        "cumulative_pnl_eur": 180.0,
+        "gpu_utilization": 0.0,
+        "wall_time_minutes": 0.25,
+        "tick_pnl_eur": 60.0,
+        "cleared_mwh": 2.0,
+        "filled_count": 1,
+        "bid_count": 1,
+        "status_counts": {
+          "filled": 1
+        }
+      },
+      "source": {
+        "trace_sha256": "c4742e3f404351c021c4a47b1dee7ecc3c340ee10ec7e92d7cea94cee4bba31c",
+        "manifest_schema_version": "1.0.0"
+      }
+    }
+  ],
+  "market_series": [
+    {
+      "step": 0,
+      "timestamp": "2026-04-02T12:00:00Z",
+      "dk1_price_eur_per_mwh": 80.0,
+      "dk2_price_eur_per_mwh": 76.8,
+      "mfrr_price_eur_per_mwh": 80.0,
+      "imbalance_mw": 0.0,
+      "gate_closure_minutes": 45,
+      "events": [
+        {
+          "id": "watch-0",
+          "kind": "watch",
+          "label": "Watch interval"
+        },
+        {
+          "id": "accept-0-agent-000",
+          "kind": "accepted_bid",
+          "label": "Verifier accepted bid"
+        },
+        {
+          "id": "accept-0-agent-001",
+          "kind": "accepted_bid",
+          "label": "Verifier accepted bid"
+        }
+      ],
+      "priority_signal": {
+        "score": 120.0,
+        "rank": 1,
+        "percentile": 1.0,
+        "tier": "critical",
+        "label": "Top value captured",
+        "drivers": [
+          "captured EUR 120",
+          "accepted candidate",
+          "same-side consensus",
+          "activation score"
+        ],
+        "risks": [],
+        "components": {
+          "must_watch_share": 0.0,
+          "watch_share": 0.333,
+          "accepted_bid_available": true,
+          "side_consensus": 1.0,
+          "activation_score": 0.583,
+          "clearability": 0.5,
+          "price_not_clearable_risk": 0.0,
+          "side_activation_mismatch_risk": 0.0,
+          "negative_worst_case_rejection_risk": 0.0,
+          "expected_profit_eur": 9.0,
+          "worst_case_profit_eur": 5.0,
+          "realized_profit_eur": 120.0
+        },
+        "grounding": "realized_outcome"
+      }
+    },
+    {
+      "step": 1,
+      "timestamp": "2026-04-02T13:00:00Z",
+      "dk1_price_eur_per_mwh": 80.0,
+      "dk2_price_eur_per_mwh": 76.8,
+      "mfrr_price_eur_per_mwh": 80.0,
+      "imbalance_mw": 24.40469091547548,
+      "gate_closure_minutes": 30,
+      "events": [
+        {
+          "id": "watch-1",
+          "kind": "watch",
+          "label": "Watch interval"
+        },
+        {
+          "id": "accept-1-agent-000",
+          "kind": "accepted_bid",
+          "label": "Verifier accepted bid"
+        },
+        {
+          "id": "accept-1-agent-001",
+          "kind": "accepted_bid",
+          "label": "Verifier accepted bid"
+        }
+      ],
+      "priority_signal": {
+        "score": 60.0,
+        "rank": 2,
+        "percentile": 0.5,
+        "tier": "medium",
+        "label": "Minor value captured",
+        "drivers": [
+          "captured EUR 60",
+          "accepted candidate",
+          "same-side consensus",
+          "activation score"
+        ],
+        "risks": [],
+        "components": {
+          "must_watch_share": 0.0,
+          "watch_share": 0.333,
+          "accepted_bid_available": true,
+          "side_consensus": 1.0,
+          "activation_score": 1.0,
+          "clearability": 1.0,
+          "price_not_clearable_risk": 0.0,
+          "side_activation_mismatch_risk": 0.0,
+          "negative_worst_case_rejection_risk": 0.0,
+          "expected_profit_eur": 9.0,
+          "worst_case_profit_eur": 5.0,
+          "realized_profit_eur": 60.0
+        },
+        "grounding": "realized_outcome"
+      }
+    }
+  ],
+  "priority_accuracy": {
+    "score": 0.6667,
+    "precision": 1.0,
+    "recall": 0.5,
+    "profit_capture_rate": 0.6667,
+    "selected_tick_count": 1,
+    "positive_tick_count": 2
+  },
+  "forecaster_leaderboard": [
+    {
+      "model_id": "ar1",
+      "label": "Gaussian AR(1) fallback",
+      "seed_count": null,
+      "q10_pinball": null,
+      "q50_pinball": null,
+      "q90_pinball": null,
+      "mean_pinball": null,
+      "raw_coverage": null,
+      "aci_coverage": null,
+      "status": "registered"
+    },
+    {
+      "model_id": "f9",
+      "label": "TimesFM-2.0 zero-shot",
+      "seed_count": null,
+      "q10_pinball": null,
+      "q50_pinball": null,
+      "q90_pinball": null,
+      "mean_pinball": null,
+      "raw_coverage": null,
+      "aci_coverage": null,
+      "status": "registered"
+    },
+    {
+      "model_id": "f10",
+      "label": "Chronos-Bolt zero-shot",
+      "seed_count": null,
+      "q10_pinball": null,
+      "q50_pinball": null,
+      "q90_pinball": null,
+      "mean_pinball": null,
+      "raw_coverage": null,
+      "aci_coverage": null,
+      "status": "registered / dependency missing"
+    },
+    {
+      "model_id": "f11",
+      "label": "PriceFM-shaped PatchTST surrogate",
+      "seed_count": null,
+      "q10_pinball": null,
+      "q50_pinball": null,
+      "q90_pinball": null,
+      "mean_pinball": null,
+      "raw_coverage": null,
+      "aci_coverage": null,
+      "status": "registered"
+    }
+  ],
+  "forecaster_summary": {
+    "active_forecaster_id": "f8",
+    "run_ids_by_forecaster": {
+      "f8": [
+        "contract-smoke"
+      ]
+    },
+    "coverage": 1.0,
+    "accepted_bid_rate": 1.0,
+    "cumulative_pnl_eur": 180.0,
+    "selected_tick_count": 1
+  },
+  "focal_baselines": [
+    {
+      "run_id": "mi00-baseline-profitguard-24-q32",
+      "label": "Profit-guard baseline 24-q32",
+      "kind": "baseline",
+      "profit_eur": 0.0,
+      "realized_profit_eur": 0.0,
+      "cvar_95_eur": 0.0,
+      "fill_rate": 0.0,
+      "bid_count": 24,
+      "regret_eur": 6175.18,
+      "n_runs": 1,
+      "status": "evaluated",
+      "source": "evaluations/mi00-baseline-profitguard-24-q32/run_summary.json"
+    }
+  ]
+}

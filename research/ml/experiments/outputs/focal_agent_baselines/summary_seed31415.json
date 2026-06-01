@@ -1,0 +1,68 @@
+{
+  "b1_naive_da": {
+    "name": "b1_naive_da",
+    "seed": 31415,
+    "n_ticks": 5472,
+    "total_profit_dkk": 0.0,
+    "total_profit_eur": 0.0,
+    "profit_per_mwh_dkk": 0.0,
+    "profit_per_mwh_eur": 0.0,
+    "sharpe": 0.0,
+    "cvar5_daily_dkk": 0.0,
+    "cvar5_daily_eur": 0.0,
+    "participation_rate": 0.0,
+    "physical_violation_rate": 0.0,
+    "runtime_seconds": 0.01,
+    "extras": {
+      "energy_delivered_mwh": 0.0,
+      "ticks_with_bid": 0,
+      "heat_unmet_tick_rate": 0.9932,
+      "bid_attempts": 0,
+      "bid_violations": 0
+    }
+  },
+  "b2_stochastic_lp": {
+    "name": "b2_stochastic_lp",
+    "seed": 31415,
+    "n_ticks": 5472,
+    "total_profit_dkk": 222789.7628,
+    "total_profit_eur": 29864.5795,
+    "profit_per_mwh_dkk": 133.2793,
+    "profit_per_mwh_eur": 17.8659,
+    "sharpe": 267.5905,
+    "cvar5_daily_dkk": 0.0,
+    "cvar5_daily_eur": 0.0,
+    "participation_rate": 0.9017,
+    "physical_violation_rate": 0.0,
+    "runtime_seconds": 0.26,
+    "extras": {
+      "energy_delivered_mwh": 1671.6012,
+      "ticks_with_bid": 4934,
+      "heat_unmet_tick_rate": 0.0969,
+      "bid_attempts": 4934,
+      "bid_violations": 0
+    }
+  },
+  "b4_ppo": {
+    "name": "b4_ppo",
+    "seed": 31415,
+    "n_ticks": 5472,
+    "total_profit_dkk": 161694.3887,
+    "total_profit_eur": 21674.851,
+    "profit_per_mwh_dkk": 123.2233,
+    "profit_per_mwh_eur": 16.5179,
+    "sharpe": 159.8673,
+    "cvar5_daily_dkk": 1455.2282,
+    "cvar5_daily_eur": 195.0708,
+    "participation_rate": 0.9973,
+    "physical_violation_rate": 0.0027,
+    "runtime_seconds": 0.36,
+    "extras": {
+      "energy_delivered_mwh": 1312.2062,
+      "ticks_with_bid": 5457,
+      "heat_unmet_tick_rate": 0.4236,
+      "bid_attempts": 5471,
+      "bid_violations": 15
+    }
+  }
+}

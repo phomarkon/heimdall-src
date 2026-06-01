@@ -1,0 +1,35 @@
+[
+  {
+    "patch_len": 4,
+    "val_pinball_mean": 268.61056264241535,
+    "val_q10_q90_coverage": 0.5684457190822608,
+    "per_quantile": {
+      "val_pinball_q10": 126.41558074951172,
+      "val_pinball_q50": 341.065185546875,
+      "val_pinball_q90": 338.3509216308594,
+      "val_pinball_mean_dkk": 268.61056264241535
+    }
+  },
+  {
+    "patch_len": 8,
+    "val_pinball_mean": 267.15992228190106,
+    "val_q10_q90_coverage": 0.5745779705278866,
+    "per_quantile": {
+      "val_pinball_q10": 122.1109619140625,
+      "val_pinball_q50": 337.8998718261719,
+      "val_pinball_q90": 341.46893310546875,
+      "val_pinball_mean_dkk": 267.15992228190106
+    }
+  },
+  {
+    "patch_len": 16,
+    "val_pinball_mean": 260.1281153361003,
+    "val_q10_q90_coverage": 0.6694646521171423,
+    "per_quantile": {
+      "val_pinball_q10": 112.60779571533203,
+      "val_pinball_q50": 332.7715148925781,
+      "val_pinball_q90": 335.0050354003906,
+      "val_pinball_mean_dkk": 260.1281153361003
+    }
+  }
+]

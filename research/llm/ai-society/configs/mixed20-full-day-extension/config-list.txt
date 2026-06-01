@@ -1,0 +1,2 @@
+ai-society/configs/mixed20-full-day-extension/m20fde-mixed20-apr08-96-real-controls-q32.yaml
+ai-society/configs/mixed20-full-day-extension/m20fde-mixed20-apr09-96-real-controls-q32.yaml

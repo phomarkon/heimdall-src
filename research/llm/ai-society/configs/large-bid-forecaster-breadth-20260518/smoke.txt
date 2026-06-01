@@ -1,0 +1,2 @@
+ai-society/configs/large-bid-forecaster-breadth-20260518/smoke-lbfb-s12-balanced-apr03-1430-2-large-q32.yaml
+ai-society/configs/large-bid-forecaster-breadth-20260518/smoke-lbfb-s20-mixed-apr03-1430-2-large-q32.yaml

@@ -1,0 +1,32 @@
+run_id: mi02-both-side-probes-96-q32
+seed: 48
+zone: DK1
+agent_count: 1
+archetype_cycle: [p2h]
+ticks: 96
+start_timestamp: "2026-04-02T00:00:00Z"
+forecaster_backend: f0
+verifier_mode: simulator
+verifier_tau_eur: 0.0
+market_context: real
+tool_mode: openai_tools
+objective: bid_seeking
+ablation_strategy: both_side_probes
+persona_profile: default
+scenario_id: p2h_dk1_pypsa
+tool_policy: p2h_only_simulator
+max_tool_rounds: 5
+data_start: "2026-04-01T00:00:00Z"
+data_end: "2026-05-01T00:00:00Z"
+context_dataset_dir: data/cache/real_context/april_2026
+data_cache_dir: data/cache/real_context/april_2026/source_cache
+default_lookback_hours: 24
+cache_refresh: false
+output_dir: research/llm/ai-society/runs
+llm:
+  enabled: true
+  model: Qwen/Qwen3-32B
+  temperature: 0.25
+  max_tokens: 900
+  timeout_seconds: 180
+  max_concurrency: 1

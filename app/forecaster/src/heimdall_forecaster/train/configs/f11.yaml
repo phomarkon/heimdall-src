@@ -1,0 +1,26 @@
+# F11 — PriceFM-shaped fine-tune on DK1 (proposal §4.2.2 F11).
+#
+# PriceFM (arXiv:2508.04875) is a probabilistic foundation model
+# pretrained on 24 EU countries. Authored weights aren't published
+# publicly as of 2026-05-10; we *approximate* F11 by continuing-training
+# the F7 architecture on DK1 with a wider patch and deeper transformer
+# (mimicking the foundation-scale architecture; per arXiv:2508.04875 §3.1).
+#
+# Honest framing: this is a "PriceFM-shaped surrogate," not a
+# fine-tune of authored weights. Documented in
+# models/forecaster/f11/MODEL_CARD.md.
+name: f11
+multivariate: false
+seq_len: 192      # 2-day context (matches PriceFM §3.1 inductive bias)
+horizon: 16
+patch_len: 16     # bigger patches than F7 (8) per PriceFM scale-up
+d_model: 192      # wider than F7 (128)
+nhead: 8
+n_layers: 8       # deeper than F7 (6)
+dropout: 0.1
+epochs: 5
+batch_size: 64
+lr: 5.0e-4
+weight_decay: 1.0e-4
+seed: 42
+quantiles: [0.1, 0.5, 0.9]

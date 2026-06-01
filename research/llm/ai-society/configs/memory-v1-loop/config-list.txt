@@ -1,0 +1,10 @@
+ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr03-i1-10-f8-q32.yaml
+ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr03-i2-10-f8-q32.yaml
+ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr03-i3-10-f8-q32.yaml
+ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr03-i4-10-f8-q32.yaml
+ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr03-i5-10-f8-q32.yaml
+ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr09-i1-10-f8-q32.yaml
+ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr09-i2-10-f8-q32.yaml
+ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr09-i3-10-f8-q32.yaml
+ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr09-i4-10-f8-q32.yaml
+ai-society/configs/memory-v1-loop/memv1-5-broadcast-apr09-i5-10-f8-q32.yaml

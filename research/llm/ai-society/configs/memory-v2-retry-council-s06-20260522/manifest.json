@@ -1,0 +1,66 @@
+{
+  "ablation_strategy": "comm_retry_council",
+  "chain_after": {
+    "matrix": "llm-retry-council-s06-20260522",
+    "required_completed": 3,
+    "required_failed": 0
+  },
+  "chooser_mode": "llm",
+  "config_list": "ai-society/configs/memory-v2-retry-council-s06-20260522/all.txt",
+  "full_run_count": 3,
+  "full_runs": [
+    {
+      "config": "ai-society/configs/memory-v2-retry-council-s06-20260522/full/s06-actioncore/mrc-s06-actioncore-retry-memv2-apr02-0530-seed42-24-q32.yaml",
+      "run_id": "mrc-s06-actioncore-retry-memv2-apr02-0530-seed42-24-q32",
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 24
+    },
+    {
+      "config": "ai-society/configs/memory-v2-retry-council-s06-20260522/full/s06-actioncore/mrc-s06-actioncore-retry-memv2-apr09-1830-seed42-24-q32.yaml",
+      "run_id": "mrc-s06-actioncore-retry-memv2-apr09-1830-seed42-24-q32",
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 24
+    },
+    {
+      "config": "ai-society/configs/memory-v2-retry-council-s06-20260522/full/s06-actioncore/mrc-s06-actioncore-retry-memv2-apr13-0015-seed42-24-q32.yaml",
+      "run_id": "mrc-s06-actioncore-retry-memv2-apr13-0015-seed42-24-q32",
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 24
+    }
+  ],
+  "generated_at": "2026-05-22",
+  "matrix": "memory-v2-retry-council-s06-20260522",
+  "memory_bank_path": "ai-society/runs/risk-filter-matrix/memory-v2-bank.jsonl",
+  "memory_enabled": true,
+  "question": "Does memory-v2 improve retry-council LLM behavior under current scenario-envelope settings?",
+  "run_root": "ai-society/runs/memory-v2-retry-council-s06-20260522",
+  "scope": "s06-only paired with llm-retry-council-s06-20260522",
+  "seed": 42,
+  "smoke_list": "ai-society/configs/memory-v2-retry-council-s06-20260522/smoke.txt",
+  "smoke_run_count": 3,
+  "smoke_runs": [
+    {
+      "config": "ai-society/configs/memory-v2-retry-council-s06-20260522/smoke/s06-actioncore/smoke-mrc-s06-actioncore-retry-memv2-apr02-0530-seed42-2-q32.yaml",
+      "run_id": "smoke-mrc-s06-actioncore-retry-memv2-apr02-0530-seed42-2-q32",
+      "start_timestamp": "2026-04-02T05:30:00Z",
+      "ticks": 2
+    },
+    {
+      "config": "ai-society/configs/memory-v2-retry-council-s06-20260522/smoke/s06-actioncore/smoke-mrc-s06-actioncore-retry-memv2-apr09-1830-seed42-2-q32.yaml",
+      "run_id": "smoke-mrc-s06-actioncore-retry-memv2-apr09-1830-seed42-2-q32",
+      "start_timestamp": "2026-04-09T18:30:00Z",
+      "ticks": 2
+    },
+    {
+      "config": "ai-society/configs/memory-v2-retry-council-s06-20260522/smoke/s06-actioncore/smoke-mrc-s06-actioncore-retry-memv2-apr13-0015-seed42-2-q32.yaml",
+      "run_id": "smoke-mrc-s06-actioncore-retry-memv2-apr13-0015-seed42-2-q32",
+      "start_timestamp": "2026-04-13T00:15:00Z",
+      "ticks": 2
+    }
+  ],
+  "windows": {
+    "apr02-0530": "2026-04-02T05:30:00Z",
+    "apr09-1830": "2026-04-09T18:30:00Z",
+    "apr13-0015": "2026-04-13T00:15:00Z"
+  }
+}

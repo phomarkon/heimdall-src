@@ -1,0 +1,1348 @@
+{
+  "runs": [
+    {
+      "cfg_hash": "a7a7970b5f96917e",
+      "model": "f0",
+      "seed": 42,
+      "ts": "2026-05-14T05:04:29Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "b202f10b71735c08",
+      "model": "f0",
+      "seed": 13,
+      "ts": "2026-05-14T05:06:51Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "a7a7970b5f96917e",
+      "model": "f0",
+      "seed": 42,
+      "ts": "2026-05-14T05:06:51Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "c46eb73518d2ddaf",
+      "model": "f0",
+      "seed": 137,
+      "ts": "2026-05-14T05:06:51Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "088358a7c870c9f6",
+      "model": "f0",
+      "seed": 1729,
+      "ts": "2026-05-14T05:06:51Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "f19b2668ed8d0d09",
+      "model": "f0",
+      "seed": 31415,
+      "ts": "2026-05-14T05:06:51Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "23412d58b3233b26",
+      "model": "f3",
+      "seed": 13,
+      "ts": "2026-05-14T05:06:52Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "8afc5d69068b4a38",
+      "model": "f3",
+      "seed": 42,
+      "ts": "2026-05-14T05:06:52Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "ca376ebe4d573411",
+      "model": "f3",
+      "seed": 137,
+      "ts": "2026-05-14T05:06:52Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "bfd2af945d2c21f0",
+      "model": "f3",
+      "seed": 1729,
+      "ts": "2026-05-14T05:06:52Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "d57353c43703be9b",
+      "model": "f3",
+      "seed": 31415,
+      "ts": "2026-05-14T05:06:52Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "c0bd39c088fc56d7",
+      "model": "f3_ensemble",
+      "seed": 13,
+      "ts": "2026-05-14T05:06:52Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "b49fe295014b61b9",
+      "model": "f3_ensemble",
+      "seed": 42,
+      "ts": "2026-05-14T05:06:52Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "98edb8df5c337a11",
+      "model": "f3_ensemble",
+      "seed": 137,
+      "ts": "2026-05-14T05:06:52Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "de93f436cd678e3a",
+      "model": "f3_ensemble",
+      "seed": 1729,
+      "ts": "2026-05-14T05:06:52Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "afc869881935d410",
+      "model": "f3_ensemble",
+      "seed": 31415,
+      "ts": "2026-05-14T05:06:52Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "78f1b69efb98d3ad",
+      "model": "f7",
+      "seed": 42,
+      "ts": "2026-05-14T05:06:53Z",
+      "reason": "full-5-seed-sweep-2026-05-11-smoke-f0-was-test"
+    },
+    {
+      "cfg_hash": "b202f10b71735c08",
+      "model": "f0",
+      "seed": 13,
+      "ts": "2026-05-14T05:10:03Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "a7a7970b5f96917e",
+      "model": "f0",
+      "seed": 42,
+      "ts": "2026-05-14T05:10:03Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "c46eb73518d2ddaf",
+      "model": "f0",
+      "seed": 137,
+      "ts": "2026-05-14T05:10:03Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "088358a7c870c9f6",
+      "model": "f0",
+      "seed": 1729,
+      "ts": "2026-05-14T05:10:03Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "f19b2668ed8d0d09",
+      "model": "f0",
+      "seed": 31415,
+      "ts": "2026-05-14T05:10:03Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "23412d58b3233b26",
+      "model": "f3",
+      "seed": 13,
+      "ts": "2026-05-14T05:10:08Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "8afc5d69068b4a38",
+      "model": "f3",
+      "seed": 42,
+      "ts": "2026-05-14T05:10:12Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "ca376ebe4d573411",
+      "model": "f3",
+      "seed": 137,
+      "ts": "2026-05-14T05:10:16Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "bfd2af945d2c21f0",
+      "model": "f3",
+      "seed": 1729,
+      "ts": "2026-05-14T05:10:21Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "d57353c43703be9b",
+      "model": "f3",
+      "seed": 31415,
+      "ts": "2026-05-14T05:10:25Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "c0bd39c088fc56d7",
+      "model": "f3_ensemble",
+      "seed": 13,
+      "ts": "2026-05-14T05:10:30Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "b49fe295014b61b9",
+      "model": "f3_ensemble",
+      "seed": 42,
+      "ts": "2026-05-14T05:10:35Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "98edb8df5c337a11",
+      "model": "f3_ensemble",
+      "seed": 137,
+      "ts": "2026-05-14T05:10:40Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "de93f436cd678e3a",
+      "model": "f3_ensemble",
+      "seed": 1729,
+      "ts": "2026-05-14T05:10:45Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "afc869881935d410",
+      "model": "f3_ensemble",
+      "seed": 31415,
+      "ts": "2026-05-14T05:10:50Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "f254ee576bdf0748",
+      "model": "f7",
+      "seed": 13,
+      "ts": "2026-05-14T05:10:51Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "78f1b69efb98d3ad",
+      "model": "f7",
+      "seed": 42,
+      "ts": "2026-05-14T05:10:53Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "802b0f4d5d7b170e",
+      "model": "f7",
+      "seed": 137,
+      "ts": "2026-05-14T05:10:55Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "05fac25762ca29b4",
+      "model": "f7",
+      "seed": 1729,
+      "ts": "2026-05-14T05:10:56Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "b9f13de3269e4b8f",
+      "model": "f7",
+      "seed": 31415,
+      "ts": "2026-05-14T05:10:58Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "b359a37f51c6da92",
+      "model": "f8",
+      "seed": 13,
+      "ts": "2026-05-14T05:10:59Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "3ea437a3b7ac5bba",
+      "model": "f8",
+      "seed": 42,
+      "ts": "2026-05-14T05:11:01Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "10156f6b7dc88494",
+      "model": "f8",
+      "seed": 137,
+      "ts": "2026-05-14T05:11:02Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "7fb2eb77dcc26f1b",
+      "model": "f8",
+      "seed": 1729,
+      "ts": "2026-05-14T05:11:03Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "ea54168742222b77",
+      "model": "f8",
+      "seed": 31415,
+      "ts": "2026-05-14T05:11:04Z",
+      "reason": "hydrated-all-checkpoints-from-hf-2026-05-11"
+    },
+    {
+      "cfg_hash": "3d1dc9ff22cd0915",
+      "model": "f1_lgbm",
+      "seed": 13,
+      "ts": "2026-05-14T05:51:13Z",
+      "reason": "registered-f1-f2-backends-2026-05-11"
+    },
+    {
+      "cfg_hash": "764f5ff55d94c6a1",
+      "model": "f1_lgbm",
+      "seed": 42,
+      "ts": "2026-05-14T05:51:16Z",
+      "reason": "registered-f1-f2-backends-2026-05-11"
+    },
+    {
+      "cfg_hash": "6b2eadc2da7b7af3",
+      "model": "f1_lgbm",
+      "seed": 137,
+      "ts": "2026-05-14T05:51:24Z",
+      "reason": "registered-f1-f2-backends-2026-05-11"
+    },
+    {
+      "cfg_hash": "efa4e2ea45d4def7",
+      "model": "f1_lgbm",
+      "seed": 1729,
+      "ts": "2026-05-14T05:51:29Z",
+      "reason": "registered-f1-f2-backends-2026-05-11"
+    },
+    {
+      "cfg_hash": "a29361429898a834",
+      "model": "f1_lgbm",
+      "seed": 31415,
+      "ts": "2026-05-14T05:51:31Z",
+      "reason": "registered-f1-f2-backends-2026-05-11"
+    },
+    {
+      "cfg_hash": "c3d96227961a6da4",
+      "model": "f2_blr",
+      "seed": 13,
+      "ts": "2026-05-14T05:51:34Z",
+      "reason": "registered-f1-f2-backends-2026-05-11"
+    },
+    {
+      "cfg_hash": "82fa3d6320a32cc4",
+      "model": "f2_blr",
+      "seed": 42,
+      "ts": "2026-05-14T05:51:36Z",
+      "reason": "registered-f1-f2-backends-2026-05-11"
+    },
+    {
+      "cfg_hash": "0d189ed7b8b313cc",
+      "model": "f2_blr",
+      "seed": 137,
+      "ts": "2026-05-14T05:51:37Z",
+      "reason": "registered-f1-f2-backends-2026-05-11"
+    },
+    {
+      "cfg_hash": "dfb308a07accd903",
+      "model": "f2_blr",
+      "seed": 1729,
+      "ts": "2026-05-14T05:51:39Z",
+      "reason": "registered-f1-f2-backends-2026-05-11"
+    },
+    {
+      "cfg_hash": "523d5b38e5ffbb7a",
+      "model": "f2_blr",
+      "seed": 31415,
+      "ts": "2026-05-14T05:51:40Z",
+      "reason": "registered-f1-f2-backends-2026-05-11"
+    },
+    {
+      "cfg_hash": "010e9325871adbe2",
+      "model": "f8b",
+      "seed": 13,
+      "ts": "2026-05-16T08:53:46Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "87fb094fdde5eefe",
+      "model": "f8b",
+      "seed": 42,
+      "ts": "2026-05-16T08:54:08Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "e7c4fb2a805c48ad",
+      "model": "f8b",
+      "seed": 137,
+      "ts": "2026-05-16T08:54:34Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "7ce57aa37848b169",
+      "model": "f8b",
+      "seed": 1729,
+      "ts": "2026-05-16T08:54:51Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "4729159390b7760e",
+      "model": "f8b",
+      "seed": 31415,
+      "ts": "2026-05-16T08:55:06Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "3dc02faea1c2bff6",
+      "model": "f8c",
+      "seed": 13,
+      "ts": "2026-05-16T08:55:25Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "cccf92afcd65d879",
+      "model": "f8c",
+      "seed": 42,
+      "ts": "2026-05-16T08:55:43Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "de8ca277da426cb5",
+      "model": "f8c",
+      "seed": 137,
+      "ts": "2026-05-16T08:56:04Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "bc76d86ef19fa1d0",
+      "model": "f8c",
+      "seed": 1729,
+      "ts": "2026-05-16T08:56:23Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "07fbc7e7361e540d",
+      "model": "f8c",
+      "seed": 31415,
+      "ts": "2026-05-16T08:56:39Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "23a727cd8db9e0b1",
+      "model": "f8d",
+      "seed": 13,
+      "ts": "2026-05-16T08:56:55Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "00a5c81a6b17ef6b",
+      "model": "f8d",
+      "seed": 42,
+      "ts": "2026-05-16T08:57:13Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "23fe3b54bf0de06b",
+      "model": "f8d",
+      "seed": 137,
+      "ts": "2026-05-16T08:57:29Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "fb28312fdc08de2e",
+      "model": "f8d",
+      "seed": 1729,
+      "ts": "2026-05-16T08:57:45Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "b27ef51a7346fa81",
+      "model": "f8d",
+      "seed": 31415,
+      "ts": "2026-05-16T08:58:02Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "010e9325871adbe2",
+      "model": "f8b",
+      "seed": 13,
+      "ts": "2026-05-16T10:18:54Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "87fb094fdde5eefe",
+      "model": "f8b",
+      "seed": 42,
+      "ts": "2026-05-16T10:28:03Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "e7c4fb2a805c48ad",
+      "model": "f8b",
+      "seed": 137,
+      "ts": "2026-05-16T10:39:11Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "7ce57aa37848b169",
+      "model": "f8b",
+      "seed": 1729,
+      "ts": "2026-05-16T10:49:27Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "4729159390b7760e",
+      "model": "f8b",
+      "seed": 31415,
+      "ts": "2026-05-16T11:00:05Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "3dc02faea1c2bff6",
+      "model": "f8c",
+      "seed": 13,
+      "ts": "2026-05-16T11:09:36Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "cccf92afcd65d879",
+      "model": "f8c",
+      "seed": 42,
+      "ts": "2026-05-16T11:11:28Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "de8ca277da426cb5",
+      "model": "f8c",
+      "seed": 137,
+      "ts": "2026-05-16T11:13:25Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "bc76d86ef19fa1d0",
+      "model": "f8c",
+      "seed": 1729,
+      "ts": "2026-05-16T11:15:37Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "07fbc7e7361e540d",
+      "model": "f8c",
+      "seed": 31415,
+      "ts": "2026-05-16T11:17:49Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "23a727cd8db9e0b1",
+      "model": "f8d",
+      "seed": 13,
+      "ts": "2026-05-16T11:19:58Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "00a5c81a6b17ef6b",
+      "model": "f8d",
+      "seed": 42,
+      "ts": "2026-05-16T11:22:11Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "23fe3b54bf0de06b",
+      "model": "f8d",
+      "seed": 137,
+      "ts": "2026-05-16T11:24:26Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "fb28312fdc08de2e",
+      "model": "f8d",
+      "seed": 1729,
+      "ts": "2026-05-16T11:26:21Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "b27ef51a7346fa81",
+      "model": "f8d",
+      "seed": 31415,
+      "ts": "2026-05-16T11:28:22Z",
+      "reason": "uncapped (10k) + comprehensive metrics + post-backend-fix per-feature normalization"
+    },
+    {
+      "cfg_hash": "b202f10b71735c08",
+      "model": "f0",
+      "seed": 13,
+      "ts": "2026-05-16T17:20:43Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "a7a7970b5f96917e",
+      "model": "f0",
+      "seed": 42,
+      "ts": "2026-05-16T17:20:44Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "c46eb73518d2ddaf",
+      "model": "f0",
+      "seed": 137,
+      "ts": "2026-05-16T17:20:45Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "088358a7c870c9f6",
+      "model": "f0",
+      "seed": 1729,
+      "ts": "2026-05-16T17:20:46Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "f19b2668ed8d0d09",
+      "model": "f0",
+      "seed": 31415,
+      "ts": "2026-05-16T17:20:47Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "3d1dc9ff22cd0915",
+      "model": "f1_lgbm",
+      "seed": 13,
+      "ts": "2026-05-16T17:23:40Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "764f5ff55d94c6a1",
+      "model": "f1_lgbm",
+      "seed": 42,
+      "ts": "2026-05-16T17:26:42Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "6b2eadc2da7b7af3",
+      "model": "f1_lgbm",
+      "seed": 137,
+      "ts": "2026-05-16T17:29:29Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "efa4e2ea45d4def7",
+      "model": "f1_lgbm",
+      "seed": 1729,
+      "ts": "2026-05-16T17:32:06Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "a29361429898a834",
+      "model": "f1_lgbm",
+      "seed": 31415,
+      "ts": "2026-05-16T17:34:34Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "c3d96227961a6da4",
+      "model": "f2_blr",
+      "seed": 13,
+      "ts": "2026-05-16T17:34:52Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "82fa3d6320a32cc4",
+      "model": "f2_blr",
+      "seed": 42,
+      "ts": "2026-05-16T17:35:08Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "0d189ed7b8b313cc",
+      "model": "f2_blr",
+      "seed": 137,
+      "ts": "2026-05-16T17:35:26Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "dfb308a07accd903",
+      "model": "f2_blr",
+      "seed": 1729,
+      "ts": "2026-05-16T17:35:43Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "523d5b38e5ffbb7a",
+      "model": "f2_blr",
+      "seed": 31415,
+      "ts": "2026-05-16T17:35:59Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "c0bd39c088fc56d7",
+      "model": "f3_ensemble",
+      "seed": 13,
+      "ts": "2026-05-16T17:46:43Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "b49fe295014b61b9",
+      "model": "f3_ensemble",
+      "seed": 42,
+      "ts": "2026-05-16T17:58:07Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "98edb8df5c337a11",
+      "model": "f3_ensemble",
+      "seed": 137,
+      "ts": "2026-05-16T18:09:16Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "de93f436cd678e3a",
+      "model": "f3_ensemble",
+      "seed": 1729,
+      "ts": "2026-05-16T18:19:47Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "afc869881935d410",
+      "model": "f3_ensemble",
+      "seed": 31415,
+      "ts": "2026-05-16T18:30:36Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "f254ee576bdf0748",
+      "model": "f7",
+      "seed": 13,
+      "ts": "2026-05-16T18:32:56Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "78f1b69efb98d3ad",
+      "model": "f7",
+      "seed": 42,
+      "ts": "2026-05-16T18:35:10Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "802b0f4d5d7b170e",
+      "model": "f7",
+      "seed": 137,
+      "ts": "2026-05-16T18:37:04Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "05fac25762ca29b4",
+      "model": "f7",
+      "seed": 1729,
+      "ts": "2026-05-16T18:38:56Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "b9f13de3269e4b8f",
+      "model": "f7",
+      "seed": 31415,
+      "ts": "2026-05-16T18:41:05Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "b359a37f51c6da92",
+      "model": "f8",
+      "seed": 13,
+      "ts": "2026-05-16T18:43:15Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "3ea437a3b7ac5bba",
+      "model": "f8",
+      "seed": 42,
+      "ts": "2026-05-16T18:45:17Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "10156f6b7dc88494",
+      "model": "f8",
+      "seed": 137,
+      "ts": "2026-05-16T18:47:20Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "7fb2eb77dcc26f1b",
+      "model": "f8",
+      "seed": 1729,
+      "ts": "2026-05-16T18:49:25Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "ea54168742222b77",
+      "model": "f8",
+      "seed": 31415,
+      "ts": "2026-05-16T18:51:36Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "010e9325871adbe2",
+      "model": "f8b",
+      "seed": 13,
+      "ts": "2026-05-16T18:53:44Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "87fb094fdde5eefe",
+      "model": "f8b",
+      "seed": 42,
+      "ts": "2026-05-16T18:55:48Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "e7c4fb2a805c48ad",
+      "model": "f8b",
+      "seed": 137,
+      "ts": "2026-05-16T18:57:43Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "7ce57aa37848b169",
+      "model": "f8b",
+      "seed": 1729,
+      "ts": "2026-05-16T18:59:55Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "4729159390b7760e",
+      "model": "f8b",
+      "seed": 31415,
+      "ts": "2026-05-16T19:02:55Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "3dc02faea1c2bff6",
+      "model": "f8c",
+      "seed": 13,
+      "ts": "2026-05-16T19:05:40Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "cccf92afcd65d879",
+      "model": "f8c",
+      "seed": 42,
+      "ts": "2026-05-16T19:08:09Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "de8ca277da426cb5",
+      "model": "f8c",
+      "seed": 137,
+      "ts": "2026-05-16T19:10:11Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "bc76d86ef19fa1d0",
+      "model": "f8c",
+      "seed": 1729,
+      "ts": "2026-05-16T19:12:09Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "07fbc7e7361e540d",
+      "model": "f8c",
+      "seed": 31415,
+      "ts": "2026-05-16T19:14:09Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "23a727cd8db9e0b1",
+      "model": "f8d",
+      "seed": 13,
+      "ts": "2026-05-16T19:17:53Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "00a5c81a6b17ef6b",
+      "model": "f8d",
+      "seed": 42,
+      "ts": "2026-05-16T19:23:07Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "23fe3b54bf0de06b",
+      "model": "f8d",
+      "seed": 137,
+      "ts": "2026-05-16T19:25:15Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "fb28312fdc08de2e",
+      "model": "f8d",
+      "seed": 1729,
+      "ts": "2026-05-16T19:27:15Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "b27ef51a7346fa81",
+      "model": "f8d",
+      "seed": 31415,
+      "ts": "2026-05-16T19:29:24Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "de0b6d5c2350a4cb",
+      "model": "f8e",
+      "seed": 13,
+      "ts": "2026-05-16T19:31:27Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "580fedabaaf630fd",
+      "model": "f8e",
+      "seed": 42,
+      "ts": "2026-05-16T19:33:19Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "0c1cedb46a0c1df2",
+      "model": "f8e",
+      "seed": 137,
+      "ts": "2026-05-16T19:35:27Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "03c8c240198b6db6",
+      "model": "f8e",
+      "seed": 1729,
+      "ts": "2026-05-16T19:37:47Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "5e0f5a742b763c1b",
+      "model": "f8e",
+      "seed": 31415,
+      "ts": "2026-05-16T19:39:56Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "e36f47f048946ed4",
+      "model": "f9",
+      "seed": 13,
+      "ts": "2026-05-16T19:42:00Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "cf7f90434f61dcd3",
+      "model": "f9",
+      "seed": 42,
+      "ts": "2026-05-16T19:44:05Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "1a10c48cbaf1fcb9",
+      "model": "f9",
+      "seed": 137,
+      "ts": "2026-05-16T19:46:08Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "515cbcc6bd7f596d",
+      "model": "f9",
+      "seed": 1729,
+      "ts": "2026-05-16T19:48:15Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "da464d45580ee767",
+      "model": "f9",
+      "seed": 31415,
+      "ts": "2026-05-16T19:50:16Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "459904294cebd261",
+      "model": "f11",
+      "seed": 13,
+      "ts": "2026-05-16T19:53:04Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "19d123b8c79b86a8",
+      "model": "f11",
+      "seed": 42,
+      "ts": "2026-05-16T19:55:44Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "83ee43682bcea580",
+      "model": "f11",
+      "seed": 137,
+      "ts": "2026-05-16T19:58:26Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "506fd775deed98db",
+      "model": "f11",
+      "seed": 1729,
+      "ts": "2026-05-16T20:01:18Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "6b87a93b35473908",
+      "model": "f11",
+      "seed": 31415,
+      "ts": "2026-05-16T20:04:01Z",
+      "reason": "post-FX-fix re-evaluation: zoo retrained on Aug-2024-backfilled + EUR/DKK-corrected panel 2026-05-16; ACI panel restored after finalize_metrics bugfix; this is the final single-shot run for the TMLR/Applied Energy submission"
+    },
+    {
+      "cfg_hash": "3d1dc9ff22cd0915",
+      "model": "f1_lgbm",
+      "seed": 13,
+      "ts": "2026-05-17T04:14:59Z",
+      "reason": "F1/F2 inference backends fixed 2026-05-17: added stats.pkl save + load + train-stat normalisation on input. Q1-critical credibility fix."
+    },
+    {
+      "cfg_hash": "764f5ff55d94c6a1",
+      "model": "f1_lgbm",
+      "seed": 42,
+      "ts": "2026-05-17T04:21:23Z",
+      "reason": "F1/F2 inference backends fixed 2026-05-17: added stats.pkl save + load + train-stat normalisation on input. Q1-critical credibility fix."
+    },
+    {
+      "cfg_hash": "6b2eadc2da7b7af3",
+      "model": "f1_lgbm",
+      "seed": 137,
+      "ts": "2026-05-17T04:27:59Z",
+      "reason": "F1/F2 inference backends fixed 2026-05-17: added stats.pkl save + load + train-stat normalisation on input. Q1-critical credibility fix."
+    },
+    {
+      "cfg_hash": "efa4e2ea45d4def7",
+      "model": "f1_lgbm",
+      "seed": 1729,
+      "ts": "2026-05-17T04:36:24Z",
+      "reason": "F1/F2 inference backends fixed 2026-05-17: added stats.pkl save + load + train-stat normalisation on input. Q1-critical credibility fix."
+    },
+    {
+      "cfg_hash": "a29361429898a834",
+      "model": "f1_lgbm",
+      "seed": 31415,
+      "ts": "2026-05-17T04:44:01Z",
+      "reason": "F1/F2 inference backends fixed 2026-05-17: added stats.pkl save + load + train-stat normalisation on input. Q1-critical credibility fix."
+    },
+    {
+      "cfg_hash": "c3d96227961a6da4",
+      "model": "f2_blr",
+      "seed": 13,
+      "ts": "2026-05-17T04:45:03Z",
+      "reason": "F1/F2 inference backends fixed 2026-05-17: added stats.pkl save + load + train-stat normalisation on input. Q1-critical credibility fix."
+    },
+    {
+      "cfg_hash": "82fa3d6320a32cc4",
+      "model": "f2_blr",
+      "seed": 42,
+      "ts": "2026-05-17T04:46:05Z",
+      "reason": "F1/F2 inference backends fixed 2026-05-17: added stats.pkl save + load + train-stat normalisation on input. Q1-critical credibility fix."
+    },
+    {
+      "cfg_hash": "0d189ed7b8b313cc",
+      "model": "f2_blr",
+      "seed": 137,
+      "ts": "2026-05-17T04:47:13Z",
+      "reason": "F1/F2 inference backends fixed 2026-05-17: added stats.pkl save + load + train-stat normalisation on input. Q1-critical credibility fix."
+    },
+    {
+      "cfg_hash": "dfb308a07accd903",
+      "model": "f2_blr",
+      "seed": 1729,
+      "ts": "2026-05-17T04:48:16Z",
+      "reason": "F1/F2 inference backends fixed 2026-05-17: added stats.pkl save + load + train-stat normalisation on input. Q1-critical credibility fix."
+    },
+    {
+      "cfg_hash": "523d5b38e5ffbb7a",
+      "model": "f2_blr",
+      "seed": 31415,
+      "ts": "2026-05-17T04:49:26Z",
+      "reason": "F1/F2 inference backends fixed 2026-05-17: added stats.pkl save + load + train-stat normalisation on input. Q1-critical credibility fix."
+    },
+    {
+      "cfg_hash": "3d1dc9ff22cd0915",
+      "model": "f1_lgbm",
+      "seed": 13,
+      "ts": "2026-05-17T05:21:28Z",
+      "reason": "FINAL: all 5 seeds of F1/F2 have stats.pkl now; final Q1-submission test-set run"
+    },
+    {
+      "cfg_hash": "764f5ff55d94c6a1",
+      "model": "f1_lgbm",
+      "seed": 42,
+      "ts": "2026-05-17T05:24:14Z",
+      "reason": "FINAL: all 5 seeds of F1/F2 have stats.pkl now; final Q1-submission test-set run"
+    },
+    {
+      "cfg_hash": "6b2eadc2da7b7af3",
+      "model": "f1_lgbm",
+      "seed": 137,
+      "ts": "2026-05-17T05:26:33Z",
+      "reason": "FINAL: all 5 seeds of F1/F2 have stats.pkl now; final Q1-submission test-set run"
+    },
+    {
+      "cfg_hash": "efa4e2ea45d4def7",
+      "model": "f1_lgbm",
+      "seed": 1729,
+      "ts": "2026-05-17T05:29:02Z",
+      "reason": "FINAL: all 5 seeds of F1/F2 have stats.pkl now; final Q1-submission test-set run"
+    },
+    {
+      "cfg_hash": "a29361429898a834",
+      "model": "f1_lgbm",
+      "seed": 31415,
+      "ts": "2026-05-17T05:31:24Z",
+      "reason": "FINAL: all 5 seeds of F1/F2 have stats.pkl now; final Q1-submission test-set run"
+    },
+    {
+      "cfg_hash": "c3d96227961a6da4",
+      "model": "f2_blr",
+      "seed": 13,
+      "ts": "2026-05-17T05:31:41Z",
+      "reason": "FINAL: all 5 seeds of F1/F2 have stats.pkl now; final Q1-submission test-set run"
+    },
+    {
+      "cfg_hash": "82fa3d6320a32cc4",
+      "model": "f2_blr",
+      "seed": 42,
+      "ts": "2026-05-17T05:31:57Z",
+      "reason": "FINAL: all 5 seeds of F1/F2 have stats.pkl now; final Q1-submission test-set run"
+    },
+    {
+      "cfg_hash": "0d189ed7b8b313cc",
+      "model": "f2_blr",
+      "seed": 137,
+      "ts": "2026-05-17T05:32:14Z",
+      "reason": "FINAL: all 5 seeds of F1/F2 have stats.pkl now; final Q1-submission test-set run"
+    },
+    {
+      "cfg_hash": "dfb308a07accd903",
+      "model": "f2_blr",
+      "seed": 1729,
+      "ts": "2026-05-17T05:32:31Z",
+      "reason": "FINAL: all 5 seeds of F1/F2 have stats.pkl now; final Q1-submission test-set run"
+    },
+    {
+      "cfg_hash": "523d5b38e5ffbb7a",
+      "model": "f2_blr",
+      "seed": 31415,
+      "ts": "2026-05-17T05:32:48Z",
+      "reason": "FINAL: all 5 seeds of F1/F2 have stats.pkl now; final Q1-submission test-set run"
+    },
+    {
+      "cfg_hash": "9d555a88f400043a",
+      "model": "f7_optuna",
+      "seed": 13,
+      "ts": "2026-05-17T12:57:47Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "1cde7f2496240b01",
+      "model": "f7_optuna",
+      "seed": 42,
+      "ts": "2026-05-17T12:59:28Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "bab3e46663f379be",
+      "model": "f7_optuna",
+      "seed": 137,
+      "ts": "2026-05-17T13:01:09Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "14589aef747d2fa5",
+      "model": "f7_optuna",
+      "seed": 1729,
+      "ts": "2026-05-17T13:02:46Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "95588deb4687dc7d",
+      "model": "f7_optuna",
+      "seed": 31415,
+      "ts": "2026-05-17T13:04:18Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "a891d6de0a8acf11",
+      "model": "f4_mc_dropout",
+      "seed": 13,
+      "ts": "2026-05-17T14:05:23Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "c29253bc7ca96f36",
+      "model": "f4_mc_dropout",
+      "seed": 42,
+      "ts": "2026-05-17T14:05:49Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "5a3c60a4b000589b",
+      "model": "f4_mc_dropout",
+      "seed": 137,
+      "ts": "2026-05-17T14:06:13Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "a3c20884d4207469",
+      "model": "f4_mc_dropout",
+      "seed": 1729,
+      "ts": "2026-05-17T14:06:38Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "30ed7ac3311f31ec",
+      "model": "f4_mc_dropout",
+      "seed": 31415,
+      "ts": "2026-05-17T14:07:02Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "3a2bcd2b9ee2b329",
+      "model": "f12_ebm",
+      "seed": 13,
+      "ts": "2026-05-17T14:13:15Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "9745025a6197c2eb",
+      "model": "f12_ebm",
+      "seed": 42,
+      "ts": "2026-05-17T14:19:25Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "db80c8aed2dc0c6d",
+      "model": "f12_ebm",
+      "seed": 137,
+      "ts": "2026-05-17T14:25:43Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "18e456d68d3c4af5",
+      "model": "f12_ebm",
+      "seed": 1729,
+      "ts": "2026-05-17T14:32:15Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "8877f63d9281c4d1",
+      "model": "f12_ebm",
+      "seed": 31415,
+      "ts": "2026-05-17T14:38:29Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "e7f11968be7b874f",
+      "model": "f3_lite",
+      "seed": 13,
+      "ts": "2026-05-17T16:10:26Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "9d0fc824a6928ab4",
+      "model": "f3_lite",
+      "seed": 42,
+      "ts": "2026-05-17T16:16:11Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "2c18bed06cd18819",
+      "model": "f3_lite",
+      "seed": 137,
+      "ts": "2026-05-17T16:21:59Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "0d43ada8c7e07491",
+      "model": "f3_lite",
+      "seed": 1729,
+      "ts": "2026-05-17T16:27:37Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "0a397278ee97d26e",
+      "model": "f3_lite",
+      "seed": 31415,
+      "ts": "2026-05-17T16:33:17Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "46cba07594870037",
+      "model": "f13",
+      "seed": 13,
+      "ts": "2026-05-17T16:34:28Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "230facc56d632cc7",
+      "model": "f13",
+      "seed": 42,
+      "ts": "2026-05-17T16:34:43Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "b43c468a9cc3dc76",
+      "model": "f13",
+      "seed": 137,
+      "ts": "2026-05-17T16:34:56Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "148b05eb544ea9be",
+      "model": "f13",
+      "seed": 1729,
+      "ts": "2026-05-17T16:35:08Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "f691f115f6f5ecb1",
+      "model": "f13",
+      "seed": 31415,
+      "ts": "2026-05-17T16:35:23Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "2fff9b6f30361bc5",
+      "model": "f10",
+      "seed": 13,
+      "ts": "2026-05-24T10:23:54Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "8850e19b79813d49",
+      "model": "f10",
+      "seed": 42,
+      "ts": "2026-05-24T10:23:54Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "3fb720087c4e6140",
+      "model": "f10",
+      "seed": 137,
+      "ts": "2026-05-24T10:23:54Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "ded136544e1d845c",
+      "model": "f10",
+      "seed": 1729,
+      "ts": "2026-05-24T10:23:54Z",
+      "reason": "single-shot"
+    },
+    {
+      "cfg_hash": "060d4b3b4d397f46",
+      "model": "f10",
+      "seed": 31415,
+      "ts": "2026-05-24T10:23:54Z",
+      "reason": "single-shot"
+    }
+  ]
+}

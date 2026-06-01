@@ -1,0 +1,140 @@
+{
+  "memory_arms": [
+    {
+      "memory": false,
+      "memory_scope_filter": "all",
+      "slug": "best-chair-no-mem"
+    },
+    {
+      "memory": true,
+      "memory_scope_filter": "archetype",
+      "slug": "best-chair-memory-v2-archetype"
+    },
+    {
+      "agent_count": 9,
+      "memory": true,
+      "memory_scope_filter": "synthesis",
+      "profile": "action_core_9_chair",
+      "slug": "best-chair-memory-v2-chair-only"
+    },
+    {
+      "memory": true,
+      "memory_scope_filter": "agent",
+      "slug": "best-chair-memory-v2-agent"
+    }
+  ],
+  "memory_bank": "ai-society/runs/intelligence-chair-matrix/memory-v2-bank.jsonl",
+  "promotion_rule": "Start at 24 ticks; expand only arms that preserve explainable watch-hour quality and reduce bid noise or retain useful profit.",
+  "role_arms": [
+    {
+      "agent_count": 9,
+      "profile": "action_core_9_chair",
+      "slug": "action-core-9-chair"
+    },
+    {
+      "agent_count": 10,
+      "profile": "action_core_10_safety",
+      "slug": "action-core-10-safety"
+    },
+    {
+      "agent_count": 8,
+      "profile": "action_core_8_aggressive",
+      "slug": "action-core-8-aggressive"
+    },
+    {
+      "agent_count": 8,
+      "profile": "action_core_8_safety",
+      "slug": "action-core-8-safety"
+    },
+    {
+      "agent_count": 8,
+      "profile": "action_core_8_toolsplit",
+      "slug": "action-core-8-toolsplit"
+    }
+  ],
+  "run_count": 48,
+  "screen_arms": [
+    {
+      "agent_count": 8,
+      "chooser_mode": "llm",
+      "max_concurrency": 6,
+      "memory": false,
+      "profile": "action_core_8",
+      "slug": "8-core",
+      "strategy": "comm_broadcast_digest"
+    },
+    {
+      "agent_count": 8,
+      "chooser_mode": "llm",
+      "max_concurrency": 6,
+      "memory": false,
+      "profile": "action_core_8",
+      "slug": "8-core-chair-2agree",
+      "strategy": "comm_society_chair_2agree"
+    },
+    {
+      "agent_count": 8,
+      "chooser_mode": "llm",
+      "max_concurrency": 6,
+      "memory": false,
+      "profile": "action_core_8",
+      "slug": "8-core-chair-riskveto",
+      "strategy": "comm_society_chair_riskveto"
+    },
+    {
+      "agent_count": 8,
+      "chooser_mode": "llm",
+      "max_concurrency": 6,
+      "memory": false,
+      "profile": "action_core_8",
+      "slug": "8-core-chair-intel",
+      "strategy": "comm_society_chair_intel"
+    },
+    {
+      "agent_count": 12,
+      "chooser_mode": "llm",
+      "max_concurrency": 8,
+      "memory": true,
+      "profile": "balanced_intelligence",
+      "slug": "12-bcast-mem",
+      "strategy": "comm_broadcast_digest"
+    },
+    {
+      "agent_count": 8,
+      "chooser_mode": "deterministic_best_accepted",
+      "llm_enabled": false,
+      "max_concurrency": 1,
+      "memory": false,
+      "profile": "action_core_8",
+      "slug": "det-best-accepted",
+      "strategy": "comm_broadcast_digest"
+    },
+    {
+      "agent_count": 8,
+      "chooser_mode": "deterministic_watch_threshold",
+      "llm_enabled": false,
+      "max_concurrency": 1,
+      "memory": false,
+      "profile": "action_core_8",
+      "slug": "det-watch-threshold",
+      "strategy": "comm_broadcast_digest"
+    }
+  ],
+  "windows": [
+    [
+      "apr02-0530",
+      "2026-04-02T05:30:00Z",
+      24
+    ],
+    [
+      "apr09-1830",
+      "2026-04-09T18:30:00Z",
+      24
+    ],
+    [
+      "apr13-0015",
+      "2026-04-13T00:15:00Z",
+      24
+    ]
+  ]
+}

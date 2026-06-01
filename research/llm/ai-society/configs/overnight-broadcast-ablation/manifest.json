@@ -1,0 +1,136 @@
+{
+  "communication_arm": {
+    "slug": "bcast",
+    "strategy": "comm_broadcast_digest"
+  },
+  "configs": [
+    "ai-society/configs/overnight-broadcast-ablation/s06-actioncore/q14/oba-s06-actioncore-bcast-apr02-0530-seed42-q14.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s06-actioncore/q14/oba-s06-actioncore-bcast-apr03-1430-seed42-q14.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s06-actioncore/q14/oba-s06-actioncore-bcast-apr05-1030-seed42-q14.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s06-actioncore/q14/oba-s06-actioncore-bcast-apr09-1830-seed42-q14.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s06-actioncore/q14/oba-s06-actioncore-bcast-apr13-0015-seed42-q14.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s06-actioncore/q32/oba-s06-actioncore-bcast-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s06-actioncore/q32/oba-s06-actioncore-bcast-apr03-1430-seed42-q32.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s06-actioncore/q32/oba-s06-actioncore-bcast-apr05-1030-seed42-q32.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s06-actioncore/q32/oba-s06-actioncore-bcast-apr09-1830-seed42-q32.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s06-actioncore/q32/oba-s06-actioncore-bcast-apr13-0015-seed42-q32.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s12-balanced/q14/oba-s12-balanced-bcast-apr02-0530-seed42-q14.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s12-balanced/q14/oba-s12-balanced-bcast-apr03-1430-seed42-q14.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s12-balanced/q14/oba-s12-balanced-bcast-apr05-1030-seed42-q14.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s12-balanced/q14/oba-s12-balanced-bcast-apr09-1830-seed42-q14.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s12-balanced/q14/oba-s12-balanced-bcast-apr13-0015-seed42-q14.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s12-balanced/q32/oba-s12-balanced-bcast-apr02-0530-seed42-q32.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s12-balanced/q32/oba-s12-balanced-bcast-apr03-1430-seed42-q32.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s12-balanced/q32/oba-s12-balanced-bcast-apr05-1030-seed42-q32.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s12-balanced/q32/oba-s12-balanced-bcast-apr09-1830-seed42-q32.yaml",
+    "ai-society/configs/overnight-broadcast-ablation/s12-balanced/q32/oba-s12-balanced-bcast-apr13-0015-seed42-q32.yaml"
+  ],
+  "existing_mixed20_baselines": [
+    {
+      "agent_count": 20,
+      "model": "Qwen/Qwen3-32B",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr02-0530-24",
+      "run_id": "msa-screen-mixed20-apr02-0530-24",
+      "strategy": "comm_broadcast_digest",
+      "window": "apr02-0530"
+    },
+    {
+      "agent_count": 20,
+      "model": "Qwen/Qwen3-32B",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr03-1430-24",
+      "run_id": "msa-screen-mixed20-apr03-1430-24",
+      "strategy": "comm_broadcast_digest",
+      "window": "apr03-1430"
+    },
+    {
+      "agent_count": 20,
+      "model": "Qwen/Qwen3-32B",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr05-1030-24",
+      "run_id": "msa-screen-mixed20-apr05-1030-24",
+      "strategy": "comm_broadcast_digest",
+      "window": "apr05-1030"
+    },
+    {
+      "agent_count": 20,
+      "model": "Qwen/Qwen3-32B",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr09-1830-24",
+      "run_id": "msa-screen-mixed20-apr09-1830-24",
+      "strategy": "comm_broadcast_digest",
+      "window": "apr09-1830"
+    },
+    {
+      "agent_count": 20,
+      "model": "Qwen/Qwen3-32B",
+      "persona_profile": "mixed_expert_20_sideaware",
+      "run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr13-0015-24",
+      "run_id": "msa-screen-mixed20-apr13-0015-24",
+      "strategy": "comm_broadcast_digest",
+      "window": "apr13-0015"
+    }
+  ],
+  "models": [
+    [
+      "q14",
+      "Qwen/Qwen3-14B"
+    ],
+    [
+      "q32",
+      "Qwen/Qwen3-32B"
+    ]
+  ],
+  "run_count": 20,
+  "seed": 42,
+  "societies": [
+    {
+      "agent_count": 6,
+      "max_concurrency": 8,
+      "per_endpoint_max_concurrency": 4,
+      "profile": "action_core_8",
+      "slug": "s06-actioncore"
+    },
+    {
+      "agent_count": 12,
+      "max_concurrency": 12,
+      "per_endpoint_max_concurrency": 6,
+      "profile": "balanced_intelligence",
+      "slug": "s12-balanced"
+    }
+  ],
+  "ticks": 24,
+  "windows": [
+    {
+      "mixed20_run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr02-0530-24",
+      "mixed20_run_id": "msa-screen-mixed20-apr02-0530-24",
+      "slug": "apr02-0530",
+      "start": "2026-04-02T05:30:00Z"
+    },
+    {
+      "mixed20_run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr03-1430-24",
+      "mixed20_run_id": "msa-screen-mixed20-apr03-1430-24",
+      "slug": "apr03-1430",
+      "start": "2026-04-03T14:30:00Z"
+    },
+    {
+      "mixed20_run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr05-1030-24",
+      "mixed20_run_id": "msa-screen-mixed20-apr05-1030-24",
+      "slug": "apr05-1030",
+      "start": "2026-04-05T10:30:00Z"
+    },
+    {
+      "mixed20_run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr09-1830-24",
+      "mixed20_run_id": "msa-screen-mixed20-apr09-1830-24",
+      "slug": "apr09-1830",
+      "start": "2026-04-09T18:30:00Z"
+    },
+    {
+      "mixed20_run_dir": "ai-society/runs/mixed-sideaware-20260515/msa-screen-mixed20-apr13-0015-24",
+      "mixed20_run_id": "msa-screen-mixed20-apr13-0015-24",
+      "slug": "apr13-0015",
+      "start": "2026-04-13T00:15:00Z"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+run_id: mi-12-retry-council-f8
+seed: 42
+zone: DK1
+agent_count: 12
+ticks: 48
+start_timestamp: "2026-04-09T18:30:00Z"
+forecaster_backend: f8
+chooser_mode: llm
+verifier_mode: simulator
+market_context: real
+tool_mode: openai_tools
+objective: bid_seeking
+ablation_strategy: comm_retry_council
+persona_profile: balanced_intelligence
+scenario_id: p2h_dk1_pypsa
+tool_policy: p2h_only_simulator
+max_tool_rounds: 6
+verifier_tau_eur: 0.0
+output_dir: research/llm/ai-society/runs
+llm:
+  enabled: true
+  model: Qwen/Qwen3-32B
+  temperature: 0.2
+  max_tokens: 1000
+  timeout_seconds: 180
+  max_concurrency: 8

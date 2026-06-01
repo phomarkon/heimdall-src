@@ -1,0 +1,26 @@
+# F13 — F8e + causal forecast-error anomaly features, 100 epochs.
+#
+# The hypothesis test of 2026-05-17: do (a) causal forecast-error features
+# (wind/solar/load DA forecast vs realised) and (b) 5x training budget
+# break the ~263 DKK pinball plateau that F8b/c/d/e hit at 20 epochs?
+#
+# If F13 < F7 by more than seed-noise (3 DKK), the rich-panel + anomaly
+# story is real. If F13 ≈ F7, the irreducible-error floor stands.
+name: f13
+use_rin: true   # required for high-dim multivariate (>5 features); without RIN this architecture collapses to constant prediction (verified F8b/c/d/e 2026-05-17)
+multivariate: false
+train_panel: data/processed/dk1_panel_rich_v2_train.parquet
+val_panel: data/processed/dk1_panel_rich_v2_val.parquet
+seq_len: 96
+horizon: 16
+patch_len: 8
+d_model: 128
+nhead: 8
+n_layers: 6
+dropout: 0.1
+epochs: 100
+batch_size: 64
+lr: 1.0e-3
+weight_decay: 1.0e-4
+seed: 42
+quantiles: [0.1, 0.5, 0.9]

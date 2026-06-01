@@ -1,0 +1,1101 @@
+{
+  "n_windows": 1000,
+  "bid_qty_mw": 40.0,
+  "tau_grid_eur": [
+    0.0,
+    50.0,
+    100.0,
+    250.0,
+    500.0,
+    1000.0
+  ],
+  "policies": [
+    "aggressive_sell",
+    "marginal_sell",
+    "out_of_money_sell",
+    "aggressive_buy",
+    "marginal_buy",
+    "out_of_money_buy"
+  ],
+  "default_spec": {
+    "grid": [
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9615310016206,
+        "pi_min_median": 1999.997463094933,
+        "pi_min_p90": 2000.0387633935418
+      },
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9615310016206,
+        "pi_min_median": 1999.997463094933,
+        "pi_min_p90": 2000.0387633935418
+      },
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9615310016206,
+        "pi_min_median": 1999.997463094933,
+        "pi_min_p90": 2000.0387633935418
+      },
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9615310016206,
+        "pi_min_median": 1999.997463094933,
+        "pi_min_p90": 2000.0387633935418
+      },
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9615310016206,
+        "pi_min_median": 1999.997463094933,
+        "pi_min_p90": 2000.0387633935418
+      },
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9615310016206,
+        "pi_min_median": 1999.997463094933,
+        "pi_min_p90": 2000.0387633935418
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9602589359945,
+        "pi_min_median": 1999.9974452860442,
+        "pi_min_p90": 2000.0405119061224
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9602589359945,
+        "pi_min_median": 1999.9974452860442,
+        "pi_min_p90": 2000.0405119061224
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9602589359945,
+        "pi_min_median": 1999.9974452860442,
+        "pi_min_p90": 2000.0405119061224
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9602589359945,
+        "pi_min_median": 1999.9974452860442,
+        "pi_min_p90": 2000.0405119061224
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9602589359945,
+        "pi_min_median": 1999.9974452860442,
+        "pi_min_p90": 2000.0405119061224
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": 1999.9602589359945,
+        "pi_min_median": 1999.9974452860442,
+        "pi_min_p90": 2000.0405119061224
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 1.0,
+        "reject_reasons": {},
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "conformal/worst_case_profit": 1000
+        },
+        "pi_min_p10": -0.0,
+        "pi_min_median": 0.0,
+        "pi_min_p90": 0.0
+      }
+    ],
+    "spec": {
+      "q_max_mw": 50.0,
+      "ramp_mw_per_min": 5.0,
+      "storage_mwh": 100.0,
+      "cop": 3.0,
+      "loss_per_quarter": 0.005,
+      "bid_tick_eur": 0.01
+    }
+  },
+  "pypsa_spec": {
+    "grid": [
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_sell",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_sell",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_sell",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "aggressive_buy",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "marginal_buy",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 0.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 50.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 100.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 250.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 500.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      },
+      {
+        "policy": "out_of_money_buy",
+        "tau_eur": 1000.0,
+        "n": 1000,
+        "accept_rate": 0.0,
+        "reject_reasons": {
+          "physical/ramp_limit": 1000
+        },
+        "pi_min_p10": null,
+        "pi_min_median": null,
+        "pi_min_p90": null
+      }
+    ],
+    "spec": {
+      "q_max_mw": 50.0,
+      "ramp_mw_per_min": 1.6666666666666667,
+      "storage_mwh": 100.0,
+      "cop": 3.0,
+      "loss_per_quarter": 0.0001,
+      "bid_tick_eur": 0.01
+    }
+  },
+  "deltas": [
+    {
+      "policy": "aggressive_sell",
+      "tau_eur": 0.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.997463094933
+    },
+    {
+      "policy": "aggressive_sell",
+      "tau_eur": 50.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.997463094933
+    },
+    {
+      "policy": "aggressive_sell",
+      "tau_eur": 100.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.997463094933
+    },
+    {
+      "policy": "aggressive_sell",
+      "tau_eur": 250.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.997463094933
+    },
+    {
+      "policy": "aggressive_sell",
+      "tau_eur": 500.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.997463094933
+    },
+    {
+      "policy": "aggressive_sell",
+      "tau_eur": 1000.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.997463094933
+    },
+    {
+      "policy": "marginal_sell",
+      "tau_eur": 0.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "marginal_sell",
+      "tau_eur": 50.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "marginal_sell",
+      "tau_eur": 100.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "marginal_sell",
+      "tau_eur": 250.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "marginal_sell",
+      "tau_eur": 500.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "marginal_sell",
+      "tau_eur": 1000.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_sell",
+      "tau_eur": 0.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_sell",
+      "tau_eur": 50.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_sell",
+      "tau_eur": 100.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_sell",
+      "tau_eur": 250.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_sell",
+      "tau_eur": 500.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_sell",
+      "tau_eur": 1000.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "aggressive_buy",
+      "tau_eur": 0.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.9974452860442
+    },
+    {
+      "policy": "aggressive_buy",
+      "tau_eur": 50.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.9974452860442
+    },
+    {
+      "policy": "aggressive_buy",
+      "tau_eur": 100.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.9974452860442
+    },
+    {
+      "policy": "aggressive_buy",
+      "tau_eur": 250.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.9974452860442
+    },
+    {
+      "policy": "aggressive_buy",
+      "tau_eur": 500.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.9974452860442
+    },
+    {
+      "policy": "aggressive_buy",
+      "tau_eur": 1000.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": -1999.9974452860442
+    },
+    {
+      "policy": "marginal_buy",
+      "tau_eur": 0.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "marginal_buy",
+      "tau_eur": 50.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "marginal_buy",
+      "tau_eur": 100.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "marginal_buy",
+      "tau_eur": 250.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "marginal_buy",
+      "tau_eur": 500.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "marginal_buy",
+      "tau_eur": 1000.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_buy",
+      "tau_eur": 0.0,
+      "delta_accept_rate": -1.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_buy",
+      "tau_eur": 50.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_buy",
+      "tau_eur": 100.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_buy",
+      "tau_eur": 250.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_buy",
+      "tau_eur": 500.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    },
+    {
+      "policy": "out_of_money_buy",
+      "tau_eur": 1000.0,
+      "delta_accept_rate": 0.0,
+      "delta_pi_min_median": 0.0
+    }
+  ],
+  "summary": {
+    "default_min_accept": 0.0,
+    "default_max_accept": 1.0,
+    "pypsa_min_accept": 0.0,
+    "pypsa_max_accept": 0.0,
+    "max_abs_delta_accept": 1.0
+  }
+}

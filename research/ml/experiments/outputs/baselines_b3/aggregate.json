@@ -1,0 +1,192 @@
+{
+  "per_seed": {
+    "13": {
+      "name": "b3_hagstrom_herre",
+      "seed": 13,
+      "n_ticks": 5472,
+      "total_profit_dkk": 251322.1266,
+      "total_profit_eur": 33689.2931,
+      "profit_per_mwh_dkk": 59.3486,
+      "profit_per_mwh_eur": 7.9556,
+      "sharpe": 39.0146,
+      "cvar5_daily_dkk": 1015.1239,
+      "cvar5_daily_eur": 136.0756,
+      "participation_rate": 0.9497,
+      "physical_violation_rate": 0.7021,
+      "runtime_seconds": 28.7,
+      "extras": {
+        "energy_delivered_mwh": 4234.6752,
+        "ticks_with_bid": 5197,
+        "heat_unmet_tick_rate": 0.0508,
+        "n_scenarios_per_lp": 24,
+        "horizon_ticks": 16,
+        "cvar_alpha": 0.05,
+        "cvar_lambda": 1.0
+      }
+    },
+    "42": {
+      "name": "b3_hagstrom_herre",
+      "seed": 42,
+      "n_ticks": 5472,
+      "total_profit_dkk": 251022.826,
+      "total_profit_eur": 33649.1724,
+      "profit_per_mwh_dkk": 59.416,
+      "profit_per_mwh_eur": 7.9646,
+      "sharpe": 39.8877,
+      "cvar5_daily_dkk": 1095.2688,
+      "cvar5_daily_eur": 146.8189,
+      "participation_rate": 0.9428,
+      "physical_violation_rate": 0.7049,
+      "runtime_seconds": 26.69,
+      "extras": {
+        "energy_delivered_mwh": 4224.8334,
+        "ticks_with_bid": 5159,
+        "heat_unmet_tick_rate": 0.0585,
+        "n_scenarios_per_lp": 24,
+        "horizon_ticks": 16,
+        "cvar_alpha": 0.05,
+        "cvar_lambda": 1.0
+      }
+    },
+    "137": {
+      "name": "b3_hagstrom_herre",
+      "seed": 137,
+      "n_ticks": 5472,
+      "total_profit_dkk": 250739.41,
+      "total_profit_eur": 33611.181,
+      "profit_per_mwh_dkk": 59.0801,
+      "profit_per_mwh_eur": 7.9196,
+      "sharpe": 36.83,
+      "cvar5_daily_dkk": 1436.952,
+      "cvar5_daily_eur": 192.6209,
+      "participation_rate": 0.9496,
+      "physical_violation_rate": 0.701,
+      "runtime_seconds": 25.59,
+      "extras": {
+        "energy_delivered_mwh": 4244.0571,
+        "ticks_with_bid": 5196,
+        "heat_unmet_tick_rate": 0.0508,
+        "n_scenarios_per_lp": 24,
+        "horizon_ticks": 16,
+        "cvar_alpha": 0.05,
+        "cvar_lambda": 1.0
+      }
+    },
+    "1729": {
+      "name": "b3_hagstrom_herre",
+      "seed": 1729,
+      "n_ticks": 5472,
+      "total_profit_dkk": 249962.3326,
+      "total_profit_eur": 33507.0151,
+      "profit_per_mwh_dkk": 59.2549,
+      "profit_per_mwh_eur": 7.943,
+      "sharpe": 37.2244,
+      "cvar5_daily_dkk": 1179.6812,
+      "cvar5_daily_eur": 158.1342,
+      "participation_rate": 0.9448,
+      "physical_violation_rate": 0.706,
+      "runtime_seconds": 26.11,
+      "extras": {
+        "energy_delivered_mwh": 4218.4271,
+        "ticks_with_bid": 5170,
+        "heat_unmet_tick_rate": 0.0556,
+        "n_scenarios_per_lp": 24,
+        "horizon_ticks": 16,
+        "cvar_alpha": 0.05,
+        "cvar_lambda": 1.0
+      }
+    },
+    "31415": {
+      "name": "b3_hagstrom_herre",
+      "seed": 31415,
+      "n_ticks": 5472,
+      "total_profit_dkk": 251343.8451,
+      "total_profit_eur": 33692.2044,
+      "profit_per_mwh_dkk": 59.0691,
+      "profit_per_mwh_eur": 7.9181,
+      "sharpe": 36.5173,
+      "cvar5_daily_dkk": 1147.4733,
+      "cvar5_daily_eur": 153.8168,
+      "participation_rate": 0.9488,
+      "physical_violation_rate": 0.7036,
+      "runtime_seconds": 28.5,
+      "extras": {
+        "energy_delivered_mwh": 4255.0793,
+        "ticks_with_bid": 5192,
+        "heat_unmet_tick_rate": 0.0521,
+        "n_scenarios_per_lp": 24,
+        "horizon_ticks": 16,
+        "cvar_alpha": 0.05,
+        "cvar_lambda": 1.0
+      }
+    }
+  },
+  "aggregate": {
+    "total_profit_eur": {
+      "mean": 33629.773199999996,
+      "std": 76.20994555591416,
+      "values": [
+        33689.2931,
+        33649.1724,
+        33611.181,
+        33507.0151,
+        33692.2044
+      ]
+    },
+    "profit_per_mwh_eur": {
+      "mean": 7.940180000000001,
+      "std": 0.020935185692990545,
+      "values": [
+        7.9556,
+        7.9646,
+        7.9196,
+        7.943,
+        7.9181
+      ]
+    },
+    "sharpe": {
+      "mean": 37.894800000000004,
+      "std": 1.4753257182737662,
+      "values": [
+        39.0146,
+        39.8877,
+        36.83,
+        37.2244,
+        36.5173
+      ]
+    },
+    "cvar5_daily_eur": {
+      "mean": 157.49328,
+      "std": 21.333871984874193,
+      "values": [
+        136.0756,
+        146.8189,
+        192.6209,
+        158.1342,
+        153.8168
+      ]
+    },
+    "participation_rate": {
+      "mean": 0.9471400000000001,
+      "std": 0.0031492856332825795,
+      "values": [
+        0.9497,
+        0.9428,
+        0.9496,
+        0.9448,
+        0.9488
+      ]
+    },
+    "physical_violation_rate": {
+      "mean": 0.7035199999999999,
+      "std": 0.002026573462769121,
+      "values": [
+        0.7021,
+        0.7049,
+        0.701,
+        0.706,
+        0.7036
+      ]
+    }
+  }
+}

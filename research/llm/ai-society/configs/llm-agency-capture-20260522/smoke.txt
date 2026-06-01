@@ -1,0 +1,7 @@
+ai-society/configs/llm-agency-capture-20260522/smoke/a0-det/smoke-lac-s06-a0-det-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/smoke/a1-selector/smoke-lac-s06-a1-selector-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/smoke/a2pure-cp11/smoke-lac-s06-a2pure-cp11-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/smoke/a2hyb-cp12/smoke-lac-s06-a2hyb-cp12-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/smoke/a3-tau100/smoke-lac-s06-a3-tau100-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/smoke/a3-tau250/smoke-lac-s06-a3-tau250-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/llm-agency-capture-20260522/smoke/a4-cp13-refine/smoke-lac-s06-a4-cp13-refine-apr02-0530-seed42-2-q32.yaml

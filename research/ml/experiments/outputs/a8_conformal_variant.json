@@ -1,0 +1,38 @@
+{
+  "stationary": {
+    "split_cp": {
+      "empirical_coverage": 0.8765386049981351,
+      "mean_width": 1759.9365234375,
+      "n_test": 2681
+    },
+    "aci": {
+      "empirical_coverage": 0.8973067235031971,
+      "mean_width": 2357.196037754597,
+      "n_test": 5161
+    },
+    "enbpi": {
+      "empirical_coverage": 0.8992443324937027,
+      "mean_width": 2192.0920591334043,
+      "n_test": 5161,
+      "window": 200
+    }
+  },
+  "regime_shift_2x": {
+    "split_cp": {
+      "empirical_coverage": 0.7844088026855651,
+      "mean_width": 1759.9365234375,
+      "n_test": 2681
+    },
+    "aci": {
+      "empirical_coverage": 0.8961441581088936,
+      "mean_width": 3373.259443909888,
+      "n_test": 5161
+    },
+    "enbpi": {
+      "empirical_coverage": 0.8986630497965511,
+      "mean_width": 3376.4163573201695,
+      "n_test": 5161,
+      "window": 200
+    }
+  }
+}

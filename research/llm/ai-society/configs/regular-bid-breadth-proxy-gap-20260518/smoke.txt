@@ -1,0 +1,2 @@
+ai-society/configs/regular-bid-breadth-proxy-gap-20260518/smoke-rbbpg-s12-balanced-apr03-1430-2-regular-real-q32.yaml
+ai-society/configs/regular-bid-breadth-proxy-gap-20260518/smoke-rbbpg-s20-mixed-persona-apr03-1430-2-regular-real-q32.yaml

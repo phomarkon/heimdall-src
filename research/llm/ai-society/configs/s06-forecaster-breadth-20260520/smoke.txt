@@ -1,0 +1,3 @@
+ai-society/configs/s06-forecaster-breadth-20260520/smoke/f0/smoke-s06fb-f0-scenario-large-apr02-0530-2-q32.yaml
+ai-society/configs/s06-forecaster-breadth-20260520/smoke/f8/smoke-s06fb-f8-scenario-large-apr02-0530-2-q32.yaml
+ai-society/configs/s06-forecaster-breadth-20260520/smoke/f10/smoke-s06fb-f10-scenario-large-apr02-0530-2-q32.yaml

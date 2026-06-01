@@ -1,0 +1,38 @@
+[
+  {
+    "name": "b5_sarimax",
+    "val_pinball_q10": 112.29456104971754,
+    "val_pinball_q50": 354.6559061821552,
+    "val_pinball_q90": 339.8403627755527,
+    "val_pinball_mean_dkk": 268.93027666914185,
+    "val_q10_q90_coverage": 0.7065373563218391,
+    "n_val": 5568
+  },
+  {
+    "name": "b6_garch",
+    "val_pinball_q10": 810.1478557543054,
+    "val_pinball_q50": 418.65958390884225,
+    "val_pinball_q90": 870.8213342864393,
+    "val_pinball_mean_dkk": 699.8762579831956,
+    "val_q10_q90_coverage": 0.9913793103448276,
+    "n_val": 5568
+  },
+  {
+    "name": "b8_prophet",
+    "val_pinball_q10": 121.15228552109663,
+    "val_pinball_q50": 390.2138590965704,
+    "val_pinball_q90": 332.30154239367283,
+    "val_pinball_mean_dkk": 281.2225623371133,
+    "val_q10_q90_coverage": 0.8220186781609196,
+    "n_val": 5568
+  },
+  {
+    "name": "b9_sgp",
+    "val_pinball_q10": 117.06613761328371,
+    "val_pinball_q50": 385.7348605709434,
+    "val_pinball_q90": 652.1720639634772,
+    "val_pinball_mean_dkk": 384.9910207159014,
+    "val_q10_q90_coverage": 0.021551724137931036,
+    "n_val": 5568
+  }
+]

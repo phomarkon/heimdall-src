@@ -1,0 +1,2 @@
+ai-society/configs/d3-faithfulness-20260524/smoke/d3-ungrounded-apr02-0530-seed42-2-q32.yaml
+ai-society/configs/d3-faithfulness-20260524/smoke/d3-grounded-apr02-0530-seed42-2-q32.yaml
