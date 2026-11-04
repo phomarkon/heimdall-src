@@ -6,7 +6,8 @@ type Selection =
   | { kind: "agent"; id: string }
   | { kind: "edge"; id: string }
   | { kind: "event"; id: string }
-  | { kind: "focal" };
+  | { kind: "focal" }
+  | { kind: "none" };
 
 type SelectionState = {
   selected: Selection;

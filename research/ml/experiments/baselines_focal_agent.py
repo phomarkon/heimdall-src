@@ -67,6 +67,43 @@ class P2HSpec:
     cop: float = 3.0  # PyPSA-Eur-Sec central HP value
     initial_soc_mwh: float = 37.5  # 50% full
     baseline_demand_mw: float = 4.0  # constant heat demand → SoC drift
+    cop_std: float = 0.20
+    thermal_loss_mean: float = 0.002
+    thermal_loss_std: float = 0.001
+    demand_noise_std: float = 0.10
+    demand_response: float = 0.15
+    degradation_budget_mwh: float = 240.0
+
+
+DISPATCH_LEVELS = 21
+
+
+def dispatch_grid(spec: P2HSpec) -> np.ndarray:
+    """The 21 auditable dispatch actions, from full curtailment to full load."""
+    return np.linspace(-spec.capacity_mw, spec.capacity_mw, DISPATCH_LEVELS)
+
+
+def feasible_action_mask(soc_mwh: float, spec: P2HSpec) -> np.ndarray:
+    """Mask actions using nominal next-state physics before an action is sampled."""
+    levels = dispatch_grid(spec)
+    nominal_next = (
+        soc_mwh * (1.0 - spec.thermal_loss_mean)
+        + spec.cop * levels * 0.25
+        - spec.baseline_demand_mw * 0.25
+    )
+    mask = (nominal_next >= 0.0) & (nominal_next <= spec.storage_mwh)
+    return mask
+
+
+def _masked_action_distribution(probability_fn, observation, mask: np.ndarray) -> np.ndarray:
+    probabilities = np.asarray(probability_fn(observation), dtype=float)
+    if probabilities.shape != (DISPATCH_LEVELS,) or np.any(probabilities < 0):
+        raise ValueError("policy must return 21 nonnegative probabilities")
+    probabilities = np.where(mask, probabilities, 0.0)
+    total = float(probabilities.sum())
+    if total <= 0:
+        raise ValueError("policy has no probability mass on feasible actions")
+    return probabilities / total
 
 
 # ---------------------------------------------------------------------------
@@ -151,7 +188,6 @@ def evaluate_policy(
 
     da = panel["da_price_dkk_mwh"].to_numpy()
     imb = panel["imbalance_price_dkk_mwh"].to_numpy()
-    ts = panel["timestamp_utc"].to_list()
     n = len(da)
 
     soc = spec.initial_soc_mwh
@@ -164,7 +200,8 @@ def evaluate_policy(
     t0 = time.perf_counter()
 
     for t in range(n):
-        history = {"da": da[:t], "imb": imb[:t]}
+        # DA is known before dispatch; the current imbalance settlement is not.
+        history = {"da": da[:t], "imb": imb[:t], "current_da": float(da[t])}
         forecast_t = (
             forecaster_signal[t] if forecaster_signal is not None else None
         )
@@ -235,7 +272,11 @@ def evaluate_policy(
 
     # CVaR(5%) on daily aggregates.
     n_full_days = n // TICKS_PER_DAY
-    daily = settlements[: n_full_days * TICKS_PER_DAY].reshape(n_full_days, TICKS_PER_DAY).sum(axis=1)
+    daily = (
+        settlements[: n_full_days * TICKS_PER_DAY]
+        .reshape(n_full_days, TICKS_PER_DAY)
+        .sum(axis=1)
+    )
     if daily.size:
         worst = np.sort(daily)[: max(1, int(np.ceil(0.05 * daily.size)))]
         cvar5 = float(worst.mean())
@@ -301,7 +342,6 @@ def _quantile_band(history_imb: np.ndarray, da_t: float, alpha: float, window: i
     if history_imb.size < 8:
         return da_t * 0.5, da_t * 1.5
     w = history_imb[-window:]
-    point = float(np.median(w))
     lo = float(np.quantile(w, alpha / 2))
     hi = float(np.quantile(w, 1 - alpha / 2))
     return lo, hi
@@ -314,7 +354,9 @@ def make_b2_policy(cfg: B2Config | None = None):
         if t < 8 or history["imb"].size < 8:
             return 0.0
         lo, hi = _quantile_band(history["imb"], history["da"][-1], cfg.alpha, cfg.quantile_window)
-        da_t = history["da"][-1] if history["da"].size else 0.0
+        da_t = float(
+            history.get("current_da", history["da"][-1] if history["da"].size else 0.0)
+        )
 
         # Per-MWh worst-case profit for the two sides:
         # - down (q>0): worst is at imb=hi → spread = da−hi (often negative)
@@ -325,10 +367,8 @@ def make_b2_policy(cfg: B2Config | None = None):
         # Pick best worst-case side.
         if worst_down >= worst_up and worst_down >= cfg.tau_dkk_per_mwh:
             side_q = +spec.capacity_mw
-            worst = worst_down
         elif worst_up > worst_down and worst_up >= cfg.tau_dkk_per_mwh:
             side_q = -spec.capacity_mw
-            worst = worst_up
         else:
             return 0.0
 
@@ -369,12 +409,13 @@ class B4Config:
 
 
 def make_p2h_env(panel: pl.DataFrame, spec: P2HSpec, seed: int):
-    """Tiny Gymnasium env for the focal P2H asset.
+    """Leakage-free, action-dependent Gymnasium environment for the P2H asset.
 
-    Observation: [normalised SoC, da_t, imb_t, hour_sin, hour_cos, lag1_imb].
-    Action: 1-D Box ∈ [-1, 1] mapping to [-cap, +cap] MW.
-    Reward: 15-min DKK settlement.
-    Episode: 96 ticks (one day).
+    Observation: [SoC, known DA_t, lag1 imbalance, lag1 DA, hour sin/cos].
+    The current imbalance settlement is revealed only after acting. The 21
+    discrete actions admit exact propensities and an ``action_masks`` method.
+    Nominal physical feasibility is enforced before sampling; stochastic COP,
+    thermal loss and demand response create action-dependent uncertainty.
     """
     import gymnasium as gym
     from gymnasium import spaces
@@ -391,13 +432,13 @@ def make_p2h_env(panel: pl.DataFrame, spec: P2HSpec, seed: int):
             self.observation_space = spaces.Box(
                 low=-10.0, high=10.0, shape=(6,), dtype=np.float32
             )
-            self.action_space = spaces.Box(
-                low=-1.0, high=1.0, shape=(1,), dtype=np.float32
-            )
+            self.action_space = spaces.Discrete(DISPATCH_LEVELS)
             self._rng = np.random.default_rng(base_seed)
             self._t0 = 0
             self._t = 0
             self._soc = spec.initial_soc_mwh
+            self._throughput_mwh = 0.0
+            self._episode_failed = False
             self._ep_len = TICKS_PER_DAY
 
         def _obs(self):
@@ -408,10 +449,10 @@ def make_p2h_env(panel: pl.DataFrame, spec: P2HSpec, seed: int):
                 [
                     self._soc / spec.storage_mwh,
                     da[tt] / 2000.0,
-                    imb[tt] / 2000.0,
+                    imb[(tt - 1) % n] / 2000.0,
+                    da[(tt - 1) % n] / 2000.0,
                     math.sin(2 * math.pi * hour),
                     math.cos(2 * math.pi * hour),
-                    imb[(tt - 1) % n] / 2000.0,
                 ],
                 dtype=np.float32,
             )
@@ -420,38 +461,120 @@ def make_p2h_env(panel: pl.DataFrame, spec: P2HSpec, seed: int):
             super().reset(seed=seed)
             if seed is not None:
                 self._rng = np.random.default_rng(seed)
-            self._t0 = int(self._rng.integers(0, max(1, n - self._ep_len)))
+            self._t0 = int(self._rng.integers(1, max(2, n - self._ep_len)))
             self._t = 0
             self._soc = spec.initial_soc_mwh
-            return self._obs(), {}
+            self._throughput_mwh = 0.0
+            self._episode_failed = False
+            return self._obs(), {"action_mask": self.action_masks()}
+
+        def action_masks(self):
+            return feasible_action_mask(self._soc, spec)
 
         def step(self, action):
-            q = float(np.clip(action[0], -1.0, 1.0)) * spec.capacity_mw
+            action_index = int(action)
+            mask = self.action_masks()
+            if action_index < 0 or action_index >= DISPATCH_LEVELS or not mask[action_index]:
+                raise ValueError("infeasible dispatch must be masked before action sampling")
+            q = float(dispatch_grid(spec)[action_index])
             tt = (self._t0 + self._t) % n
-            soc_new = (
-                self._soc + spec.cop * q * 0.25 - spec.baseline_demand_mw * 0.25
+            cop = max(0.5, spec.cop + float(self._rng.normal(0.0, spec.cop_std)))
+            thermal_loss = float(
+                np.clip(
+                    self._rng.normal(spec.thermal_loss_mean, spec.thermal_loss_std),
+                    0.0,
+                    0.02,
+                )
             )
-            penalty = 0.0
-            if soc_new < 0:
-                penalty -= (-soc_new) * 100.0
-                soc_new = 0.0
-                q = 0.0
-            elif soc_new > spec.storage_mwh:
-                penalty -= (soc_new - spec.storage_mwh) * 100.0
-                soc_new = spec.storage_mwh
-                q = 0.0
+            demand_multiplier = max(
+                0.0,
+                1.0
+                + float(self._rng.normal(0.0, spec.demand_noise_std))
+                + spec.demand_response * abs(q) / spec.capacity_mw,
+            )
+            heat_demand = spec.baseline_demand_mw * demand_multiplier
+            raw_soc = self._soc * (1.0 - thermal_loss) + cop * q * 0.25 - heat_demand * 0.25
+            heat_shortfall = max(0.0, -raw_soc)
+            overflow = max(0.0, raw_soc - spec.storage_mwh)
+            soc_new = float(np.clip(raw_soc, 0.0, spec.storage_mwh))
+            self._throughput_mwh += abs(q) * 0.25
+            degradation_failure = self._throughput_mwh > spec.degradation_budget_mwh
+            step_failure = heat_shortfall > 0.0 or degradation_failure
+            self._episode_failed = self._episode_failed or step_failure
+            penalty = -100.0 * (heat_shortfall + overflow) - 1000.0 * float(step_failure)
             reward = q * (da[tt] - imb[tt]) * 0.25 + penalty
             self._soc = soc_new
             self._t += 1
             term = self._t >= self._ep_len
-            return self._obs(), float(reward), term, False, {}
+            info = {
+                "action_mask": (
+                    self.action_masks()
+                    if not term
+                    else np.ones(DISPATCH_LEVELS, dtype=bool)
+                ),
+                "episode_failure": self._episode_failed,
+                "step_failure": step_failure,
+                "heat_shortfall_mwh": heat_shortfall,
+                "degradation_failure": degradation_failure,
+                "cop": cop,
+                "thermal_loss": thermal_loss,
+                "heat_demand_mw": heat_demand,
+                "dispatch_mw": q,
+                "settlement_imbalance_dkk_mwh": float(imb[tt]),
+            }
+            return self._obs(), float(reward), term, False, info
 
     env = P2HEnv(base_seed=seed)
     return env
 
 
+def rollout_probability_policy(
+    env,
+    executed_probability_fn,
+    behavior_probability_fn,
+    *,
+    seed: int,
+) -> dict:
+    """Roll out one episode and log exact masked behavior/executed propensities.
+
+    Both callbacks map the current observation to 21 action probabilities.
+    Masking and renormalization happen before sampling, so the returned log
+    probabilities describe the policy that interacted with the environment.
+    """
+    rng = np.random.default_rng(seed)
+    observation, info = env.reset(seed=seed)
+    states, masks, actions, rewards = [], [], [], []
+    behavior_logs, executed_logs = [], []
+    terminated = truncated = False
+    episode_loss = 0
+    while not (terminated or truncated):
+        mask = np.asarray(info["action_mask"], dtype=bool)
+        behavior = _masked_action_distribution(behavior_probability_fn, observation, mask)
+        executed = _masked_action_distribution(executed_probability_fn, observation, mask)
+        if np.any((executed > 0) & (behavior == 0)):
+            raise ValueError("executed policy is outside behavior support")
+        action = int(rng.choice(DISPATCH_LEVELS, p=executed))
+        states.append(np.asarray(observation).tolist())
+        masks.append(mask.tolist())
+        actions.append(action)
+        behavior_logs.append(float(np.log(behavior[action])))
+        executed_logs.append(float(np.log(executed[action])))
+        observation, reward, terminated, truncated, info = env.step(action)
+        rewards.append(float(reward))
+        episode_loss = max(episode_loss, int(info["episode_failure"]))
+    return {
+        "states": states,
+        "feasible_masks": masks,
+        "actions": actions,
+        "rewards": rewards,
+        "episode_loss": episode_loss,
+        "behavior_log_probabilities": behavior_logs,
+        "executed_log_probabilities": executed_logs,
+    }
+
+
 def b4_train_ppo(cfg: B4Config, train_panel: pl.DataFrame, spec: P2HSpec):
-    from stable_baselines3 import PPO
+    from sb3_contrib import MaskablePPO
     from stable_baselines3.common.vec_env import DummyVecEnv
 
     cfg.save_dir.mkdir(parents=True, exist_ok=True)
@@ -464,7 +587,7 @@ def b4_train_ppo(cfg: B4Config, train_panel: pl.DataFrame, spec: P2HSpec):
     # 10k-param actor-critic — GPU launch overhead dominates per-step.
     # See https://github.com/DLR-RM/stable-baselines3/issues/1245.
     # Parallelism across seeds is achieved at the driver level, not here.
-    model = PPO(
+    model = MaskablePPO(
         "MlpPolicy",
         venv,
         learning_rate=cfg.learning_rate,
@@ -487,24 +610,24 @@ def make_b4_policy(model):
 
     def _policy(t, history, forecast_t, soc, spec):
         # Reconstruct the same observation the env emits for the *current* tick.
-        if history["da"].size == 0:
-            return 0.0
-        da_t = history["da"][-1]
-        imb_t = history["imb"][-1]
+        da_t = float(history.get("current_da", 0.0))
+        lag1_imb = float(history["imb"][-1]) if history["imb"].size else 0.0
+        lag1_da = float(history["da"][-1]) if history["da"].size else da_t
         hour = (t % TICKS_PER_DAY) / TICKS_PER_DAY
         obs = np.array(
             [
                 soc / spec.storage_mwh,
                 da_t / 2000.0,
-                imb_t / 2000.0,
+                lag1_imb / 2000.0,
+                lag1_da / 2000.0,
                 math.sin(2 * math.pi * hour),
                 math.cos(2 * math.pi * hour),
-                (history["imb"][-2] if history["imb"].size > 1 else imb_t) / 2000.0,
             ],
             dtype=np.float32,
         )
-        action, _ = model.predict(obs, deterministic=True)
-        return float(np.clip(action[0], -1.0, 1.0)) * spec.capacity_mw
+        mask = feasible_action_mask(soc, spec)
+        action, _ = model.predict(obs, deterministic=True, action_masks=mask)
+        return float(dispatch_grid(spec)[int(action)])
 
     return _policy
 

@@ -1,0 +1,38 @@
+{
+  "ablation_strategy": "comm_broadcast_digest",
+  "abstained": 57,
+  "accepted": 269,
+  "agent_count": 12,
+  "chooser_mode": "llm",
+  "created_at_utc": "2026-05-15T10:08:54.935486Z",
+  "forecaster_backend": "f8",
+  "invalid": 0,
+  "llm_base_urls": [
+    "http://127.0.0.1:8000/v1",
+    "http://127.0.0.1:8001/v1"
+  ],
+  "llm_enabled": true,
+  "llm_model_configured": "Qwen/Qwen3-32B",
+  "llm_model_served": "Qwen/Qwen3-32B",
+  "llm_models_served": {
+    "http://127.0.0.1:8000/v1": "Qwen/Qwen3-32B",
+    "http://127.0.0.1:8001/v1": "Qwen/Qwen3-32B"
+  },
+  "market_context": "real",
+  "max_concurrency": 12,
+  "memory_bank_path": "ai-society/runs/risk-filter-matrix/memory-v2-bank.jsonl",
+  "memory_enabled": true,
+  "memory_items_loaded": 14,
+  "per_endpoint_max_concurrency": null,
+  "persona_profile": "jao_grid_v1",
+  "rejected": 0,
+  "run_id": "bme-promote-jao12-bcast-mem-apr02-0530-48-f8",
+  "runtime_seconds": 1311.708298,
+  "runtime_seconds_per_tick": 27.327256,
+  "simulator_max_concurrency": 8,
+  "ticks": 48,
+  "tool_mode": "openai_tools",
+  "trace_path": "ai-society/runs/bcast-mem-extensions-20260515-promotion/bme-promote-jao12-bcast-mem-apr02-0530-48-f8/traces.jsonl",
+  "verifier_mode": "simulator",
+  "watched": 250
+}

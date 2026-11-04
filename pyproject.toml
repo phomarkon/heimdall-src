@@ -51,6 +51,13 @@ dependencies = [
   "optuna>=4.8.0",
 ]
 
+[project.optional-dependencies]
+safe-rl = [
+  "gymnasium>=1.2",
+  "stable-baselines3>=2.7",
+  "sb3-contrib>=2.7",
+]
+
 [tool.uv.workspace]
 members = [
   "packages/contracts",

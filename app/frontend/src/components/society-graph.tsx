@@ -280,13 +280,13 @@ export function SocietyGraph({ snapshot }: { snapshot: RunSnapshot }) {
         <SelectedAgentCard
           node={selectedAgent}
           snapshot={snapshot}
-          onClose={() => setSelected({ kind: "focal" })}
+          onClose={() => setSelected({ kind: "none" })}
           onOpenHistory={() => setHistoryAgentId(selectedAgent.id)}
         />
       ) : null}
 
       {selectedEdge ? (
-        <SelectedEdgeCard edge={selectedEdge} snapshot={snapshot} onClose={() => setSelected({ kind: "focal" })} />
+        <SelectedEdgeCard edge={selectedEdge} snapshot={snapshot} onClose={() => setSelected({ kind: "none" })} />
       ) : null}
 
       {historyAgent ? (
@@ -415,8 +415,8 @@ function SelectedAgentCard({
             type="button"
             onClick={onClose}
             className="flex h-7 w-7 items-center justify-center border border-[#1f2933] bg-[#f7f6f2] text-xs font-black text-slate-700 hover:bg-[#dff5ec]"
-            aria-label="Reset selected agent"
-            title="Reset selected agent"
+            aria-label="Close panel"
+            title="Close panel"
           >
             x
           </button>
@@ -555,8 +555,8 @@ function SelectedInfoAgentCard({
             type="button"
             onClick={onClose}
             className="flex h-7 w-7 items-center justify-center border border-[#1f2933] bg-[#f7f6f2] text-xs font-black text-slate-700 hover:bg-[#dff5ec]"
-            aria-label="Reset selected agent"
-            title="Reset selected agent"
+            aria-label="Close panel"
+            title="Close panel"
           >
             x
           </button>

@@ -1,0 +1,26 @@
+{
+  "artifacts": {
+    "agent_metrics": "evaluations/ghs-s20-mixed-large-mar11-0000-seed42-24-q32/agent_metrics.parquet",
+    "archetype_metrics": "evaluations/ghs-s20-mixed-large-mar11-0000-seed42-24-q32/archetype_metrics.parquet",
+    "bid_evaluations": "evaluations/ghs-s20-mixed-large-mar11-0000-seed42-24-q32/bid_evaluations.parquet",
+    "run_summary": "evaluations/ghs-s20-mixed-large-mar11-0000-seed42-24-q32/run_summary.json"
+  },
+  "context_dataset_id": "2026_03",
+  "context_dir": "data/cache/real_context/2026_03",
+  "context_manifest_sha256": "19fcf8392552f2488ed2b1e51e2b47e31d546075ad2862b9c7ec36b7913ccccf",
+  "created_at_utc": "2026-05-25T11:22:28.324050Z",
+  "row_counts": {
+    "agent_metrics": 20,
+    "archetype_metrics": 13,
+    "bid_evaluations": 480,
+    "traces": 480,
+    "truth": 5954
+  },
+  "run_dir": "ai-society/runs/generalized-headlines-20260525/ghs-s20-mixed-large-mar11-0000-seed42-24-q32",
+  "run_id": "ghs-s20-mixed-large-mar11-0000-seed42-24-q32",
+  "schema_version": "1.0.0",
+  "trace_sha256": "39ac5e0cb1ebe72d2feaf76ab920618e1f39876236d5b762075569abca9406f2",
+  "truth_dataset_id": "2026_03",
+  "truth_dir": "data/cache/evaluation_truth/2026_03",
+  "truth_manifest_sha256": "f5d7aacc2308e4cfbcecd00a30a0990e6a481120965eb7469f59982361600418"
+}
